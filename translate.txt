@@ -1,0 +1,9 @@
+%s/함수명/Function Name/g
+%s/작성자/Author/g
+%s/작성일/Date/g
+%s/목적/Purpose/g
+%s/입력/Input/g
+%s/출력/Return/g
+%s/일자/Date/g
+%s/수정자/Modifier/g
+%s/수정내용/Modified contents/g

@@ -15,15 +15,15 @@ void DevideScript(char *pszScript);
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CGameProcess::CGameProcess()
+	Function Name : CGameProcess::CGameProcess()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date : 
 
-	목적   : 
-	출력   : 
+	Purpose   : 
+	Return   : 
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CGameProcess::CGameProcess()
@@ -35,15 +35,15 @@ CGameProcess::CGameProcess()
 
 /******************************************************************************************************************
 
-	함수명 : CGameProcess::~CGameProcess()
+	Function Name : CGameProcess::~CGameProcess()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date : 
 
-	목적   : 
-	출력   : 
+	Purpose   : 
+	Return   : 
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CGameProcess::~CGameProcess()
@@ -185,15 +185,15 @@ VOID CGameProcess::DeleteProc()
 
 /******************************************************************************************************************
 
-	함수명 : CGameProcess::Load()
+	Function Name : CGameProcess::Load()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date : 
 
-	목적   : 
-	출력   : VOID 
+	Purpose   : 
+	Return   : VOID 
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CGameProcess::Load()
@@ -292,16 +292,16 @@ VOID CGameProcess::Load()
 
 /******************************************************************************************************************
 
-	함수명 : CGameProcess::LoadMapChanged()
+	Function Name : CGameProcess::LoadMapChanged()
 
-	작성자 : 
-	작성일 :  
+	Author : 
+	Date :  
 
-	목적   : 맵이 바뀌었을때 메모리 해제와 생성, 및 데이타 로드.
-	입력   : CHAR* szMap
-	출력   : VOID 
+	Purpose   : 맵이 바뀌었을때 메모리 해제와 생성, 및 데이타 로드.
+	Input   : CHAR* szMap
+	Return   : VOID 
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CGameProcess::LoadMapChanged(CHAR* szMap)
@@ -877,7 +877,7 @@ VOID CGameProcess::RenderScene(INT nLoopTime)
 
 		m_xMyHero.UpdateMotionState(nLoopTime, bIsMoveTime);
 		// 맵을 그린다.
-//		Clear(0);
+		//Clear(0);
 		g_xMainWnd.DrawWithImagePerLineClipRgn(
 			m_xMap.m_rcView.left+_VIEW_CELL_X_START-m_xMap.m_shViewOffsetX,
 			m_xMap.m_rcView.top+_VIEW_CELL_Y_START-m_xMap.m_shViewOffsetY,
@@ -934,7 +934,9 @@ VOID CGameProcess::RenderScene(INT nLoopTime)
 		}
 
 
-		if ( m_bShowMist )			m_xMist.ProgressMist();
+		if ( m_bShowMist )
+			m_xMist.ProgressMist();
+
 		if ( m_bShowSnow )			
 		{
 			m_xSnow.UpdateSystem(nLoopTime);
@@ -1170,9 +1172,13 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 	m_xMap.SetAniTileFrame(nLoopTime);
 
 // 48*32 타일형 오브젝트 그리기.
-	for ( INT nYCnt = m_xMap.m_shStartViewTileY-4; nYCnt < m_xMap.m_shStartViewTileY+_VIEW_CELL_Y_COUNT+6; nYCnt++ )
+	for ( INT nYCnt = m_xMap.m_shStartViewTileY-4; 
+			nYCnt < m_xMap.m_shStartViewTileY+_VIEW_CELL_Y_COUNT+6; 
+			nYCnt++ )
 	{
-		for ( INT nXCnt = m_xMap.m_shStartViewTileX-4; nXCnt < m_xMap.m_shStartViewTileX+_VIEW_CELL_X_COUNT+6; nXCnt++ )
+		for ( INT nXCnt = m_xMap.m_shStartViewTileX-4; 
+				nXCnt < m_xMap.m_shStartViewTileX+_VIEW_CELL_X_COUNT+6; 
+				nXCnt++ )
 		{
 			if ( nYCnt >= m_xMap.m_stMapFileHeader.shHeight )
 				break;
@@ -1187,7 +1193,10 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 			{
 				m_xLightFog.SetLightRadiusWithCircle((nXCnt-m_xMap.m_shStartViewTileX)*_CELL_WIDTH-m_xMap.m_shViewOffsetX+_VIEW_CELL_X_START,
 													 (nYCnt-m_xMap.m_shStartViewTileY)*_CELL_HEIGHT-m_xMap.m_shViewOffsetY+_VIEW_CELL_Y_START, 
-													 12, m_fTileLightBlue, m_fTileLightGreen, m_fTileLightRed);
+													 12, 
+													 m_fTileLightBlue, 
+													 m_fTileLightGreen, 
+													 m_fTileLightRed);
 			}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1292,13 +1301,16 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 								}
 								
 								if ( !bBlend )
+								{
 									g_xMainWnd.DrawWithImageForCompClipRgn(
 									(nXCnt-m_xMap.m_shStartViewTileX)*_CELL_WIDTH +_VIEW_CELL_X_START-m_xMap.m_shViewOffsetX,
 									(nYCnt-m_xMap.m_shStartViewTileY)*_CELL_HEIGHT+_VIEW_CELL_Y_START-m_xMap.m_pxTileImg[nObjFileIdx]->m_lpstNewCurrWilImageInfo->shHeight+_CELL_HEIGHT-m_xMap.m_shViewOffsetY,
 									m_xMap.m_pxTileImg[nObjFileIdx]->m_lpstNewCurrWilImageInfo->shWidth,
 									m_xMap.m_pxTileImg[nObjFileIdx]->m_lpstNewCurrWilImageInfo->shHeight,
 									(WORD*)m_xMap.m_pxTileImg[nObjFileIdx]->m_pbCurrImage,
-									_CLIP_WIDTH, _CLIP_HEIGHT);
+									_CLIP_WIDTH,
+									_CLIP_HEIGHT);
+								}
 								else
 								{
 									m_xImage.AddTextr(_TEXTR_FILE_MAP, nObjFileIdx, nImgIdx);
@@ -1311,7 +1323,11 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 									D3DVECTOR	vecTrans(nStartX, nStartY, 0);
 									D3DVECTOR	vecScale(m_xMap.m_pxTileImg[nObjFileIdx]->m_lpstNewCurrWilImageInfo->shWidth, m_xMap.m_pxTileImg[nObjFileIdx]->m_lpstNewCurrWilImageInfo->shHeight, 1);
 
-									D3DUtil_InitMaterial(mtrl, (FLOAT)255/255.0f, (FLOAT)255/255.0f, (FLOAT)255/255.0f);
+									D3DUtil_InitMaterial(mtrl, 
+											(FLOAT)255/255.0f, 
+											(FLOAT)255/255.0f, 
+											(FLOAT)255/255.0f);
+
 									mtrl.diffuse.a = 1.0f/255.0f;
 									g_xMainWnd.Get3DDevice()->SetMaterial(&mtrl);
 									m_xImage.DrawBillBoard(g_xMainWnd.Get3DDevice(), vecTrans, vecScale, mtrl, lpddsTextr);
@@ -1325,12 +1341,17 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 	}	
 
 	// 48*32가 아닌 길이가 있는 타일형 오브젝트 그리기.
-	for ( nYCnt = m_xMap.m_shStartViewTileY; nYCnt < m_xMap.m_shStartViewTileY+_VIEW_CELL_Y_COUNT_FOR_OBJ; nYCnt++ )
+	for ( nYCnt = m_xMap.m_shStartViewTileY; 
+			nYCnt < m_xMap.m_shStartViewTileY+_VIEW_CELL_Y_COUNT_FOR_OBJ; 
+			nYCnt++ )
 	{
-		for ( INT nXCnt = m_xMap.m_shStartViewTileX; nXCnt < m_xMap.m_shStartViewTileX+_VIEW_CELL_X_COUNT; nXCnt++ )
+		for ( INT nXCnt = m_xMap.m_shStartViewTileX; 
+				nXCnt < m_xMap.m_shStartViewTileX+_VIEW_CELL_X_COUNT; 
+				nXCnt++ )
 		{
 			if ( nYCnt >= m_xMap.m_stMapFileHeader.shHeight )
 				break;
+
 			if ( nXCnt >= m_xMap.m_stMapFileHeader.shWidth || nXCnt < 0 || nYCnt < 0 )
 				continue; 
 
@@ -1657,6 +1678,7 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 
 
 	bDrawShadow = FALSE;
+
 	if ( m_bShadowABlend )
 		bDrawShadow = TRUE;
 
