@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WindHorn - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP88F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/WindHorn.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\WorkGroup\Mir2Ex0309\WindHorn\RegHandler.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHDefProcess.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHDXGraphic.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHImage.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHSurface.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHWilImage.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHWilTexture.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\WHWindow.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\D3DCommon\d3dmath.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\D3DCommon\d3dtextr.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\D3DCommon\d3dutil.cpp"
+"D:\WorkGroup\Mir2Ex0309\WindHorn\D3DCommon\ddutil.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP88F.tmp" 
+Creating temporary file "D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP890.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/WindHorn.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\WorkGroup\Mir2Ex0309\WindHorn\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP890.tmp" 
+Creating temporary file "D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP891.tmp" with contents
+[
+/nologo /out:"Debug\WindHorn.lib" 
+.\Debug\RegHandler.obj
+.\Debug\StdAfx.obj
+.\Debug\WHDefProcess.obj
+.\Debug\WHDXGraphic.obj
+.\Debug\WHImage.obj
+.\Debug\WHSurface.obj
+.\Debug\WHWilImage.obj
+.\Debug\WHWilTexture.obj
+.\Debug\WHWindow.obj
+.\Debug\d3dmath.obj
+.\Debug\d3dtextr.obj
+.\Debug\d3dutil.obj
+.\Debug\ddutil.obj
+]
+Creating command line "link.exe -lib @D:\DOCUME~1\plusplus\LOCALS~1\Temp\RSP891.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+RegHandler.cpp
+WHDefProcess.cpp
+WHDXGraphic.cpp
+WHImage.cpp
+WHSurface.cpp
+WHWilImage.cpp
+WHWilTexture.cpp
+WHWindow.cpp
+d3dmath.cpp
+d3dtextr.cpp
+d3dutil.cpp
+ddutil.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+WindHorn.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
