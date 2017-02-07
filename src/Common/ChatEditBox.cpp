@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -26,15 +26,15 @@ static CChatEdit*	g_xChatEdit = NULL;
 
 /******************************************************************************************************************
 
-	함수명 : CChatEdit::CChatEdit()
+	Function Name : CChatEdit::CChatEdit()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CChatEdit::CChatEdit()
@@ -50,15 +50,15 @@ CChatEdit::CChatEdit()
 
 /******************************************************************************************************************
 
-	함수명 : CChatEdit::~CChatEdit()
+	Function Name : CChatEdit::~CChatEdit()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CChatEdit::~CChatEdit()
@@ -70,15 +70,15 @@ CChatEdit::~CChatEdit()
 
 /******************************************************************************************************************
 
-	함수명 : CChatEdit::DestroyDialog()
+	Function Name : CChatEdit::DestroyDialog()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CChatEdit::DestroyDialog()
@@ -97,19 +97,19 @@ BOOL CChatEdit::DestroyDialog()
 
 /******************************************************************************************************************
 
-	함수명 : ChatEditDlgProc()
+	Function Name : ChatEditDlgProc()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT uMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : INT_PTR CALLBACK 
+	Return   : INT_PTR CALLBACK
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 INT_PTR CALLBACK ChatEditDlgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -121,19 +121,19 @@ INT_PTR CALLBACK ChatEditDlgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 /******************************************************************************************************************
 
-	함수명 : CChatEdit::ChatEditProc()
+	Function Name : CChatEdit::ChatEditProc()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT nMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT CALLBACK 
+	Return   : LRESULT CALLBACK
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 LRESULT CALLBACK CChatEdit::ChatEditProc(HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam)
@@ -215,21 +215,21 @@ LRESULT CALLBACK CChatEdit::ChatEditProc(HWND hWnd, UINT nMsg, WPARAM wParam, LP
 
 /******************************************************************************************************************
 
-	함수명 : CChatEdit::Create()
+	Function Name : CChatEdit::Create()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HINSTANCE hInstance
+	Purpose   :
+	Params   : HINSTANCE hInstance
 	         HWND hWndParent
 	         INT nX
 	         INT nY
 	         INT nXsize
 	         INT nYSize
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CChatEdit::Create(HINSTANCE hInstance, HWND hWndParent, INT nX, INT nY, INT nXsize, INT nYSize)

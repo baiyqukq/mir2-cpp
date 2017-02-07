@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:																											
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -22,15 +22,15 @@
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::CInventoryWnd()
+	Function Name : CInventoryWnd::CInventoryWnd()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CInventoryWnd::CInventoryWnd()
@@ -42,15 +42,15 @@ CInventoryWnd::CInventoryWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::~CInventoryWnd()
+	Function Name : CInventoryWnd::~CInventoryWnd()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CInventoryWnd::~CInventoryWnd()
@@ -92,13 +92,13 @@ VOID CInventoryWnd::Destroy()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::CreateInventoryWnd()
+	Function Name : CInventoryWnd::CreateInventoryWnd()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : INT nID
+	Purpose   :
+	Params   : INT nID
 	         CWHWilImageData* pxWndImage
 	         INT nFrameImgIdx
 	         INT nStartX
@@ -106,9 +106,9 @@ VOID CInventoryWnd::Destroy()
 	         INT nWidth
 	         INT nHeight
 	         BOOL bCanMove
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::CreateInventoryWnd(INT nID, CWHWilImageData* pxWndImage, INT nFrameImgIdx, INT nStartX, INT nStartY, INT nWidth, INT nHeight, BOOL bCanMove)
@@ -151,15 +151,15 @@ VOID CInventoryWnd::CreateInventoryWnd(INT nID, CWHWilImageData* pxWndImage, INT
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SetInvenBtnInit()
+	Function Name : CInventoryWnd::SetInvenBtnInit()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::SetInvenBtnInit()
@@ -173,15 +173,15 @@ VOID CInventoryWnd::SetInvenBtnInit()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ShowInventoryWnd()
+	Function Name : CInventoryWnd::ShowInventoryWnd()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::ShowInventoryWnd()
@@ -249,15 +249,15 @@ VOID CInventoryWnd::ShowInventoryWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ShowInvenItemState()
+	Function Name : CInventoryWnd::ShowInvenItemState()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::ShowInvenItemState()
@@ -318,16 +318,16 @@ VOID CInventoryWnd::ShowInvenItemState()
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::CheckItemPos()
+	Function Name : CInventoryWnd::CheckItemPos()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : CHAR* szName
-	출력   : BOOL 
+	Purpose   :
+	Params   : CHAR* szName
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::CheckItemPos(CHAR* szName)
@@ -436,16 +436,16 @@ BOOL CInventoryWnd::CheckItemPos(CHAR* szName)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SaveItemPos()
+	Function Name : CInventoryWnd::SaveItemPos()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : CHAR* szName
-	출력   : BOOL 
+	Purpose   :
+	Params   : CHAR* szName
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::SaveItemPos(CHAR* szName)
@@ -473,16 +473,16 @@ BOOL CInventoryWnd::SaveItemPos(CHAR* szName)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::GetInvenNum()
+	Function Name : CInventoryWnd::GetInvenNum()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 마우스 위치에서 현재 인벤토리의 셀번호를 얻어온다.
-	입력   : POINT ptMouse
-	출력   : INT 
+	Purpose   : 마우스 위치에서 현재 인벤토리의 셀번호를 얻어온다.
+	Params   : POINT ptMouse
+	Return   : INT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 INT CInventoryWnd::GetInvenNum(POINT ptMouse)
@@ -505,16 +505,16 @@ INT CInventoryWnd::GetInvenNum(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::GetBeltNum()
+	Function Name : CInventoryWnd::GetBeltNum()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 마우스 위치에서 현재 벨트의 셀번호를 얻어온다.
-	입력   : POINT ptMouse
-	출력   : INT 
+	Purpose   : 마우스 위치에서 현재 벨트의 셀번호를 얻어온다.
+	Params   : POINT ptMouse
+	Return   : INT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 INT CInventoryWnd::GetBeltNum(POINT ptMouse)
@@ -537,16 +537,16 @@ INT CInventoryWnd::GetBeltNum(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::DeleteInventoryCurrItem()
+	Function Name : CInventoryWnd::DeleteInventoryCurrItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리의 해당셀 아이템을 지운다.
-	입력   : INT nInventoryNum
-	출력   : VOID 
+	Purpose   : 인벤토리의 해당셀 아이템을 지운다.
+	Params   : INT nInventoryNum
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::DeleteInvenItem(INT nInventoryNum)
@@ -577,15 +577,15 @@ VOID CInventoryWnd::DeleteInvenItem(INT nMakeIndex, CHAR* szName)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::DeleteInventoryAllItem()
+	Function Name : CInventoryWnd::DeleteInventoryAllItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리의 모든 아이템을 지운다.
-	출력   : VOID 
+	Purpose   : 인벤토리의 모든 아이템을 지운다.
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::DeleteAllInvenItem()
@@ -600,16 +600,16 @@ VOID CInventoryWnd::DeleteAllInvenItem()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::DeleteCurrBeltItemList()
+	Function Name : CInventoryWnd::DeleteCurrBeltItemList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 벨트의 해당셀 아이템을 지운다.
-	입력   : INT nBeltInventoryNum
-	출력   : VOID 
+	Purpose   : 벨트의 해당셀 아이템을 지운다.
+	Params   : INT nBeltInventoryNum
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::DeleteBeltItem(INT nBeltInventoryNum)
@@ -621,16 +621,16 @@ VOID CInventoryWnd::DeleteBeltItem(INT nBeltInventoryNum)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::DeleteAllBeltItemList()
+	Function Name : CInventoryWnd::DeleteAllBeltItemList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 벨트의 모든 아이템을 지운다.
-	입력   : INT nBeltInventoryNum
-	출력   : VOID 
+	Purpose   : 벨트의 모든 아이템을 지운다.
+	Params   : INT nBeltInventoryNum
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::DeleteAllBeltItem()
@@ -645,18 +645,18 @@ VOID CInventoryWnd::DeleteAllBeltItem()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::AddInvenItem()
+	Function Name : CInventoryWnd::AddInvenItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리에 아이템을 넣는다.
-	입력   : CItem xItem
+	Purpose   : 인벤토리에 아이템을 넣는다.
+	Params   : CItem xItem
 	         INT nInvenNum
 	         BOOL bUseInvenNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::AddInvenItem(CItem xItem, INT nInvenNum, BOOL bUseInvenNum)
@@ -690,18 +690,18 @@ BOOL CInventoryWnd::AddInvenItem(CItem xItem, INT nInvenNum, BOOL bUseInvenNum)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::AddBeltItem()
+	Function Name : CInventoryWnd::AddBeltItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 벨트에 아이템을 넣는다.
-	입력   : CItem xItem
+	Purpose   : 벨트에 아이템을 넣는다.
+	Params   : CItem xItem
 	         INT nBeltNum
 	         BOOL bUseBeltNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::AddBeltItem(CItem xItem, INT nBeltNum, BOOL bUseBeltNum)
@@ -734,17 +734,17 @@ BOOL CInventoryWnd::AddBeltItem(CItem xItem, INT nBeltNum, BOOL bUseBeltNum)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ExtractInvenItem()
+	Function Name : CInventoryWnd::ExtractInvenItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리에서 현재 번호의 아이템을 뽑아온다.
-	입력   : CItem* pxItem
+	Purpose   : 인벤토리에서 현재 번호의 아이템을 뽑아온다.
+	Params   : CItem* pxItem
 	         INT nInventoryNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::ExtractInvenItem(CItem* pxItem, INT nInventoryNum)
@@ -763,17 +763,17 @@ BOOL CInventoryWnd::ExtractInvenItem(CItem* pxItem, INT nInventoryNum)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ExtractBeltItem()
+	Function Name : CInventoryWnd::ExtractBeltItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 가방창에서 현재 번호의 아이템을 뽑아온다.
-	입력   : CItem* pxItem
+	Purpose   : 가방창에서 현재 번호의 아이템을 뽑아온다.
+	Params   : CItem* pxItem
 	         INT nBeltInventoryNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::ExtractBeltItem(CItem* pxItem, INT nBeltInventoryNum)
@@ -792,17 +792,17 @@ BOOL CInventoryWnd::ExtractBeltItem(CItem* pxItem, INT nBeltInventoryNum)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ChangeInvenWithCommon()
+	Function Name : CInventoryWnd::ChangeInvenWithCommon()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리의 아이템과 공통(마우스)아이템을 바꾼다.
-	입력   : INT nInventoryNum
+	Purpose   : 인벤토리의 아이템과 공통(마우스)아이템을 바꾼다.
+	Params   : INT nInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::ChangeInvenWithCommon(INT nInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -829,17 +829,17 @@ VOID CInventoryWnd::ChangeInvenWithCommon(INT nInventoryNum, LPCOMMONITEMSET pst
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::ChangeBeltWithCommon()
+	Function Name : CInventoryWnd::ChangeBeltWithCommon()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 벨트의 아이템과 공통(마우스)아이템을 바꾼다.
-	입력   : INT nBeltInventoryNum
+	Purpose   : 벨트의 아이템과 공통(마우스)아이템을 바꾼다.
+	Params   : INT nBeltInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::ChangeBeltWithCommon(INT nBeltInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -866,17 +866,17 @@ VOID CInventoryWnd::ChangeBeltWithCommon(INT nBeltInventoryNum, LPCOMMONITEMSET 
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SetCommonFromInven()
+	Function Name : CInventoryWnd::SetCommonFromInven()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인벤토리의 해당번호 아이템을 공통(마우스)아이템으로 세팅한다.
-	입력   : INT nInventoryNum
+	Purpose   : 인벤토리의 해당번호 아이템을 공통(마우스)아이템으로 세팅한다.
+	Params   : INT nInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::SetCommonFromInven(INT nInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -898,17 +898,17 @@ VOID CInventoryWnd::SetCommonFromInven(INT nInventoryNum, LPCOMMONITEMSET pstCom
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SetCommonFromBelt()
+	Function Name : CInventoryWnd::SetCommonFromBelt()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 벨트창의 해당번호 아이템을 공통(마우스)아이템으로 세팅한다.
-	입력   : INT nBeltInventoryNum
+	Purpose   : 벨트창의 해당번호 아이템을 공통(마우스)아이템으로 세팅한다.
+	Params   : INT nBeltInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::SetCommonFromBelt(INT nBeltInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -930,17 +930,17 @@ VOID CInventoryWnd::SetCommonFromBelt(INT nBeltInventoryNum, LPCOMMONITEMSET pst
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SetInvenFromCommon()
+	Function Name : CInventoryWnd::SetInvenFromCommon()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 공통(마우스)아이템을 인벤토리의 해당번호로 세팅한다.
-	입력   : INT nInventoryNum
+	Purpose   : 공통(마우스)아이템을 인벤토리의 해당번호로 세팅한다.
+	Params   : INT nInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::SetInvenFromCommon(INT nInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -958,17 +958,17 @@ VOID CInventoryWnd::SetInvenFromCommon(INT nInventoryNum, LPCOMMONITEMSET pstCom
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::SetBeltFromCommon()
+	Function Name : CInventoryWnd::SetBeltFromCommon()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 공통(마우스)아이템을 벨트창의 해당번호로 세팅한다.
-	입력   : INT nBeltInventoryNum
+	Purpose   : 공통(마우스)아이템을 벨트창의 해당번호로 세팅한다.
+	Params   : INT nBeltInventoryNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::SetBeltFromCommon(INT nBeltInventoryNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -1085,16 +1085,16 @@ BOOL CInventoryWnd::OnKeyUp(LPCOMMONITEMSET pstCommonItemSet, WPARAM wParam, LPA
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnLButtonDown()
+	Function Name : CInventoryWnd::OnLButtonDown()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::OnLButtonDown(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
@@ -1148,17 +1148,17 @@ BOOL CInventoryWnd::OnLButtonDown(LPCOMMONITEMSET pstCommonItemSet, POINT ptMous
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnLButtonUp()
+	Function Name : CInventoryWnd::OnLButtonUp()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : LPCOMMONITEMSET pstCommonItemSet
+	Purpose   :
+	Params   : LPCOMMONITEMSET pstCommonItemSet
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
@@ -1259,17 +1259,17 @@ BOOL CInventoryWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnLButtonDoubleClick()
+	Function Name : CInventoryWnd::OnLButtonDoubleClick()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : LPCOMMONITEMSET pstCommonItemSet
+	Purpose   :
+	Params   : LPCOMMONITEMSET pstCommonItemSet
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInventoryWnd::OnLButtonDoubleClick(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
@@ -1324,16 +1324,16 @@ BOOL CInventoryWnd::OnLButtonDoubleClick(LPCOMMONITEMSET pstCommonItemSet, POINT
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnMouseMove()
+	Function Name : CInventoryWnd::OnMouseMove()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : VOID 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::OnMouseMove(POINT ptMouse)
@@ -1350,15 +1350,15 @@ VOID CInventoryWnd::OnMouseMove(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnScrollDown()
+	Function Name : CInventoryWnd::OnScrollDown()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::OnScrollDown()
@@ -1370,15 +1370,15 @@ VOID CInventoryWnd::OnScrollDown()
 
 /******************************************************************************************************************
 
-	함수명 : CInventoryWnd::OnScrollUp()
+	Function Name : CInventoryWnd::OnScrollUp()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInventoryWnd::OnScrollUp()

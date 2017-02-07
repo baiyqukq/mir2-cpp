@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -22,15 +22,15 @@
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CImageHandler::CImageHandler()
+	Function Name : CImageHandler::CImageHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CImageHandler::CImageHandler()
@@ -51,15 +51,15 @@ CImageHandler::CImageHandler()
 
 /******************************************************************************************************************
 
-	함수명 : CImageHandler::~CImageHandler()
+	Function Name : CImageHandler::~CImageHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CImageHandler::~CImageHandler()
@@ -71,17 +71,17 @@ CImageHandler::~CImageHandler()
 
 /******************************************************************************************************************
 
-	함수명 : CImageHandler::LoadAllImage()
+	Function Name : CImageHandler::LoadAllImage()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BOOL bIsMemMapped
+	Purpose   :
+	Params   : BOOL bIsMemMapped
 	         BOOL bComp
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CImageHandler::LoadAllImage(BOOL bIsMemMapped, BOOL bComp)
@@ -200,15 +200,15 @@ VOID CImageHandler::InitAllImage()
 
 /******************************************************************************************************************
 
-	함수명 : CImageHandler::DeleteAllImage()
+	Function Name : CImageHandler::DeleteAllImage()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CImageHandler::DeleteAllImage()

@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -42,18 +42,18 @@ CWHDXGraphicWindow* GetDXGWindowPtr()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::CWHDXGraphicWindow()
+	Function Name : CWHDXGraphicWindow::CWHDXGraphicWindow()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WORD wWidth
+	Purpose   :
+	Params   : WORD wWidth
 	         WORD wHeight
 	         WORD wBpp
-	출력   : 
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHDXGraphicWindow::CWHDXGraphicWindow(WORD wWidth, WORD wHeight, WORD wBpp)
@@ -109,15 +109,15 @@ VOID CWHDXGraphicWindow::UsedAndFreeMemoryCheck()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::~CWHDXGraphicWindow()
+	Function Name : CWHDXGraphicWindow::~CWHDXGraphicWindow()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHDXGraphicWindow::~CWHDXGraphicWindow()
@@ -132,19 +132,19 @@ CWHDXGraphicWindow::~CWHDXGraphicWindow()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::Create()
+	Function Name : CWHDXGraphicWindow::Create()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPTSTR lpCaption
+	Purpose   :
+	Params   : LPTSTR lpCaption
 	         CHAR *pszMenuName
 	         BYTE bScreenModeFlag
 	         BYTE bDeviceModeFlag
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHDXGraphicWindow::Create(HINSTANCE hInst, LPTSTR lpCaption, CHAR *pszMenuName, CHAR* pszIconName, BYTE bScreenModeFlag, BYTE bDeviceModeFlag)
@@ -198,19 +198,19 @@ BOOL CWHDXGraphicWindow::Create(HINSTANCE hInst, LPTSTR lpCaption, CHAR *pszMenu
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::MainWndProcDXG()
+	Function Name : CWHDXGraphicWindow::MainWndProcDXG()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT uMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHDXGraphicWindow::MainWndProcDXG(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
@@ -281,17 +281,17 @@ LRESULT CWHDXGraphicWindow::OnSetCursor()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::OnSize()
+	Function Name : CWHDXGraphicWindow::OnSize()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WPARAM wParam
+	Purpose   :
+	Params   : WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHDXGraphicWindow::OnSize(WPARAM wParam, LPARAM lParam)
@@ -309,17 +309,17 @@ LRESULT CWHDXGraphicWindow::OnSize(WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::OnMove()
+	Function Name : CWHDXGraphicWindow::OnMove()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WPARAM wParam
+	Purpose   :
+	Params   : WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHDXGraphicWindow::OnMove(WPARAM wParam, LPARAM lParam)
@@ -331,15 +331,15 @@ LRESULT CWHDXGraphicWindow::OnMove(WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::OnDestroy()
+	Function Name : CWHDXGraphicWindow::OnDestroy()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHDXGraphicWindow::OnDestroy()
@@ -350,17 +350,17 @@ LRESULT CWHDXGraphicWindow::OnDestroy()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::OnSysKeyDown()
+	Function Name : CWHDXGraphicWindow::OnSysKeyDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WPARAM wParam
+	Purpose   :
+	Params   : WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHDXGraphicWindow::OnSysKeyDown(WPARAM wParam, LPARAM lParam)
@@ -400,15 +400,15 @@ LRESULT CWHDXGraphicWindow::OnSysKeyDown(WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::FindDriverAndDevice()
+	Function Name : CWHDXGraphicWindow::FindDriverAndDevice()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : DWORD 
+	Purpose   :
+	Return   : DWORD
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BYTE CWHDXGraphicWindow::FindDriverAndDevice()
@@ -458,15 +458,15 @@ BYTE CWHDXGraphicWindow::FindDriverAndDevice()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DestroyDXGObjects()
+	Function Name : CWHDXGraphicWindow::DestroyDXGObjects()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : HRESULT 
+	Purpose   :
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::DestroyDXGObjects()
@@ -521,15 +521,15 @@ HRESULT CWHDXGraphicWindow::DestroyDXGObjects()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::FreeDXGEnumModeResources()
+	Function Name : CWHDXGraphicWindow::FreeDXGEnumModeResources()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CWHDXGraphicWindow::FreeDXGEnumModeResources()
@@ -543,15 +543,15 @@ VOID CWHDXGraphicWindow::FreeDXGEnumModeResources()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::CreateDXG()
+	Function Name : CWHDXGraphicWindow::CreateDXG()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : HRESULT 
+	Purpose   :
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::CreateDXG() 
@@ -618,20 +618,20 @@ HRESULT CWHDXGraphicWindow::CreateDXG()
 
 /******************************************************************************************************************
 
-	함수명 : CDXGraphic::ResetDXG()
+	Function Name : CDXGraphic::ResetDXG()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WORD wWidth
+	Purpose   :
+	Params   : WORD wWidth
 	         WORD wHeight
 	         WORD wBPP
 	         BYTE bScreenModeFlag
 	         BYTE bDeviceModeFlag
-	출력   : HRESULT 
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::ResetDXG(WORD wWidth, WORD wHeight, WORD wBPP, BYTE bScreenModeFlag, BYTE bDeviceModeFlag)
@@ -684,15 +684,15 @@ HRESULT CWHDXGraphicWindow::ResetDXG(WORD wWidth, WORD wHeight, WORD wBPP, BYTE 
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::CreatePrimarySurface()
+	Function Name : CWHDXGraphicWindow::CreatePrimarySurface()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : HRESULT 
+	Purpose   :
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::CreatePrimarySurface()
@@ -788,15 +788,15 @@ HRESULT CWHDXGraphicWindow::CreatePrimarySurface()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::UpdateBoundsWnd()
+	Function Name : CWHDXGraphicWindow::UpdateBoundsWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CWHDXGraphicWindow::UpdateBoundsWnd()
@@ -816,16 +816,16 @@ VOID CWHDXGraphicWindow::UpdateBoundsWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::CreateZBuffer()
+	Function Name : CWHDXGraphicWindow::CreateZBuffer()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : GUID* pDeviceGUID
-	출력   : HRESULT 
+	Purpose   :
+	Params   : GUID* pDeviceGUID
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::CreateZBuffer(GUID* pDeviceGUID)
@@ -920,19 +920,19 @@ HRESULT CWHDXGraphicWindow::Init3DDeviceObjects()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::CreateGameFont()
+	Function Name : CWHDXGraphicWindow::CreateGameFont()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPCSTR szFontName
+	Purpose   :
+	Params   : LPCSTR szFontName
 	         INT nXsize
 	         INT nYsize
 	         BYTE bFontType
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HFONT CWHDXGraphicWindow::CreateGameFont(LPCSTR szFontName, INT nHeight, INT nWidth, INT nWeight, BOOL bItalic, BOOL bULine, BOOL bStrikeOut, DWORD dwCharSet)
@@ -1003,22 +1003,22 @@ CHAR* CWHDXGraphicWindow::IntToStr(INT nNum)
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::PutsHan()
+	Function Name : CWHDXGraphicWindow::PutsHan()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPDIRECTDRAWSURFACE7 pSurface
+	Purpose   :
+	Params   : LPDIRECTDRAWSURFACE7 pSurface
 	         INT nX
 	         INT nY
 	         COLORREF foreColor
 	         COLORREF backColor
 	         CHAR* szFormat
 	         ...
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CWHDXGraphicWindow::PutsHan(LPDIRECTDRAWSURFACE7 pSurface, INT nX, INT nY, COLORREF foreColor, COLORREF backColor, CHAR* szText, HFONT hFont)
@@ -1057,22 +1057,22 @@ VOID CWHDXGraphicWindow::PutsHan(LPDIRECTDRAWSURFACE7 pSurface, INT nX, INT nY, 
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::PutsHan()
+	Function Name : CWHDXGraphicWindow::PutsHan()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPDIRECTDRAWSURFACE7 pSurface
+	Purpose   :
+	Params   : LPDIRECTDRAWSURFACE7 pSurface
 	         INT nX
 	         INT nY
 	         COLORREF foreColor
 	         COLORREF backColor
 	         CHAR* szFormat
 	         ...
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CWHDXGraphicWindow::PutsHan(LPDIRECTDRAWSURFACE7 pSurface, RECT rc, COLORREF foreColor, COLORREF backColor, CHAR* szText, HFONT hFont)
@@ -1346,16 +1346,16 @@ BOOL CWHDXGraphicWindow::StringDivide(INT nDivideWidth, INT& nDividedLine, CHAR*
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::GetRGBMaskInfoIN16Bits()
+	Function Name : CWHDXGraphicWindow::GetRGBMaskInfoIN16Bits()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPDIRECTDRAWSURFACE7 pSurface
-	출력   : DXG_MASKINFO 
+	Purpose   :
+	Params   : LPDIRECTDRAWSURFACE7 pSurface
+	Return   : DXG_MASKINFO
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 DXG_MASKINFO CWHDXGraphicWindow::GetRGBMaskInfoIN16Bits(LPDIRECTDRAWSURFACE7 pSurface)
@@ -1423,20 +1423,20 @@ WORD CWHDXGraphicWindow::ConvertColor24To16(COLORREF dwColor)
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DrawWithGDI()
+	Function Name : CWHDXGraphicWindow::DrawWithGDI()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : RECT rc
+	Purpose   :
+	Params   : RECT rc
 	         LPDIRECTDRAWSURFACE7 pSurface
 	         DWORD dwColor
 	         DWORD dwPenStyleFlg
 	         BYTE bKind
-	출력   : HRESULT 
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::DrawWithGDI(RECT rc, LPDIRECTDRAWSURFACE7 pSurface, DWORD dwColor, BYTE bKind)
@@ -1511,20 +1511,20 @@ HRESULT CWHDXGraphicWindow::DrawWithGDI(RECT rc, LPDIRECTDRAWSURFACE7 pSurface, 
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DrawSprite()
+	Function Name : CWHDXGraphicWindow::DrawSprite()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 일반적인 그리기. 한픽셀씩 그린다. 스크린영역 클리핑, 소스영역 클리핑
-	입력   : INT nX
+	Purpose   : 일반적인 그리기. 한픽셀씩 그린다. 스크린영역 클리핑, 소스영역 클리핑
+	Params   : INT nX
 	         INT nY
 	         INT nXSize
 	         INT nYSize
 	         WORD* pwSrc
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHDXGraphicWindow::DrawWithImage(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc)
@@ -1655,18 +1655,18 @@ BOOL CWHDXGraphicWindow::DrawWithImagePerLineClipRgn(INT nX, INT nY, INT nXSize,
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DrawWithSurface()
+	Function Name : CWHDXGraphicWindow::DrawWithSurface()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPDIRECTDRAWSURFACE7 pddsSrc
+	Purpose   :
+	Params   : LPDIRECTDRAWSURFACE7 pddsSrc
 	         RECT* prcSrc
 	         RECT* prcDst
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHDXGraphicWindow::DrawWithSurface(INT nX, INT nY, INT nXSize, INT nYSize, LPDIRECTDRAWSURFACE7 pddsSrc)
@@ -5102,14 +5102,14 @@ VOID CWHDXGraphicWindow::DrawWithGrayBackBuffer()
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DrawWithImageForCompClipRgnToMem()
+	Function Name : CWHDXGraphicWindow::DrawWithImageForCompClipRgnToMem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 압축된 소스 이미지의 원하는 사이즈 압축을 풀은 상태로 전달받은 메모리(pwDst)에 카피한다.
+	Purpose   : 압축된 소스 이미지의 원하는 사이즈 압축을 풀은 상태로 전달받은 메모리(pwDst)에 카피한다.
 
-	입력   : INT nStartX
+	Params   : INT nStartX
 	         INT nStartY
 	         INT nWantedXSize
 	         INT nWantedYSize
@@ -5118,9 +5118,9 @@ VOID CWHDXGraphicWindow::DrawWithGrayBackBuffer()
 	         WORD wClipHeight
 	         WORD wChooseColor1
 	         WORD wChooseColor2
-	출력   : BOOL
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHDXGraphicWindow::DrawWithImageForCompColorToMem(RECT rcWanted, WORD* pwSrc, WORD wColor, WORD* pwDst)
@@ -5743,13 +5743,13 @@ BOOL CWHDXGraphicWindow::DrawWithImageForCompToMem(RECT rcWanted, WORD* pwSrc, W
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::DrawWithABlendForIntersectCompData()
+	Function Name : CWHDXGraphicWindow::DrawWithABlendForIntersectCompData()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nX					: 백버퍼상의 그림시작위치.
+	Purpose   :
+	Params   : INT nX					: 백버퍼상의 그림시작위치.
 	         INT nY					
 	         INT nSrcXSize			: 원본그림의 사이즈.
 	         INT nSrcYSize
@@ -5761,9 +5761,9 @@ BOOL CWHDXGraphicWindow::DrawWithImageForCompToMem(RECT rcWanted, WORD* pwSrc, W
 	         WORD wSrcChooseColor2
 	         WORD wDstChooseColor1	: 타겟그림의 염색 이미지1 컬러.
 	         WORD wDstChooseColor2
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHDXGraphicWindow::DrawWithABlendForIntersectCompData(INT nSrcX, INT nSrcY, 
@@ -5969,18 +5969,18 @@ BOOL CWHDXGraphicWindow::DrawWithABlendForIntersectCompData(INT nSrcX, INT nSrcY
 
 /******************************************************************************************************************
 
-	함수명 : CWHDXGraphicWindow::Present()
+	Function Name : CWHDXGraphicWindow::Present()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPRECT lprcDest
+	Purpose   :
+	Params   : LPRECT lprcDest
 	         LPRECT lprcSrc
 	         BYTE bCntRgn
-	출력   : HRESULT 
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::Present()
@@ -6020,15 +6020,15 @@ HRESULT CWHDXGraphicWindow::Present()
 
 /******************************************************************************************************************
 
-	함수명 : RestoreSurfaces()
+	Function Name : RestoreSurfaces()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : HRESULT 
+	Purpose   :
+	Return   : HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 HRESULT CWHDXGraphicWindow::RestoreSurfaces()
@@ -6065,20 +6065,20 @@ HRESULT CWHDXGraphicWindow::RestoreSurfaces()
 
 /******************************************************************************************************************
 
-	함수명 : WINAPI DXGDriverEnumCallbackEx()
+	Function Name : WINAPI DXGDriverEnumCallbackEx()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : GUID *pGUID
+	Purpose   :
+	Params   : GUID *pGUID
 	         LPSTR szDesc
 	         LPSTR szName
 	         LPVOID pContext
 	         HMONITOR hm
-	출력   : static BOOL 
+	Return   : static BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 static BOOL WINAPI DXGDriverEnumCallbackEx(GUID *pGUID, LPSTR szDesc, LPSTR szName, LPVOID pContext, HMONITOR hm)
@@ -6136,17 +6136,17 @@ static BOOL WINAPI DXGDriverEnumCallbackEx(GUID *pGUID, LPSTR szDesc, LPSTR szNa
 
 /******************************************************************************************************************
 
-	함수명 : WINAPI DXGEnumDisplayModeCallback()
+	Function Name : WINAPI DXGEnumDisplayModeCallback()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : DDSURFACEDESC2* pddsd
+	Purpose   :
+	Params   : DDSURFACEDESC2* pddsd
 	         VOID* pParentInfo
-	출력   : static HRESULT 
+	Return   : static HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 static HRESULT WINAPI DXGEnumDisplayModeCallback(DDSURFACEDESC2* pddsd, VOID* pParentInfo)
@@ -6166,17 +6166,17 @@ static HRESULT WINAPI DXGEnumDisplayModeCallback(DDSURFACEDESC2* pddsd, VOID* pP
 
 /******************************************************************************************************************
 
-	함수명 : DXGModesSortCallback()
+	Function Name : DXGModesSortCallback()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : const VOID* arg1
+	Purpose   :
+	Params   : const VOID* arg1
 	         const VOID* arg2
-	출력   : static int 
+	Return   : static int
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 static int DXGModesSortCallback(const VOID* arg1, const VOID* arg2)
@@ -6199,19 +6199,19 @@ static int DXGModesSortCallback(const VOID* arg1, const VOID* arg2)
 
 /******************************************************************************************************************
 
-	함수명 : WINAPI DXG3DDeviceEnumCallback()
+	Function Name : WINAPI DXG3DDeviceEnumCallback()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : TCHAR* szDesc
+	Purpose   :
+	Params   : TCHAR* szDesc
 	         TCHAR* szName
 	         D3DDEVICEDESC7* pDesc
 	         VOID* pParentInfo
-	출력   : static HRESULT 
+	Return   : static HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 static HRESULT WINAPI DXG3DDeviceEnumCallback(TCHAR* szDesc, TCHAR* szName, D3DDEVICEDESC7* pDesc, VOID* pParentInfo)
@@ -6268,17 +6268,17 @@ static HRESULT WINAPI DXG3DDeviceEnumCallback(TCHAR* szDesc, TCHAR* szName, D3DD
 
 /******************************************************************************************************************
 
-	함수명 : WINAPI DXGEnumZBufferFormatsCallback()
+	Function Name : WINAPI DXGEnumZBufferFormatsCallback()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : DDPIXELFORMAT* pddpf
+	Purpose   :
+	Params   : DDPIXELFORMAT* pddpf
 	         VOID* pContext
-	출력   : static HRESULT 
+	Return   : static HRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 static HRESULT WINAPI DXGEnumZBufferFormatsCallback(DDPIXELFORMAT* pddpf, VOID* pContext)

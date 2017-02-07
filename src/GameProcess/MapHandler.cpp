@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 #include "StdAfx.h"
@@ -14,15 +14,15 @@
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::CMapHandler()
+	Function Name : CMapHandler::CMapHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CMapHandler::CMapHandler()
@@ -34,15 +34,15 @@ CMapHandler::CMapHandler()
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::~CMapHandler()
+	Function Name : CMapHandler::~CMapHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CMapHandler::~CMapHandler()
@@ -54,15 +54,15 @@ CMapHandler::~CMapHandler()
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::InitMapHandler()
+	Function Name : CMapHandler::InitMapHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::InitMapHandler()
@@ -109,15 +109,15 @@ VOID CMapHandler::LoadMapHandler(CHAR* szMapFile, CImageHandler* pxImgHandler, I
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::DestroyMapHandler()
+	Function Name : CMapHandler::DestroyMapHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::DestroyMapHandler()
@@ -140,15 +140,15 @@ VOID CMapHandler::DestroyMapHandler()
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::LoadNewMapBuffer()
+	Function Name : CMapHandler::LoadNewMapBuffer()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::LoadNewMapBuffer()
@@ -189,16 +189,16 @@ VOID CMapHandler::LoadNewMapBuffer()
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::LoadMapData()
+	Function Name : CMapHandler::LoadMapData()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CHAR* szMapFile
-	출력   : BOOL 
+	Purpose   :
+	Params   : CHAR* szMapFile
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CMapHandler::LoadMapData(CHAR* szMapFile)
@@ -255,15 +255,15 @@ BOOL CMapHandler::LoadMapData(CHAR* szMapFile)
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
+	Function Name : CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
@@ -288,15 +288,15 @@ VOID CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::FreeMapData()
+	Function Name : CMapHandler::FreeMapData()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::FreeMapData()
@@ -318,18 +318,18 @@ VOID CMapHandler::FreeMapData()
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::ScrollMap()
+	Function Name : CMapHandler::ScrollMap()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nCharDir
+	Purpose   :
+	Params   : INT nCharDir
 	         INT nCharFrame
 	         INT nSpeed
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::ScrollMap(INT nCharDir, INT nCharFrame, INT nSpeed)
@@ -429,17 +429,17 @@ VOID CMapHandler::ScrollMap(INT nCharDir, WORD wCurrDelay, WORD wMoveDelay, INT 
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::DrawBaseTile()
+	Function Name : CMapHandler::DrawBaseTile()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nX
+	Purpose   :
+	Params   : INT nX
 	         INT nY
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::DrawBaseTile(INT nX, INT nY)
@@ -472,17 +472,17 @@ VOID CMapHandler::DrawBaseTile(INT nX, INT nY)
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::DrawOpenDoor()
+	Function Name : CMapHandler::DrawOpenDoor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nX
+	Purpose   :
+	Params   : INT nX
 	         INT nY
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 /*VOID CMapHandler::DrawOpenDoor(INT nX, INT nY)
@@ -650,17 +650,17 @@ INT CMapHandler::GetDoorImgIdx(INT nX, INT nY)
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::SetMovedTileBuffer()
+	Function Name : CMapHandler::SetMovedTileBuffer()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : SHORT shMovedTileX
+	Purpose   :
+	Params   : SHORT shMovedTileX
 	         SHORT shMovedTileY
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CMapHandler::SetMovedTileBuffer(SHORT shMovedTileX, SHORT shMovedTileY)
@@ -1283,17 +1283,17 @@ BOOL CMapHandler::DrawOneCellOverObjTile(INT nX, INT nY)
 
 /******************************************************************************************************************
 
-	함수명 : CMapHandler::DrawSMTile()
+	Function Name : CMapHandler::DrawSMTile()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nX
+	Purpose   :
+	Params   : INT nX
 	         INT nY
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 /*

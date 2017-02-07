@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -18,15 +18,15 @@
 
 /******************************************************************************************************************
 
-	함수명 : CWHImage::CWHImage()
+	Function Name : CWHImage::CWHImage()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHImage::CWHImage()
@@ -44,15 +44,15 @@ CWHImage::CWHImage()
 
 /******************************************************************************************************************
 
-	함수명 : CWHImage::~CWHImage()
+	Function Name : CWHImage::~CWHImage()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHImage::~CWHImage()
@@ -64,17 +64,17 @@ CWHImage::~CWHImage()
 
 /******************************************************************************************************************
 
-	함수명 : CWHImage::Convert24To16()
+	Function Name : CWHImage::Convert24To16()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BYTE *pOrgImage
+	Purpose   :
+	Params   : BYTE *pOrgImage
 	         BYTE bOrgImgBitCount
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHImage::Convert24To16(BYTE *pOrgImage, BYTE bOrgImgBitCount)
@@ -109,17 +109,17 @@ BOOL CWHImage::Convert24To16(BYTE *pOrgImage, BYTE bOrgImgBitCount)
 
 /******************************************************************************************************************
 
-	함수명 : CWHImage::LoadBitmap()
+	Function Name : CWHImage::LoadBitmap()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPCTSTR pszFileName
+	Purpose   :
+	Params   : LPCTSTR pszFileName
 	         BYTE bBitCount
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHImage::LoadBitmap(LPCTSTR pszFileName, BOOL fCut, BOOL fCompress, BYTE bBitCount)

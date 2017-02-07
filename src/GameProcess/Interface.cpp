@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:																											
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -17,15 +17,15 @@
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::CInterface()
+	Function Name : CInterface::CInterface()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CInterface::CInterface()
@@ -37,15 +37,15 @@ CInterface::CInterface()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::~CInterface()
+	Function Name : CInterface::~CInterface()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CInterface::~CInterface()
@@ -57,15 +57,15 @@ CInterface::~CInterface()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::Init()
+	Function Name : CInterface::Init()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인터페이스관련 변수및, 객체초기화.
-	출력   : VOID 
+	Purpose   : 인터페이스관련 변수및, 객체초기화.
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::Init()
@@ -112,15 +112,15 @@ VOID CInterface::Init()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::Destroy()
+	Function Name : CInterface::Destroy()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 인터페이스관련 변수, 객체의 소멸및, 초기화.
-	출력   : VOID 
+	Purpose   : 인터페이스관련 변수, 객체의 소멸및, 초기화.
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::Destroy()
@@ -236,18 +236,18 @@ VOID CInterface::CreateInterface(CImageHandler* pxImgHandler)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::MsgAdd()
+	Function Name : CInterface::MsgAdd()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : DWORD dwFontColor
+	Purpose   :
+	Params   : DWORD dwFontColor
 	         DWORD dwFontBackColor
 	         CHAR* pszMsg
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::MsgAdd(DWORD dwFontColor, DWORD dwFontBackColor, CHAR* pszMsg)
@@ -309,15 +309,15 @@ VOID CInterface::MsgAdd(DWORD dwFontColor, DWORD dwFontBackColor, CHAR* pszMsg)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::ShowWndList()
+	Function Name : CInterface::ShowWndList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : Active되어있는 윈도우의 리스트를 보여준다.
-	출력   : VOID 
+	Purpose   : Active되어있는 윈도우의 리스트를 보여준다.
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::ShowWndList()
@@ -385,15 +385,15 @@ VOID CInterface::ShowWndList()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::ShowChatList()
+	Function Name : CInterface::ShowChatList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 채팅 리스트를 보여준다.
-	출력   : VOID 
+	Purpose   : 채팅 리스트를 보여준다.
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::ShowChatList()
@@ -425,17 +425,17 @@ VOID CInterface::ShowChatList()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::RenderInterface()
+	Function Name : CInterface::RenderInterface()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	입력   : INT nLoopTime
+	Purpose   :
+	Params   : INT nLoopTime
 	         POINT ptMousePos
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::RenderInterface(INT nLoopTime, POINT ptMousePos)
@@ -491,15 +491,15 @@ VOID CInterface::RenderInterface(INT nLoopTime, POINT ptMousePos)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::ShowBeltItem()
+	Function Name : CInterface::ShowBeltItem()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::ShowBeltItem()
@@ -553,15 +553,15 @@ VOID CInterface::ShowBeltItem()
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::ShowGameStatus()
+	Function Name : CInterface::ShowGameStatus()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::ShowGameStatus()
@@ -802,16 +802,16 @@ VOID CInterface::ShowMagicKey()
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************************************************
 
-	함수명 : CInterface::GetWindowInMousePos()
+	Function Name : CInterface::GetWindowInMousePos()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 마우스 포인터를 영역안에 가지고 있는 윈도우리스트중 맨처음 윈도우의 ID를 리턴한다.
-	입력   : POINT ptMouse
-	출력   : 
+	Purpose   : 마우스 포인터를 영역안에 가지고 있는 윈도우리스트중 맨처음 윈도우의 ID를 리턴한다.
+	Params   : POINT ptMouse
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 INT	CInterface::GetWindowInMousePos(POINT ptMouse)
@@ -885,16 +885,16 @@ INT	CInterface::GetWindowInMousePos(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::AddWindowToList()
+	Function Name : CInterface::AddWindowToList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 윈도우리스트의 맨 마지막에 현재 입력받은 아이디가 nID인 윈도우를 추가한다.
-	입력   : INT nID
-	출력   : VOID 
+	Purpose   : 윈도우리스트의 맨 마지막에 현재 입력받은 아이디가 nID인 윈도우를 추가한다.
+	Params   : INT nID
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::AddWindowToList(INT nID)
@@ -905,16 +905,16 @@ VOID CInterface::AddWindowToList(INT nID)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::DeleteWindowToList()
+	Function Name : CInterface::DeleteWindowToList()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : nID의 아이디를 가진 윈도우를 리스트상에서 삭제한다.
-	입력   : INT nID
-	출력   : VOID 
+	Purpose   : nID의 아이디를 가진 윈도우를 리스트상에서 삭제한다.
+	Params   : INT nID
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::DeleteWindowToList(INT nID)
@@ -942,17 +942,17 @@ VOID CInterface::DeleteWindowToList(INT nID)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::WindowActivate()
+	Function Name : CInterface::WindowActivate()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : nID인 윈도우를 윈도우리스트에 추가시키거나 삭제시키며, 추가의 경우, 윈도우의 상태를 최상위 상태로 세팅한다.
+	Purpose   : nID인 윈도우를 윈도우리스트에 추가시키거나 삭제시키며, 추가의 경우, 윈도우의 상태를 최상위 상태로 세팅한다.
 			 윈도우가 키입력을 받아서 화면에 나올때 호출하는 함수이다.
-	입력   : INT nID
-	출력   : VOID 
+	Params   : INT nID
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInterface::WindowActivate(INT nID)
@@ -1193,16 +1193,16 @@ BOOL CInterface::WindowActivate(INT nID)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::MoveTopWindow()
+	Function Name : CInterface::MoveTopWindow()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 맨위의 윈도우를 마우스 좌표로 이동시킨다.
-	입력   : POINT ptMouse
-	출력   : VOID 
+	Purpose   : 맨위의 윈도우를 마우스 좌표로 이동시킨다.
+	Params   : POINT ptMouse
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::MoveTopWindow(POINT ptMouse)
@@ -1267,16 +1267,16 @@ VOID CInterface::MoveTopWindow(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::WindowFocusChanged()
+	Function Name : CInterface::WindowFocusChanged()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : 윈도우 영역으로 마우스 클릭이 되면 현재 Top 윈도우를 마우스 클릭 윈도우로 바꿔주고 그윈도우로 포커스를 맞춰준다.
-	입력   : INT nID
-	출력   : VOID 
+	Purpose   : 윈도우 영역으로 마우스 클릭이 되면 현재 Top 윈도우를 마우스 클릭 윈도우로 바꿔주고 그윈도우로 포커스를 맞춰준다.
+	Params   : INT nID
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CInterface::WindowFocusChangedAndSetReadyMove(INT nID, POINT ptMouse)
@@ -1437,16 +1437,16 @@ BOOL CInterface::IsTopWindow(INT nID)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************************************************
 
-	함수명 : CInterface::OnLButtonDown()
+	Function Name : CInterface::OnLButtonDown()
 
- 	작성자 : 
-	작성일 : 
+ 	Author : 
+	Date :
 
-	목적   : Mouse LButtonDown이 일어났을때 인터페이스에서 할일을 정의한다.
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   : Mouse LButtonDown이 일어났을때 인터페이스에서 할일을 정의한다.
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInterface::OnLButtonDown(POINT ptMouse)
@@ -1549,16 +1549,16 @@ BOOL CInterface::OnLButtonDown(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::OnLButtonUp()
+	Function Name : CInterface::OnLButtonUp()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : Mouse LButtonUp이 일어났을때 인터페이스에서 할일을 정의한다.
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   : Mouse LButtonUp이 일어났을때 인터페이스에서 할일을 정의한다.
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInterface::OnLButtonUp(POINT ptMouse)
@@ -1722,16 +1722,16 @@ BOOL CInterface::OnLButtonUp(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CInterface::OnMouseMove()
+	Function Name : CInterface::OnMouseMove()
 
-	작성자 : 
-	작성일 : 
+	Author : 
+	Date :
 
-	목적   : Mouse Move가 일어났을때 인터페이스에서 할일을 정의한다.
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   : Mouse Move가 일어났을때 인터페이스에서 할일을 정의한다.
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CInterface::OnMouseMove(POINT ptMouse)

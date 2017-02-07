@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -22,15 +22,15 @@
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CActor::CActor()
+	Function Name : CActor::CActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CActor::CActor()
@@ -42,15 +42,15 @@ CActor::CActor()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::~CActor()
+	Function Name : CActor::~CActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CActor::~CActor()
@@ -230,21 +230,21 @@ VOID CActor::DrawWithEffected(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSr
 
 /******************************************************************************************************************
 
-	함수명 : CActor::Create()
+	Function Name : CActor::Create()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CImageHandler* pxImgHandler
+	Purpose   :
+	Params   : CImageHandler* pxImgHandler
 	         FEATURE stFeature
 	         BYTE bMtn
 	         WORD bDir
 	         WORD wPosX
 	         WORD wPosY
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::Create(CImageHandler* pxImgHandler, FEATURE* pstFeature, BYTE bMtn, WORD bDir, WORD wPosX, WORD wPosY)
@@ -373,16 +373,16 @@ BOOL CActor::Create(CImageHandler* pxImgHandler, FEATURE* pstFeature, BYTE bMtn,
 
 /******************************************************************************************************************
 
-	함수명 : CActor::CheckFeatureValidate()
+	Function Name : CActor::CheckFeatureValidate()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : FEATURE stFeature
-	출력   : BOOL 
+	Purpose   :
+	Params   : FEATURE stFeature
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::CheckFeatureValidate(FEATURE stFeature)
@@ -412,17 +412,17 @@ BOOL CActor::CheckFeatureValidate(FEATURE stFeature)
 
 /******************************************************************************************************************
 
-	함수명 : CActor::ChangeFeature()
+	Function Name : CActor::ChangeFeature()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CImageHandler* pxImgHandler
+	Purpose   :
+	Params   : CImageHandler* pxImgHandler
 	         FEATURE stFeature
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::ChangeFeature(FEATURE stFeature)
@@ -508,17 +508,17 @@ BOOL CActor::ChangeFeature(FEATURE stFeature)
 
 /******************************************************************************************************************
 
-	함수명 : CActor::SetMotionFrame()
+	Function Name : CActor::SetMotionFrame()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BYTE bMtn
+	Purpose   :
+	Params   : BYTE bMtn
 	         BYTE bDir
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::SetMotionFrame(BYTE bMtn, BYTE bDir)
@@ -695,15 +695,15 @@ VOID CActor::PlayActSound()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::SetMoving()
+	Function Name : CActor::SetMoving()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::SetMoving()
@@ -796,15 +796,15 @@ VOID CActor::SetMoving()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::SetBackStepMoving()
+	Function Name : CActor::SetBackStepMoving()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::SetBackStepMoving()
@@ -893,15 +893,15 @@ VOID CActor::SetBackStepMoving()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::SetMoved()
+	Function Name : CActor::SetMoved()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::SetMoved()
@@ -950,16 +950,16 @@ VOID CActor::SetMoved()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::OnCharDescPacket()
+	Function Name : CActor::OnCharDescPacket()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : SM_WALK, SM_DEATH, SM_TURN, SM_RUN, SM_DIGUP 메시지에 사용한다.
-	입력   : LPPACKETMSG lpPacketMsg
-	출력   : VOID 
+	Purpose   : SM_WALK, SM_DEATH, SM_TURN, SM_RUN, SM_DIGUP 메시지에 사용한다.
+	Params   : LPPACKETMSG lpPacketMsg
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::OnCharDescPacket(LPPACKETMSG lpPacketMsg)
@@ -1441,15 +1441,15 @@ VOID CActor::StruckMsgReassign()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::UpdatePacketState()
+	Function Name : CActor::UpdatePacketState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::UpdatePacketState()
@@ -1509,18 +1509,18 @@ BOOL CActor::UpdatePacketState()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::LoadEffect()
+	Function Name : CActor::LoadEffect()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CImageHandler* pxImgHandler
+	Purpose   :
+	Params   : CImageHandler* pxImgHandler
 	         WORD wEffectNum
 	         BYTE bDir
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::LoadEffect(CImageHandler* pxImgHandler, WORD wEffectNum, BYTE bDir)
@@ -1577,15 +1577,15 @@ BOOL CActor::LoadEffect(CImageHandler* pxImgHandler, WORD wEffectNum, BYTE bDir)
 
 /******************************************************************************************************************
 
-	함수명 : CActor::DrawEffect()
+	Function Name : CActor::DrawEffect()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::DrawEffect()
@@ -1717,20 +1717,20 @@ BOOL CActor::DrawEffect()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::UpdateMotionState()
+	Function Name : CActor::UpdateMotionState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nLoopTime
+	Purpose   :
+	Params   : INT nLoopTime
 	         SHORT shStartViewTileX
 	         SHORT shStartViewTileY
 	         SHORT shViewOffsetX
 	         SHORT shViewOffsetY
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
@@ -1827,15 +1827,15 @@ VOID CActor::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 
 /******************************************************************************************************************
 
-	함수명 : CActor::UpdateMove(BOOL bIsMoveTime)
+	Function Name : CActor::UpdateMove(BOOL bIsMoveTime)
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::UpdateMove(BOOL bIsMoveTime)
@@ -1908,17 +1908,17 @@ BOOL CActor::UpdateMove(BOOL bIsMoveTime)
 
 /******************************************************************************************************************
 
-	함수명 : CActor::DrawActor()
+	Function Name : CActor::DrawActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BOOL bFocused
+	Purpose   :
+	Params   : BOOL bFocused
 	         BOOL bShadowAblended
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CActor::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, BOOL bUseScrnPos, BOOL bDrawShadow)
@@ -2081,15 +2081,15 @@ BOOL CActor::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, 
 
 /******************************************************************************************************************
 
-	함수명 : CActor::DrawHPBar()
+	Function Name : CActor::DrawHPBar()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::DrawHPBar()
@@ -2118,15 +2118,15 @@ VOID CActor::DrawHPBar()
 
 /******************************************************************************************************************
 
-	함수명 : CActor::DrawName()
+	Function Name : CActor::DrawName()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CActor::DrawName()
@@ -2299,18 +2299,18 @@ VOID CActor::ShowMessage(INT nLoopTime)
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CNPC::DrawActor()
+	Function Name : CNPC::DrawActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CMapHandler* pxMap
+	Purpose   :
+	Params   : CMapHandler* pxMap
 	         BOOL bFocused
 	         BOOL bShadowAblended
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CNPC::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, BOOL bUseScrnPos, BOOL bDrawShadow)
@@ -2432,15 +2432,15 @@ VOID CNPC::OnHit(LPPACKETMSG lpPacketMsg)
 
 /******************************************************************************************************************
 
-	함수명 : CNPC::UpdatePacketState()
+	Function Name : CNPC::UpdatePacketState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CNPC::UpdatePacketState()
@@ -2487,17 +2487,17 @@ BOOL CNPC::UpdatePacketState()
 
 /******************************************************************************************************************
 
-	함수명 : CNPC::UpdateMotionState()
+	Function Name : CNPC::UpdateMotionState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nLoopTime
+	Purpose   :
+	Params   : INT nLoopTime
 	         BOOL bIsMoveTime
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CNPC::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
@@ -2531,15 +2531,15 @@ VOID CNPC::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CHero::CHero()
+	Function Name : CHero::CHero()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CHero::CHero()
@@ -2551,15 +2551,15 @@ CHero::CHero()
 
 /******************************************************************************************************************
 
-	함수명 : CHero::~CHero()
+	Function Name : CHero::~CHero()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CHero::~CHero()
@@ -2613,22 +2613,22 @@ VOID CHero::DestroyActor()
 
 /******************************************************************************************************************
 
-	함수명 : CHero::Create()
+	Function Name : CHero::Create()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CImageHandler* pxImgHandler
+	Purpose   :
+	Params   : CImageHandler* pxImgHandler
 	         WORD wActor
 	         BYTE bMtn
 	         WORD bDir
 	         WORD wPosX
 	         WORD wPosY
 	         FEATURE stFeature
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CHero::Create(CImageHandler* pxImgHandler, BYTE bMtn, BYTE bDir, WORD wPosX, WORD wPosY, 
@@ -2885,15 +2885,15 @@ VOID CHero::ShowShield()
 
 /******************************************************************************************************************
 
-	함수명 : CHero::UpdateMove(BOOL bIsMoveTime)
+	Function Name : CHero::UpdateMove(BOOL bIsMoveTime)
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CHero::UpdateMove(BOOL bIsMoveTime)
@@ -3464,15 +3464,15 @@ VOID CHero::OnButch(LPPACKETMSG lpPacketMsg)
 
 /******************************************************************************************************************
 
-	함수명 : CHero::UpdatePacketState()
+	Function Name : CHero::UpdatePacketState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CHero::UpdatePacketState()
@@ -3539,17 +3539,17 @@ BOOL CHero::UpdatePacketState()
 
 /******************************************************************************************************************
 
-	함수명 : CHero::UpdateMotionState()
+	Function Name : CHero::UpdateMotionState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nLoopTime
+	Purpose   :
+	Params   : INT nLoopTime
 	         BOOL bIsMoveTime
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
@@ -3680,18 +3680,18 @@ VOID CHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 
 /******************************************************************************************************************
 
-	함수명 : CHero::ChangeFeature()
+	Function Name : CHero::ChangeFeature()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : BYTE bGender, BYTE bWear, BYTE bHair, BYTE bWeapon;
-	입력   : WORD wActor
+	Purpose   : BYTE bGender, BYTE bWear, BYTE bHair, BYTE bWeapon;
+	Params   : WORD wActor
 	         BYTE bHair
 	         BYTE bWeapon
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CHero::ChangeFeature(FEATURE stFeature, FEATUREEX stFeatureEx)
@@ -3751,17 +3751,17 @@ BOOL CHero::ChangeFeature(FEATURE stFeature, FEATUREEX stFeatureEx)
 
 /******************************************************************************************************************
 
-	함수명 : CHero::DrawActor()
+	Function Name : CHero::DrawActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BOOL bFocused
+	Purpose   :
+	Params   : BOOL bFocused
 	         BOOL bShadowAblended
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, BOOL bUseScrnPos, BOOL bDrawShadow)
@@ -4103,15 +4103,15 @@ BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, B
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CMyHero::CMyHero()
+	Function Name : CMyHero::CMyHero()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CMyHero::CMyHero()
@@ -4123,15 +4123,15 @@ CMyHero::CMyHero()
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::~CMyHero()
+	Function Name : CMyHero::~CMyHero()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CMyHero::~CMyHero()
@@ -4220,16 +4220,16 @@ BOOL CMyHero::Create(CImageHandler* pxImgHandler, BYTE bMtn, BYTE bDir, WORD wPo
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::SetMapHandler()
+	Function Name : CMyHero::SetMapHandler()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CMapHandler* pxMap
-	출력   : VOID 
+	Purpose   :
+	Params   : CMapHandler* pxMap
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CMyHero::SetMapHandler(CMapHandler* pxMap)
@@ -4255,15 +4255,15 @@ VOID CMyHero::OnHealthSpellChanged(LPPACKETMSG lpPacketMsg)
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::UpdatePacketState()
+	Function Name : CMyHero::UpdatePacketState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::UpdatePacketState()
@@ -4367,15 +4367,15 @@ BOOL CMyHero::UpdatePacketState()
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::SetOldPosition()
+	Function Name : CMyHero::SetOldPosition()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::SetOldPosition()
@@ -4409,15 +4409,15 @@ BOOL CMyHero::SetOldPosition()
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::CheckMyPostion()
+	Function Name : CMyHero::CheckMyPostion()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::CheckMyPostion()
@@ -4434,15 +4434,15 @@ BOOL CMyHero::CheckMyPostion()
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::AdjustMyPostion()
+	Function Name : CMyHero::AdjustMyPostion()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CMyHero::AdjustMyPostion()
@@ -4454,18 +4454,18 @@ VOID CMyHero::AdjustMyPostion()
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::SetMotionState()
+	Function Name : CMyHero::SetMotionState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BYTE bMtn
+	Purpose   :
+	Params   : BYTE bMtn
 	         BYTE bDir
 	         LPPOINT lpptTarget
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CMyHero::SetMotionState(BYTE bMtn, BYTE bDir, INT nMouseTargetID, BOOL bIsDead, LPPOINT lpptPos, SHORT shSkill)
@@ -4765,16 +4765,16 @@ VOID CMyHero::SetMotionState(BYTE bMtn, BYTE bDir, INT nMouseTargetID, BOOL bIsD
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::UpdateMotionState()
+	Function Name : CMyHero::UpdateMotionState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nLoopTime
-	출력   : VOID 
+	Purpose   :
+	Params   : INT nLoopTime
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 VOID CMyHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
@@ -5082,16 +5082,16 @@ VOID CMyHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::UpdateMove(BOOL bIsMoveTime)
+	Function Name : CMyHero::UpdateMove(BOOL bIsMoveTime)
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BOOL bIsMoveTime
-	출력   : BOOL 
+	Purpose   :
+	Params   : BOOL bIsMoveTime
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::UpdateMove(BOOL bIsMoveTime)
@@ -5418,17 +5418,17 @@ BOOL CMyHero::UpdateMove(BOOL bIsMoveTime)
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero:DrawActor()
+	Function Name : CMyHero:DrawActor()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BOOL bFocused
+	Purpose   :
+	Params   : BOOL bFocused
 	         BOOL bShadowAblended
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::DrawActor(BOOL bFocused, BOOL bShadowAblended, BOOL bUseScrnPos, BOOL bDrawShadow)
@@ -5455,17 +5455,17 @@ BOOL CMyHero::DrawActor(BOOL bFocused, BOOL bShadowAblended, BOOL bUseScrnPos, B
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::CalcDirection()
+	Function Name : CMyHero::CalcDirection()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nTargetTileX
+	Purpose   :
+	Params   : INT nTargetTileX
 	         INT nTargetTileY
-	출력   : 
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BYTE CMyHero::CalcDirection(INT nTargetTileX, INT nTargetTileY)
@@ -5514,17 +5514,17 @@ BYTE CMyHero::CalcDirection(INT nTargetTileX, INT nTargetTileY)
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::GetPosMouseToTile()
+	Function Name : CMyHero::GetPosMouseToTile()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nXPos
+	Purpose   :
+	Params   : INT nXPos
 	         INT nYPos
-	출력   : POINT 
+	Return   : POINT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 POINT CMyHero::GetPosMouseToTile(INT nXPos, INT nYPos)
@@ -5597,18 +5597,18 @@ BOOL CMyHero::CanRun()
 //---------------------------------------------------------------------------------------------------------------//
 /******************************************************************************************************************
 
-	함수명 : CMyHero::OnLButtonDown()
+	Function Name : CMyHero::OnLButtonDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
+	Purpose   :
+	Params   : POINT ptMouse
 	         INT nTargetID
 	         POINT* lpptTargetPos
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* lpptTargetPos)
@@ -5740,7 +5740,7 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 			else												SetMotionState(_MT_HORSEWALK, bDir, nTargetID, bIsDead, &ptTargetTile);
 
 		}
-		// 7. 이동 할수 없다면 주변에 이동할수 있는 타일을 찾아내어 목적 타일과의 가장 가까운 타일을 찾아낸다.
+		// 7. 이동 할수 없다면 주변에 이동할수 있는 타일을 찾아내어 Purpose 타일과의 가장 가까운 타일을 찾아낸다.
 		else if ( !m_pxMap->GetNextTileCanMove(m_wPosX, m_wPosY, bDir, 1, &ptTargetTile) )
 		{
 			INT nSelectedDir = -1;
@@ -5787,16 +5787,16 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::OnRButtonDown()
+	Function Name : CMyHero::OnRButtonDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::OnRButtonDown(POINT ptMouse)
@@ -6073,18 +6073,18 @@ VOID CMyHero::SetMagic(LPCLIENTMAGICRCD	pstMagic, BYTE bKeyNum, BYTE bDir, INT n
 
 /******************************************************************************************************************
 
-	함수명 : CMyHero::OnKeyDown()
+	Function Name : CMyHero::OnKeyDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WPARAM wParam
+	Purpose   :
+	Params   : WPARAM wParam
 	         LPARAM lParam
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CMyHero::OnKeyDown(WPARAM wParam, LPARAM lParam, POINT ptMouse, POINT ptTargetPos, INT nMosueTargetID, FEATURE stTargetFeature)

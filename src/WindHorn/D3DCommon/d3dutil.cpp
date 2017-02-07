@@ -319,18 +319,18 @@ HRESULT _DbgOut( TCHAR* strFile, DWORD dwLine, HRESULT hr, TCHAR* strMsg )
 
 /******************************************************************************************************************
 
-	함수명 : SetBlendRenderState()
+	Function Name : SetBlendRenderState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 렌더링스테이트를 셋팅한다.
-	입력   : LPDIRECT3DDEVICE7 pd3dDevice
+	Purpose   : 렌더링스테이트를 셋팅한다.
+	Params   : LPDIRECT3DDEVICE7 pd3dDevice
 	         BYTE bBlendFlag
 	         D3DMATERIAL7 mtrlGetMtrl
-	출력   : void 
+	Return   : void
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 void SetBlendRenderState(LPDIRECT3DDEVICE7 pd3dDevice, BYTE bBlendFlag, D3DMATERIAL7 mtrlGetMtrl)
@@ -406,16 +406,16 @@ void SetBlendRenderState(LPDIRECT3DDEVICE7 pd3dDevice, BYTE bBlendFlag, D3DMATER
 
 /******************************************************************************************************************
 
-	함수명 : ResetBlendenderState()
+	Function Name : ResetBlendenderState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 렌더링스테이트를 기본상태로 복구한다.
-	입력   : LPDIRECT3DDEVICE7 pd3dDevice
-	출력   : void 
+	Purpose   : 렌더링스테이트를 기본상태로 복구한다.
+	Params   : LPDIRECT3DDEVICE7 pd3dDevice
+	Return   : void
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 void ResetBlendenderState(LPDIRECT3DDEVICE7 pd3dDevice)

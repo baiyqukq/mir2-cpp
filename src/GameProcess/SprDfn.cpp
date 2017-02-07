@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -21,15 +21,15 @@
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CSprite::CSprite()
+	Function Name : CSprite::CSprite()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CSprite::CSprite()
@@ -41,15 +41,15 @@ CSprite::CSprite()
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::~CSprite()
+	Function Name : CSprite::~CSprite()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CSprite::~CSprite()
@@ -61,15 +61,15 @@ CSprite::~CSprite()
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::InitSpriteInfo()
+	Function Name : CSprite::InitSpriteInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CSprite::InitSpriteInfo()
@@ -87,15 +87,15 @@ VOID CSprite::InitSpriteInfo()
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::DeleteSpriteInfo()
+	Function Name : CSprite::DeleteSpriteInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CSprite::DeleteSpriteInfo()
@@ -107,13 +107,13 @@ VOID CSprite::DeleteSpriteInfo()
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::SetEffectInfo()
+	Function Name : CSprite::SetEffectInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPEFFECTSPRINFO pstEffect
+	Purpose   :
+	Params   : LPEFFECTSPRINFO pstEffect
 	         DWORD dwFstFrm
 	         DWORD dwEndFrm
 	         WORD wDelay
@@ -130,9 +130,9 @@ VOID CSprite::DeleteSpriteInfo()
 	         BYTE bBlendType
 	         BYTE bOpa
 	         BYTE bSwingCnt
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CSprite::SetEffectInfo(LPEFFECTSPRINFO pstEffect, DWORD dwFstFrm, DWORD dwEndFrm, WORD wDelay, WORD wImgIdx, WORD wEffectIdx,
@@ -171,16 +171,16 @@ VOID CSprite::SetEffectInfo(LPEFFECTSPRINFO pstEffect, DWORD dwFstFrm, DWORD dwE
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::GetEffectInfo()
+	Function Name : CSprite::GetEffectInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WORD wEffectNum
-	출력   : LPEFFECTSPRINFO 
+	Purpose   :
+	Params   : WORD wEffectNum
+	Return   : LPEFFECTSPRINFO
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 LPEFFECTSPRINFO CSprite::GetEffectInfo(WORD wEffectNum)
@@ -203,16 +203,16 @@ LPEFFECTSPRINFO CSprite::GetEffectInfo(WORD wEffectNum)
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::GetExplosionInfo()
+	Function Name : CSprite::GetExplosionInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WORD wEffectNum
-	출력   : LPEFFECTSPRINFO 
+	Purpose   :
+	Params   : WORD wEffectNum
+	Return   : LPEFFECTSPRINFO
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 LPEFFECTSPRINFO CSprite::GetExplosionInfo(WORD wEffectNum)
@@ -235,16 +235,16 @@ LPEFFECTSPRINFO CSprite::GetExplosionInfo(WORD wEffectNum)
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::GetMagicInfo()
+	Function Name : CSprite::GetMagicInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WORD wEffectNum
-	출력   : LPEFFECTSPRINFO 
+	Purpose   :
+	Params   : WORD wEffectNum
+	Return   : LPEFFECTSPRINFO
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 LPEFFECTSPRINFO CSprite::GetMagicInfo(WORD wEffectNum)
@@ -267,19 +267,19 @@ LPEFFECTSPRINFO CSprite::GetMagicInfo(WORD wEffectNum)
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::SetSprDfn()
+	Function Name : CSprite::SetSprDfn()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPSPRFRMDEF pstSprDfn
+	Purpose   :
+	Params   : LPSPRFRMDEF pstSprDfn
 	         WORD wFstFrm
 	         WORD wFrmCnt
 	         WORD wDelay
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CSprite::SetSprDfn(LPSPRFRMDEF pstSprDfn, WORD wFstFrm, WORD wFrmCnt, WORD wDelay)
@@ -292,15 +292,15 @@ VOID CSprite::SetSprDfn(LPSPRFRMDEF pstSprDfn, WORD wFstFrm, WORD wFrmCnt, WORD 
 
 /******************************************************************************************************************
 
-	함수명 : CSprite::SetInfo()
+	Function Name : CSprite::SetInfo()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CSprite::SetInfo()

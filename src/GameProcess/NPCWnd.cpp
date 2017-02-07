@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -625,7 +625,7 @@ BOOL	CNPCWnd::ClickCommandProcess(CMTxtBtn* ClickedBtn)		// 아래 에 있는 것들 종
 			if(!m_xMsgBox.IsActive())	SetWndRectExtend();
 			m_xMsgBox.ShowMessageBox(szMsg,MSG_EDITEXIST|MSG_BTN_OK);	// OK
 			SetNpcEditBoxPos();
-			// 문파 설립창을 열고 문파 명을 입력 받는다.
+			// 문파 설립창을 열고 문파 명을 Params 받는다.
 			m_nNpcMsgState = 1;
 			return TRUE;
 		}
@@ -639,7 +639,7 @@ BOOL	CNPCWnd::ClickCommandProcess(CMTxtBtn* ClickedBtn)		// 아래 에 있는 것들 종
 			if(!m_xMsgBox.IsActive())	SetWndRectExtend();
 			m_xMsgBox.ShowMessageBox(szMsg,MSG_EDITEXIST|MSG_BTN_OK);	// OK
 			SetNpcEditBoxPos();
-			// 문쟁을 할 상대 문파를 입력 받는다.
+			// 문쟁을 할 상대 문파를 Params 받는다.
 			m_nNpcMsgState = 2;
 			return TRUE;
 		}
@@ -653,7 +653,7 @@ BOOL	CNPCWnd::ClickCommandProcess(CMTxtBtn* ClickedBtn)		// 아래 에 있는 것들 종
 			if(!m_xMsgBox.IsActive())	SetWndRectExtend();
 			m_xMsgBox.ShowMessageBox(szMsg,MSG_EDITEXIST|MSG_BTN_OK);	// OK
 			SetNpcEditBoxPos();
-			// 성 금고창을 열어 빼어낼 돈을 입력 받는다.
+			// 성 금고창을 열어 빼어낼 돈을 Params 받는다.
 			m_nNpcMsgState = 3;
 			return TRUE;
 		}
@@ -667,7 +667,7 @@ BOOL	CNPCWnd::ClickCommandProcess(CMTxtBtn* ClickedBtn)		// 아래 에 있는 것들 종
 			if(!m_xMsgBox.IsActive())	SetWndRectExtend();
 			m_xMsgBox.ShowMessageBox(szMsg,MSG_EDITEXIST|MSG_BTN_OK);	// OK
 			SetNpcEditBoxPos();
-			// 성 금고창을 열어 넣을 돈 액수를 입력 받는다.
+			// 성 금고창을 열어 넣을 돈 액수를 Params 받는다.
 			m_nNpcMsgState = 4;
 			return TRUE;
 		}

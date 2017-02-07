@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -22,15 +22,15 @@
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::CStatusWnd()
+	Function Name : CStatusWnd::CStatusWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CStatusWnd::CStatusWnd()
@@ -42,15 +42,15 @@ CStatusWnd::CStatusWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::~CStatusWnd()
+	Function Name : CStatusWnd::~CStatusWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 CStatusWnd::~CStatusWnd()
@@ -96,13 +96,13 @@ VOID CStatusWnd::Destory()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::CreateStatusWnd()
+	Function Name : CStatusWnd::CreateStatusWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nID
+	Purpose   :
+	Params   : INT nID
 	         CWHWilImageData* pxWndImage
 	         INT nFrameImgIdx
 	         INT nStartX
@@ -110,9 +110,9 @@ VOID CStatusWnd::Destory()
 	         INT nWidth
 	         INT nHeight
 	         BOOL bCanMove
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::CreateStatusWnd(INT nID, CWHWilImageData* pxWndImage, INT nFrameImgIdx, INT nStartX, INT nStartY, INT nWidth, INT nHeight, BOOL bCanMove)
@@ -156,15 +156,15 @@ VOID CStatusWnd::CreateStatusWnd(INT nID, CWHWilImageData* pxWndImage, INT nFram
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ShowStatusWnd()
+	Function Name : CStatusWnd::ShowStatusWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowStatusWnd()
@@ -233,15 +233,15 @@ VOID CStatusWnd::ShowStatusWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetStatusBtnInit()
+	Function Name : CStatusWnd::SetStatusBtnInit()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetStatusBtnInit()
@@ -268,15 +268,15 @@ VOID CStatusWnd::SetStatusBtnInit()
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ShowCharEquipWnd()
+	Function Name : CStatusWnd::ShowCharEquipWnd()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowCharEquipWnd()
@@ -327,15 +327,15 @@ VOID CStatusWnd::ShowCharEquipWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ShowEquipItemState()
+	Function Name : CStatusWnd::ShowEquipItemState()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowEquipItemState()
@@ -355,16 +355,16 @@ VOID CStatusWnd::ShowEquipItemState()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::GetEquipNum()
+	Function Name : CStatusWnd::GetEquipNum()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : INT 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : INT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 INT CStatusWnd::GetEquipNum(POINT ptMouse)
@@ -387,18 +387,18 @@ INT CStatusWnd::GetEquipNum(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::CheckEquipItem()
+	Function Name : CStatusWnd::CheckEquipItem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CItem* pxItem
+	Purpose   :
+	Params   : CItem* pxItem
 	         BYTE bEquipCell
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::CheckEquipItem(CItem* pxItem, BYTE bEquipCell, POINT ptMouse)
@@ -441,16 +441,16 @@ BOOL CStatusWnd::CheckEquipItem(CItem* pxItem, BYTE bEquipCell, POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::DeleteEquipItem()
+	Function Name : CStatusWnd::DeleteEquipItem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nEquipNum
-	출력   : VOID 
+	Purpose   :
+	Params   : INT nEquipNum
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::DeleteEquipItem(INT nEquipNum)
@@ -482,15 +482,15 @@ VOID CStatusWnd::DeleteEquipItem(INT nMakeIndex, CHAR* szName)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::DeleteAllEquipItem()
+	Function Name : CStatusWnd::DeleteAllEquipItem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::DeleteAllEquipItem()
@@ -505,18 +505,18 @@ VOID CStatusWnd::DeleteAllEquipItem()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::AddEquipItem()
+	Function Name : CStatusWnd::AddEquipItem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CItem xItem
+	Purpose   :
+	Params   : CItem xItem
 	         INT nEquipNum
 	         BOOL bUseEquipNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::AddEquipItem(CItem xItem, INT nEquipNum, BOOL bUseEquipNum)
@@ -551,17 +551,17 @@ BOOL CStatusWnd::AddEquipItem(CItem xItem, INT nEquipNum, BOOL bUseEquipNum)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ExtractEquipItem()
+	Function Name : CStatusWnd::ExtractEquipItem()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CItem* pxItem
+	Purpose   :
+	Params   : CItem* pxItem
 	         INT nEquipNum
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::ExtractEquipItem(CItem* pxItem, INT nEquipNum)
@@ -582,17 +582,17 @@ BOOL CStatusWnd::ExtractEquipItem(CItem* pxItem, INT nEquipNum)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ChangeEquipWithCommon()
+	Function Name : CStatusWnd::ChangeEquipWithCommon()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nEquipNum
+	Purpose   :
+	Params   : INT nEquipNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ChangeEquipWithCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -620,17 +620,17 @@ VOID CStatusWnd::ChangeEquipWithCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonI
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetCommonFromEquip()
+	Function Name : CStatusWnd::SetCommonFromEquip()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nEquipNum
+	Purpose   :
+	Params   : INT nEquipNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetCommonFromEquip(INT nEquipNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -652,17 +652,17 @@ VOID CStatusWnd::SetCommonFromEquip(INT nEquipNum, LPCOMMONITEMSET pstCommonItem
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetEquipFromCommon()
+	Function Name : CStatusWnd::SetEquipFromCommon()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nEquipNum
+	Purpose   :
+	Params   : INT nEquipNum
 	         LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetEquipFromCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -679,16 +679,16 @@ VOID CStatusWnd::SetEquipFromCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonItem
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetTakeOnFromEquip()
+	Function Name : CStatusWnd::SetTakeOnFromEquip()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : INT nEquipNum
-	출력   : VOID 
+	Purpose   :
+	Params   : INT nEquipNum
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetTakeOnFromEquip(INT nEquipNum)
@@ -706,16 +706,16 @@ VOID CStatusWnd::SetTakeOnFromEquip(INT nEquipNum)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetTakeOnFromCommon()
+	Function Name : CStatusWnd::SetTakeOnFromCommon()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPCOMMONITEMSET pstCommonItemSet
-	출력   : VOID 
+	Purpose   :
+	Params   : LPCOMMONITEMSET pstCommonItemSet
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetTakeOnFromCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonItemSet)
@@ -733,15 +733,15 @@ VOID CStatusWnd::SetTakeOnFromCommon(INT nEquipNum, LPCOMMONITEMSET pstCommonIte
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetEquipFromTakeOn()
+	Function Name : CStatusWnd::SetEquipFromTakeOn()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::SetEquipFromTakeOn()
@@ -780,15 +780,15 @@ VOID CStatusWnd::SetEquipFromTakeOn()
 *******************************************************************************************************************/
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::ShowCharStatus()
+	Function Name : CStatusWnd::ShowCharStatus()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowCharStatus()
@@ -1001,17 +1001,17 @@ VOID CStatusWnd::ShowCharSetMagicWnd()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::SetMagicKey()
+	Function Name : CStatusWnd::SetMagicKey()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
+	Purpose   :
+	Params   : POINT ptMouse
 	         BYTE bKey
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::SetMagicKey(POINT ptMouse, BYTE bKey)
@@ -1057,16 +1057,16 @@ BOOL CStatusWnd::SetMagicKey(POINT ptMouse, BYTE bKey)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::GetMagicByKey()
+	Function Name : CStatusWnd::GetMagicByKey()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : BYTE bKey
-	출력   : LPCLIENTMAGICRCD 
+	Purpose   :
+	Params   : BYTE bKey
+	Return   : LPCLIENTMAGICRCD
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 LPCLIENTMAGICRCD CStatusWnd::GetMagicByKey(BYTE bKey)
@@ -1113,18 +1113,18 @@ LPCLIENTMAGICRCD CStatusWnd::GetMagicByKey(BYTE bKey)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnKeyDown()
+	Function Name : CStatusWnd::OnKeyDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : WPARAM wParam
+	Purpose   :
+	Params   : WPARAM wParam
 	         LPARAM lParam
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::OnKeyDown(WPARAM wParam, LPARAM lParam, POINT ptMouse)
@@ -1176,16 +1176,16 @@ BOOL CStatusWnd::OnKeyDown(WPARAM wParam, LPARAM lParam, POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnLButtonUp()
+	Function Name : CStatusWnd::OnLButtonUp()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : BOOL 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
@@ -1303,16 +1303,16 @@ BOOL CStatusWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnMouseMove()
+	Function Name : CStatusWnd::OnMouseMove()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : POINT ptMouse
-	출력   : VOID 
+	Purpose   :
+	Params   : POINT ptMouse
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::OnMouseMove(POINT ptMouse)
@@ -1337,17 +1337,17 @@ VOID CStatusWnd::OnMouseMove(POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnLButtonDown()
+	Function Name : CStatusWnd::OnLButtonDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPCOMMONITEMSET pstCommonItemSet
+	Purpose   :
+	Params   : LPCOMMONITEMSET pstCommonItemSet
 	         POINT ptMouse
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 BOOL CStatusWnd::OnLButtonDown(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
@@ -1386,15 +1386,15 @@ BOOL CStatusWnd::OnLButtonDown(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnScrollDown()
+	Function Name : CStatusWnd::OnScrollDown()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::OnScrollDown()
@@ -1409,15 +1409,15 @@ VOID CStatusWnd::OnScrollDown()
 
 /******************************************************************************************************************
 
-	함수명 : CStatusWnd::OnScrollUp()
+	Function Name : CStatusWnd::OnScrollUp()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : VOID 
+	Purpose   :
+	Return   : VOID
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : 수정내용
 
 *******************************************************************************************************************/
 VOID CStatusWnd::OnScrollUp()

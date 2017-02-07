@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -119,7 +119,7 @@ VOID CStoreWnd::ShowStoreWnd()
 		}
 
 		if(m_nIsReadyToDisplay&&1)
-		{	// Kinds List 출력
+		{	// Kinds List Return
 			m_xKindBtn.m_pTxtBtn.MoveCurrentToTop();
 			for(int i = 0 ; i <m_xKindBtn.GetButtonCount(); i++)
 			{
@@ -134,7 +134,7 @@ VOID CStoreWnd::ShowStoreWnd()
 			}
 		}
 		if((m_nIsReadyToDisplay>>1)&&1)
-		{	// Item List 출력
+		{	// Item List Return
 //			g_xMainWnd.PutsHan(NULL,tRect.left+POS_ITEMLIST_LINE_X,tRect.top+POS_ITEMLIST_LINE_Y+17,RGB(255,255,0),RGB(0,0,0),"123456789012345678901234567890");
 			m_xItemLstBtn.m_pTxtBtn.MoveCurrentToTop();
 			for(int i = 0 ; i <m_xItemLstBtn.GetButtonCount(); i++)

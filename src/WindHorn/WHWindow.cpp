@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -24,15 +24,15 @@ static CWHApp* g_pWHApp = NULL;
 
 /******************************************************************************************************************
 
-	함수명 : CWHApp::CWHApp()
+	Function Name : CWHApp::CWHApp()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHApp::CWHApp()
@@ -43,15 +43,15 @@ CWHApp::CWHApp()
 
 /******************************************************************************************************************
 
-	함수명 : CWHApp::~CWHApp()
+	Function Name : CWHApp::~CWHApp()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHApp::~CWHApp()
@@ -60,19 +60,19 @@ CWHApp::~CWHApp()
 
 /******************************************************************************************************************
 
-	함수명 : CWHApp::MainWndProc()
+	Function Name : CWHApp::MainWndProc()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT uMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHApp::MainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
@@ -82,19 +82,19 @@ LRESULT CWHApp::MainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 
 /******************************************************************************************************************
 
-	함수명 : WndProc()
+	Function Name : WndProc()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT uMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT CALLBACK 
+	Return   : LRESULT CALLBACK
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -119,15 +119,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::CWHWindow()
+	Function Name : CWHWindow::CWHWindow()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHWindow::CWHWindow()
@@ -137,15 +137,15 @@ CWHWindow::CWHWindow()
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::~CWHWindow()
+	Function Name : CWHWindow::~CWHWindow()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : 
+	Purpose   :
+	Return   :
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 CWHWindow::~CWHWindow()
@@ -154,16 +154,16 @@ CWHWindow::~CWHWindow()
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::RegisterClass()
+	Function Name : CWHWindow::RegisterClass()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : CHAR *pszMenuName
-	출력   : BOOL 
+	Purpose   :
+	Params   : CHAR *pszMenuName
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHWindow::RegisterClass(CHAR* pszMenuName, CHAR* pszIconName)
@@ -193,17 +193,17 @@ BOOL CWHWindow::RegisterClass(CHAR* pszMenuName, CHAR* pszIconName)
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::Create()
+	Function Name : CWHWindow::Create()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPTSTR lpCaption
+	Purpose   :
+	Params   : LPTSTR lpCaption
 	         CHAR *pszMenuName
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHWindow::Create(HINSTANCE hInst, LPTSTR lpCaption, CHAR *pszMenuName, CHAR* pszIconName)
@@ -245,19 +245,19 @@ BOOL CWHWindow::Create(HINSTANCE hInst, LPTSTR lpCaption, CHAR *pszMenuName, CHA
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::MainWndProc()
+	Function Name : CWHWindow::MainWndProc()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : HWND hWnd
+	Purpose   :
+	Params   : HWND hWnd
 	         UINT uMsg
 	         WPARAM wParam
 	         LPARAM lParam
-	출력   : LRESULT 
+	Return   : LRESULT
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHWindow::MainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
@@ -273,15 +273,15 @@ LRESULT CWHWindow::MainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
 
 /******************************************************************************************************************
 
-	함수명 : CWHWindow::OnDestroy()
+	Function Name : CWHWindow::OnDestroy()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 LRESULT CWHWindow::OnDestroy()

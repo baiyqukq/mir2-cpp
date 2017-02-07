@@ -1,11 +1,11 @@
 /******************************************************************************************************************
                                                                                                                    
-	모듈명:																											
+	Module Name:
 																													
-	작성자:																											
-	작성일:																											
+	Author:
+	Date:
 																													
-	[일자][수정자] : 수정 내용																						
+	[Date][Modifier] : Modified contents
                                                                                                                    
 *******************************************************************************************************************/
 
@@ -18,15 +18,15 @@
 
 /******************************************************************************************************************
 
-	함수명 : CWHSurface::ReleaseSurface()
+	Function Name : CWHSurface::ReleaseSurface()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	출력   : BOOL 
+	Purpose   :
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHSurface::ReleaseSurface()
@@ -46,18 +46,18 @@ BOOL CWHSurface::ReleaseSurface()
 
 /******************************************************************************************************************
 
-	함수명 : CWHSurface::CreateOffScreenSurface()
+	Function Name : CWHSurface::CreateOffScreenSurface()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : LPDIRECTDRAW7 pDD
+	Purpose   :
+	Params   : LPDIRECTDRAW7 pDD
 	         DWORD dwXSize
 	         DWORD dwYSize
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHSurface::CreateOffScreenSurface(LPDIRECTDRAW7 pDD, DWORD dwXSize, DWORD dwYSize) 
@@ -84,18 +84,18 @@ BOOL CWHSurface::CreateOffScreenSurface(LPDIRECTDRAW7 pDD, DWORD dwXSize, DWORD 
 
 /******************************************************************************************************************
 
-	함수명 : CWHSurface::CopyImageToSurface()
+	Function Name : CWHSurface::CopyImageToSurface()
 
-	작성자 : 
-	작성일 : 
+	Author :
+	Date :
 
-	목적   : 
-	입력   : DWORD dwSrcWidth
+	Purpose   :
+	Params   : DWORD dwSrcWidth
 	         DWORD dwSrcHeight
 	         WORD* pwSrc
-	출력   : BOOL 
+	Return   : BOOL
 
-	[일자][수정자] : 수정내용
+	[Date][Modifier] : Modified contents
 
 *******************************************************************************************************************/
 BOOL CWHSurface::CopyImageToSurface(DWORD dwSrcWidth, DWORD dwSrcHeight, WORD* pwSrc)
