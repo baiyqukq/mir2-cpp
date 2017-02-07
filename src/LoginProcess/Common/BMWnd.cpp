@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "StdAfx.h"
 
 #define WND_WIDTH		640
 #define WND_HEIGHT		480

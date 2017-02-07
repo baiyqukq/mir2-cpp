@@ -11,7 +11,7 @@
 
 
 
-#include "stdafx.h"
+#include "StdAfx.h"
 #include "WHEngine.h"
 
 static CWHApp* g_pWHApp = NULL;

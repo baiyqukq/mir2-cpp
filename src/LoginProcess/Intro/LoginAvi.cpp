@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "StdAfx.h"
 
 #define _RENDER_AVI_NONE		0
 #define _RENDER_AVI_INTRO		1

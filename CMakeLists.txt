@@ -12,6 +12,10 @@ file(GLOB_RECURSE
 	"src/*.h"
 	)
 
+INCLUDE_DIRECTORIES(
+        "src"
+        )
+
 add_executable(${PROJECT_NAME}
 	${HEADERS}
 	${SOURCES}

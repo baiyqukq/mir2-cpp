@@ -1,5 +1,5 @@
 //#include "MsgBox.h"
-#include "stdafx.h"
+#include "StdAfx.h"
 
 
 CMsgBox::CMsgBox()	// Constructor

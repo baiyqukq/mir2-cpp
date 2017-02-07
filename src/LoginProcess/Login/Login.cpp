@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "StdAfx.h"
 
 #define LOGIN_BUTTON_COUNT			4
 #define LOGIN_INPUT_COUNT			2

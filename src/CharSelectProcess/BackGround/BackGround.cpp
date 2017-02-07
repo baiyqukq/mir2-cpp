@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "StdAfx.h"
 
 #define AVI_CREATECHAR						".\\CreateChr.avi"
 #define AVI_STARTGAME						".\\StartGame.avi"
