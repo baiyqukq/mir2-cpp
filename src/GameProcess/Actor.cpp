@@ -490,7 +490,7 @@ BOOL CActor::ChangeFeature(FEATURE stFeature)
 				}
 			}
 			break;
-		// NPC는 프레임이 일정하지 않으므로 따로 적용시킨다.
+		// NPC는 Frame이 일정하지 않으므로 따로 적용시킨다.
 		case _GENDER_NPC:
 		default:
 			return FALSE;
@@ -614,7 +614,7 @@ VOID CActor::PlayActSound()
 		171,  33,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,	// 90 - 99
 	};
 
-	if ( m_dwCurrFrame == m_dwFstFrame+1 && m_bCurrMtn == _MT_MON_APPEAR )			// 나타나기.
+	if ( m_dwCurrFrame == m_dwFstFrame+1 && m_bCurrMtn == _MT_MON_APPEAR )			// Appear.
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10;
 	}
@@ -640,11 +640,11 @@ VOID CActor::PlayActSound()
 				nWaveNum = -1;
 		}
 	}
-	else if ( m_dwCurrFrame == m_dwFstFrame+1 && m_bCurrMtn == _MT_MON_ATTACK_A )	// 일반공격1.
+	else if ( m_dwCurrFrame == m_dwFstFrame+1 && m_bCurrMtn == _MT_MON_ATTACK_A )	// NormalAttack1.
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10 + 2;
 	}
-	else if ( m_dwCurrFrame == m_dwFstFrame+2 && m_bCurrMtn == _MT_MON_ATTACK_A )	// 일반공격1.
+	else if ( m_dwCurrFrame == m_dwFstFrame+2 && m_bCurrMtn == _MT_MON_ATTACK_A )	// NormalAttack1.
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10 + 3;
 	}
@@ -677,11 +677,11 @@ VOID CActor::PlayActSound()
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10 + 4;
 	}
-	else if ( m_dwCurrFrame == m_dwFstFrame+2 && m_bCurrMtn == _MT_MON_DIE )		// 죽기1.
+	else if ( m_dwCurrFrame == m_dwFstFrame+2 && m_bCurrMtn == _MT_MON_DIE )		// Die1.
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10 + 5;
 	}
-	else if ( m_dwCurrFrame == m_dwFstFrame+3 && m_bCurrMtn == _MT_MON_DIE )		// 죽기2.
+	else if ( m_dwCurrFrame == m_dwFstFrame+3 && m_bCurrMtn == _MT_MON_DIE )		// Die2.
 	{
 		nWaveNum = 200 + nActorSndTbl[m_stFeature.bDress]*10 + 6;
 	}
@@ -1867,7 +1867,7 @@ BOOL CActor::UpdateMove(BOOL bIsMoveTime)
 			}
 		}
 
-		// 연속적인 프레임 중에서 해야할일.
+		// 연속적인 Frame 중에서 해야할일.
 		if ( m_dwCurrFrame >= m_dwEndFrame )
 		{
 			m_dwCurrFrame = m_dwEndFrame - 1;
@@ -2946,7 +2946,7 @@ BOOL CHero::UpdateMove(BOOL bIsMoveTime)
 			}
 		}
 
-		// 연속적인 프레임 중에서 해야할일.
+		// 연속적인 Frame 중에서 해야할일.
 		if ( m_dwCurrFrame >= m_dwEndFrame )
 		{
 			m_dwCurrFrame = m_dwEndFrame - 1;
@@ -4852,7 +4852,7 @@ VOID CMyHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 
 			UpdatePacketState();
 
-			// 연속적인 프레임 중에서 해야할일.
+			// 연속적인 Frame 중에서 해야할일.
 			if ( m_dwMotionLockTime > _MOTION_LOCKTIME )
 			{
 				m_dwMotionLockTime = 0;
@@ -5003,7 +5003,7 @@ VOID CMyHero::UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime)
 
 			UpdatePacketState();
 
-			// 연속적인 프레임 중에서 해야할일.
+			// 연속적인 Frame 중에서 해야할일.
 			if ( m_dwMotionLockTime > _MOTION_LOCKTIME )
 			{
 				m_dwMotionLockTime = 0;
@@ -5150,7 +5150,7 @@ BOOL CMyHero::UpdateMove(BOOL bIsMoveTime)
 				}
 			}
 
-			// 연속적인 프레임 중에서 해야할일.
+			// 연속적인 Frame 중에서 해야할일.
 			if ( m_dwCurrFrame >= m_dwEndFrame )
 			{
 				m_dwCurrFrame = m_dwEndFrame-1;
@@ -5311,7 +5311,7 @@ BOOL CMyHero::UpdateMove(BOOL bIsMoveTime)
 				}
 			}
 
-			// 연속적인 프레임 중에서 해야할일.
+			// 연속적인 Frame 중에서 해야할일.
 			if ( m_dwMotionLockTime > _MOTION_LOCKTIME )
 			{
 				m_dwMotionLockTime = 0;
@@ -5391,7 +5391,7 @@ BOOL CMyHero::UpdateMove(BOOL bIsMoveTime)
 				}
 			}
 
-			// 연속적인 프레임 중에서 해야할일.
+			// 연속적인 Frame 중에서 해야할일.
 			if ( m_dwMotionLockTime > _MOTION_LOCKTIME )
 			{
 				m_dwMotionLockTime = 0;
@@ -5645,7 +5645,7 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 			nLength = (INT)sqrt((double)(m_wPosX-ptMouseTilePos.x)*(m_wPosX-ptMouseTilePos.x) + (m_wPosY-ptMouseTilePos.y)*(m_wPosY-ptMouseTilePos.y));
 
 
-		// 1. SHIFT.(강제 공격)
+		// 1. SHIFT.(강제 Attack)
 		if ( HIBYTE(GetKeyState(VK_SHIFT)) )
 		{
 			if ( m_stFeatureEx.bHorse == _HORSE_NONE )
@@ -5654,7 +5654,7 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 				{
 					if ( m_stFeatureEx.bHorse == _HORSE_NONE && !bIsDead )
 					{
-						// 공격한다.
+						// Attack한다.
 						ptTargetTile.x = m_wPosX;
 						ptTargetTile.y = m_wPosY;
 						SetMotionState(_MT_ONEHSWING, bDir, nTargetID, bIsDead, &ptTargetTile);
@@ -5691,7 +5691,7 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 			{
 				if ( m_stFeatureEx.bHorse == _HORSE_NONE && !bIsDead )
 				{
-					// 공격한다.
+					// Attack한다.
 					ptTargetTile.x = m_wPosX;
 					ptTargetTile.y = m_wPosY;
 					bDir = CalcDirection(lpptTargetPos->x, lpptTargetPos->y);
@@ -5717,13 +5717,13 @@ BOOL CMyHero::OnLButtonDown(POINT ptMouse, INT nTargetID, BOOL bIsDead, POINT* l
 			{
 				// 대화창이나 상점창을 연다.
 			}
-			// Actor가 공격 가능한가?
+			// Actor가 Attack 가능한가?
 			else if()
 			{
 				// Actor의 위치가 1타일 내인가?
 				if ()
 				{
-					// 공격한다.
+					// Attack한다.
 				}
 				// Actor가 있는 방향으로 이동 가능한가?(맵속성체크) 
 				else if ()
@@ -6051,7 +6051,7 @@ VOID CMyHero::SetMagic(LPCLIENTMAGICRCD	pstMagic, BYTE bKeyNum, BYTE bDir, INT n
 		break;
 	}
 
-	// 공격마법일때 접속종료 못하게하는 Delay.
+	// AttackSpell일때 접속종료 못하게하는 Delay.
 	switch ( m_shCurrMagicID )
 	{
 	case _SKILL_MOOTEBO:	case _SKILL_FIRESWORD:		case _SKILL_BANWOL:		case _SKILL_ERGUM:			case _SKILL_FIRECHARM:
@@ -6061,7 +6061,7 @@ VOID CMyHero::SetMagic(LPCLIENTMAGICRCD	pstMagic, BYTE bKeyNum, BYTE bDir, INT n
 		break;
 	}
 
-	// 사람을 공격했을때 움직임 패널티 Delay.
+	// 사람을 Attack했을때 움직임 패널티 Delay.
 	m_wMagicPKDelayTime = 0;
 	if ( nTargetID )
 	{
@@ -6133,10 +6133,10 @@ BOOL CMyHero::OnKeyDown(WPARAM wParam, LPARAM lParam, POINT ptMouse, POINT ptTar
 	}
 
 	dwCurrTick = timeGetTime();
-	// 마법이용가능 Delay Time Check.
+	// Spell이용가능 Delay Time Check.
 	if ( dwCurrTick - m_dwLastSpellTime > 500 + m_wMagicDelayTime )
 	{
-		// 마법이 제대로 세팅되었는지 Check.
+		// Spell이 제대로 세팅되었는지 Check.
 		if ( bMagicKey )
 		{
 			if ( nMosueTargetID == NULL )	ptMouseTilePos = GetPosMouseToTile(ptMouse.x, ptMouse.y);

@@ -147,7 +147,7 @@ BOOL CMagic::CreateMagic(BYTE bMagicNum, SHORT shFireTileX, SHORT shFireTileY,
 		//------------------------------------------------------------------------------------------------------------
 
 		//------------------------------------------------------------------------------------------------------------
-		// 마법에 따른 정보세팅.
+		// Spell에 따른 정보세팅.
 		//------------------------------------------------------------------------------------------------------------
 		switch ( bMagicNum )
 		{
@@ -257,7 +257,7 @@ BOOL CMagic::CreateMagic(BYTE bMagicNum, SHORT shFireTileX, SHORT shFireTileY,
 		// 이미지로딩.
 		//------------------------------------------------------------------------------------------------------------
 		//------------------------------------------------------------------------------------------------------------
-		// 프레임정보얻기.
+		// Frame정보얻기.
 		//------------------------------------------------------------------------------------------------------------
 		m_dwFstFrame		= pstMagicSpr->dwFstFrm+(10)*m_bDir16;
 		m_dwEndFrame		= pstMagicSpr->dwEndFrm+(10)*m_bDir16;
@@ -335,7 +335,7 @@ BOOL CMagic::CreateMagic(BYTE bMagicNum, SHORT shFireTileX, SHORT shFireTileY,
 
 BOOL CMagic::DrawLight(CLightFog* xLightFog, INT nLoopTime)
 {
-	BYTE bSwingCnt		= 0;				// 프레임이 변화됐을때만.
+	BYTE bSwingCnt		= 0;				// Frame이 변화됐을때만.
 	m_wCurrLightDelay  += nLoopTime;
 
 	if ( m_bMagicNum == _SKILL_EARTHFIRE || m_bMagicNum == _SKILL_HOLYSHIELD || m_bMagicNum == _SKILL_FIRE || m_bMagicNum == _SKILL_SPACEMOVE2 || m_bMagicNum == _SKILL_SINSU || m_bMagicNum == _SKILL_LIGHTENING )
@@ -650,8 +650,8 @@ BOOL CMagic::UpdateMagic(INT nLoopTime)
 		   m_shScrnY = m_fFloatScrnY;
 
 
-		   // 현재 스크린좌표를 타일좌표로 변환하여 마법통과여부를 결정한다.
-//		   if ( 마법이 통과할수 없으면 )
+		   // 현재 스크린좌표를 타일좌표로 변환하여 Spell통과여부를 결정한다.
+//		   if ( Spell이 통과할수 없으면 )
 		   INT nabsX, nabsY;
 		   nabsX = abs(m_shTargetScrnX-m_shScrnX);
 		   nabsY = abs(m_shTargetScrnY-m_shScrnY);
@@ -722,19 +722,19 @@ BOOL CMagic::UpdateMagic(INT nLoopTime)
 		m_bFixed = TRUE;
 		m_bRepeat= FALSE;
 		bCrash = TRUE;
-		// 폭발프레임으로전환한다.
+		// 폭발Frame으로전환한다.
 
 		LPEFFECTSPRINFO pstMagicSpr = g_xSpriteInfo.GetExplosionInfo(m_bMagicNum);
 
 		if ( !pstMagicSpr )
 		{
-			// 폭발프레임이 없다면.
+			// 폭발Frame이 없다면.
 			m_bActiveState	= _MAGIC_FINISH;
 			return FALSE;
 		}
 
 		//------------------------------------------------------------------------------------------------------------
-		// 프레임정보얻기.
+		// Frame정보얻기.
 		//------------------------------------------------------------------------------------------------------------
 		m_dwFstFrame		= pstMagicSpr->dwFstFrm;
 		m_dwEndFrame		= pstMagicSpr->dwEndFrm;

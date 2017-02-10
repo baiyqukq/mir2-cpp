@@ -251,22 +251,22 @@
 /******************************************************************************************************************
 	#1. Sprite Define
 *******************************************************************************************************************/
-// Hero의 동작 정의.(게임내의 모든 동작을 정의한다.)
+// Hero's Action Definition.(게임내의 모든 Action을 Definition한다.)
 
-#define _MAX_HERO_MTN				33			// 최대 동작갯수.
-#define _MAX_HERO_FRAME				3000		// 다음 Hero로 넘어가는 최대 프레임 갯수.
+#define _MAX_HERO_MTN				33			// Maximum Action Number.
+#define _MAX_HERO_FRAME				3000		// 다음 Hero로 넘어가는 Maximum Frame Number.
 #define	_MAX_HERO_REALFRAME			2640
 
-#define _MT_STAND					0			// 유휴동작.
-#define _MT_ARROWATTACK				1			// 활공격.
-#define _MT_SPELL1					2			// 마법 시전1.
-#define _MT_SPELL2					3			// 마법 공격 시전2.
+#define _MT_STAND					0			// Idle Behavior.
+#define _MT_ARROWATTACK				1			// 활Attack.
+#define _MT_SPELL1					2			// Spell 시전1.
+#define _MT_SPELL2					3			// Spell Attack 시전2.
 #define _MT_HOLD					4			// 견디기.
 #define _MT_PUSHBACK				5			// 뒤로 밀려나기.
 #define _MT_PUSHBACKFLY				6			// 뒤로 날라서 밀려나기.
 #define _MT_ATTACKMODE				7			// 전투모드.
-#define _MT_CUT						8			// 고기 썰기.
-#define _MT_ONEVSWING				9			// 한손 종베기.(동작 9번부터 14번까지에서 무기의 종류에 따라 동작이 정해진다.)
+#define _MT_CUT						8			// Cut Meat.
+#define _MT_ONEVSWING				9			// 한손 종베기.(Action 9번부터 14번까지에서 무기의 종류에 따라 Action이 정해진다.)
 #define _MT_TWOVSWING				10			// 두손 종베기.
 #define _MT_ONEHSWING				11			// 한손 횡베기.
 #define _MT_TWOHSWING				12			// 두손 횡베기.	
@@ -276,10 +276,10 @@
 #define _MT_WHEELWIND				16			// 돌면서 베기.
 #define _MT_RANDSWING				17			// 마구 베기.
 #define _MT_BACKDROPKICK			18			// 뒤돌아 차기.
-#define _MT_DIE						19			// 죽기.
-#define _MT_SPECIALDIE				20			// 튀어올라 죽기.
-#define _MT_WALK					21			// 걷기.
-#define _MT_RUN						22			// 달리기.
+#define _MT_DIE						19			// Die.
+#define _MT_SPECIALDIE				20			// 튀어올라 Die.
+#define _MT_WALK					21			// Walk.
+#define _MT_RUN						22			// Run.
 #define _MT_MOODEPO					23			// 무태보 뛰기.
 #define _MT_ROLL					24			// 구르기.
 #define _MT_FISHSTAND				25			// 낚시모드 유휴.
@@ -287,34 +287,34 @@
 #define _MT_FISHTHROW				27			// 낚시줄 던지기.
 #define _MT_FISHPULL				28			// 낚시줄 당기기.
 #define _MT_HORSESTAND				29			// 승마모드 유휴.
-#define _MT_HORSEWALK				30			// 승마모드 걷기.
-#define _MT_HORSERUN				31			// 승마모드 달리기.
+#define _MT_HORSEWALK				30			// 승마모드 Walk.
+#define _MT_HORSERUN				31			// 승마모드 Run.
 #define _MT_HORSEHIT				32			// 승마모드 맞기.
 
-// Monster의 동작 정의.(게임내의 모든 동작을 정의한다.)
-#define _MAX_MON_MTN				10			// 최대 동작갯수.
-#define _MAX_MON_FRAME				1000		// 다음 Mon로 넘어가는 최대 프레임 갯수.
+// Monste's Action Definition.(게임내의 모든 Action을 Definition한다.)
+#define _MAX_MON_MTN				10			// Maximum Action Number.
+#define _MAX_MON_FRAME				1000		// 다음 Mon로 넘어가는 Maximum Frame Number.
 
-#define _MT_MON_STAND				0			// 유휴동작.
-#define _MT_MON_WALK				1			// 걷기동작.
-#define _MT_MON_ATTACK_A			2			// 일반공격동작1.
-#define _MT_MON_HITTED				3			// 맞기동작.
-#define _MT_MON_DIE					4			// 죽기동작.
-#define _MT_MON_ATTACK_B			5			// 일반공격동작2.
-#define _MT_MON_SPELL_A				6			// 마법공격동작1.
-#define _MT_MON_SPELL_B				7			// 마법공격동작2.
-#define _MT_MON_APPEAR				8			// 나타나기동작.
-#define _MT_MON_SPECIAL_MTN			9			// 특수동작1.
+#define _MT_MON_STAND				0			// Idle Behavior.
+#define _MT_MON_WALK				1			// Walk Action.
+#define _MT_MON_ATTACK_A			2			// Normal Attack Action1.
+#define _MT_MON_HITTED				3			// Hitted Action.
+#define _MT_MON_DIE					4			// Die Action.
+#define _MT_MON_ATTACK_B			5			// Normal Attack Action2.
+#define _MT_MON_SPELL_A				6			// Spell Attack Action1.
+#define _MT_MON_SPELL_B				7			// Spell Attack Action2.
+#define _MT_MON_APPEAR				8			// Appear Action.
+#define _MT_MON_SPECIAL_MTN			9			// Special Action1.
 
 
-// NPC의 동작 정의.(게임내의 모든 동작을 정의한다.)
-// NPC 관련정의.
-#define _MAX_NPC_MTN				3			// 최대 동작갯수.
-#define _MAX_NPC_FRAME				100			// 다음 NPC로 넘어가는 최대 프레임 갯수.
+// NPC's Action Definition.(게임내의 모든 Action을 Definition한다.)
+// NPC 관련Definition.
+#define _MAX_NPC_MTN				3			// Maximum Action Number.
+#define _MAX_NPC_FRAME				100			// 다음 NPC로 넘어가는 Maximum Frame Number.
 
-#define _MT_NPC_STAND				0			// 유휴동작.
-#define _MT_NPC_ACT01				1			// 특수동작1.
-#define _MT_NPC_ACT02				2			// 특수동작2.
+#define _MT_NPC_STAND				0			// Idle Behavior.
+#define _MT_NPC_ACT01				1			// SpecialAction1.
+#define _MT_NPC_ACT02				2			// SpecialAction2.
 
 // 기도.							0			
 // 무기대장장이.					1			
@@ -350,7 +350,7 @@
 
 
 
-// 마법효과관련정의.
+// Spell효과관련Definition.
 #define _MAX_EFFECT					33
 #define _MAX_MAGIC					52
 #define _MAX_EXPLOSION				8
@@ -553,9 +553,9 @@
 /******************************************************************************************************************
 	#1. Magic
 *******************************************************************************************************************/
-#define _MAGIC_ACTIVE				0			// 마법활성상태.
-#define _LIGHT_ACTIVE				1			// 마법광원활성상태.
-#define _MAGIC_FINISH				2			// 마법소멸.
+#define _MAGIC_ACTIVE				0			// Spell활성상태.
+#define _LIGHT_ACTIVE				1			// Spell광원활성상태.
+#define _MAGIC_FINISH				2			// Spell소멸.
 
 #define _SKILL_FIREBALL				1			// 화염장.
 #define _SKILL_HEALLING				2			// 회복술.
@@ -596,22 +596,22 @@
 #define _SKILL_SPACEMOVE2			35			// 아공행법2.
 #define _SKILL_SPACEMOVE3			36			// 아공행법3.
 
-#define _MONMAGIC_KEPAL				100			// 전격공격.(공격한 캐릭터위에)(마법)
-#define _MONMAGIC_EXPLODE			101			// 폭발마법.(돌골렘죽을때, 론공격시)
-#define _MONMAGIC_BLACK1			102			// 흑마법사. (마법(시전))
-#define _MONMAGIC_BLACK2			103			// 흑마법사. (마법(마법))
-#define _MONMAGIC_DIE				104			// 흑마법사, 경갑옷기사, 홍마법사, 신기선보스변신전 죽음.(효과)
-#define _MONMAGIC_ANTHEAL			105			// 치유개미힐링(발사마법, 폭발효과.)
-#define _MONMAGIC_GREATANT			106			// 거대개미.(공격한 캐릭터위에)(마법)
+#define _MONMAGIC_KEPAL				100			// 전격Attack.(Attack한 캐릭터위에)(Spell)
+#define _MONMAGIC_EXPLODE			101			// 폭발Spell.(돌골렘죽을때, 론Attack시)
+#define _MONMAGIC_BLACK1			102			// 흑Spell사. (Spell(시전))
+#define _MONMAGIC_BLACK2			103			// 흑Spell사. (Spell(Spell))
+#define _MONMAGIC_DIE				104			// 흑Spell사, 경갑옷기사, 홍Spell사, 신기선보스변신전 죽음.(효과)
+#define _MONMAGIC_ANTHEAL			105			// 치유개미힐링(발사Spell, 폭발효과.)
+#define _MONMAGIC_GREATANT			106			// 거대개미.(Attack한 캐릭터위에)(Spell)
 #define _MONMAGIC_MAGENUMA			108			// 결계.
-#define _MONMAGIC_ANT				109			// 병정개미공격.(공격한 캐릭터위에)(마법)
-#define _MONMAGIC_WORKANT			110			// 일개미공격.(공격한 캐릭터위에)(마법)
-#define _MONMAGIC_RED1				111			// 홍마법사. (마법(시전))
-#define _MONMAGIC_RED2				112			// 홍마법사. (마법(마법))
-#define _MONMAGIC_COWGHOST			113			// 우면귀. (마법)
-#define _MONMAGIC_SINSU				114			// 신수. (마법)
-#define _MONMAGIC_ZOMBIE			115			// 좀비. (마법)
-#define _MONMAGIC_JUMAWANG			116			// 주마왕. (마법)
+#define _MONMAGIC_ANT				109			// 병정개미Attack.(Attack한 캐릭터위에)(Spell)
+#define _MONMAGIC_WORKANT			110			// 일개미Attack.(Attack한 캐릭터위에)(Spell)
+#define _MONMAGIC_RED1				111			// 홍Spell사. (Spell(시전))
+#define _MONMAGIC_RED2				112			// 홍Spell사. (Spell(Spell))
+#define _MONMAGIC_COWGHOST			113			// 우면귀. (Spell)
+#define _MONMAGIC_SINSU				114			// 신수. (Spell)
+#define _MONMAGIC_ZOMBIE			115			// 좀비. (Spell)
+#define _MONMAGIC_JUMAWANG			116			// 주마왕. (Spell)
 #define _MONMAGIC_CHIM				117
 #define _MONMAGIC_ARROW				118
 #define _MONMAGIC_MAARROW			119
@@ -628,7 +628,7 @@
 #define _MONMAGIC_NUMAGUMGI			130
 #define _MONMAGIC_EXPLODE1			131
 
-#define _BLEND_NORMAL				0			// 일반적인그리기.(알파값이 적용될수있다.)
+#define _BLEND_NORMAL				0			// Normal적인그리기.(알파값이 적용될수있다.)
 #define _BLEND_LIGHT				1			// 섬광효과형태의 블렌딩.
 #define _BLEND_LIGHTINV				2	
 #define _BLEND_INVNORMAL			3
@@ -662,25 +662,25 @@
 #define _FOG_COLOR_TYPE2			RGB(10, 255, 10);
 #define _FOG_COLOR_TYPE3			RGB(10, 10, 255);
 
-// 속성 관련 정의.
+// 속성 관련 Definition.
 #define _CAN_WALK					0
 #define _CAN_NOTWALK	 			1
 #define _CAN_FLY					0
 #define _CAN_NOTFLY					1
 
-// 라이트 크기 관련 정의.
+// 라이트 크기 관련 Definition.
 #define _LIGHT_SIZE_TYPE0			3
 #define _LIGHT_SIZE_TYPE1			4
 #define _LIGHT_SIZE_TYPE2			5
 #define _LIGHT_SIZE_TYPE3			6
 
-// 라이트 색 관련 정의.
+// 라이트 색 관련 Definition.
 #define _LIGHT_COLOR_TYPE0			RGB(255, 0, 0);
 #define _LIGHT_COLOR_TYPE1			RGB(0, 255, 0);
 #define _LIGHT_COLOR_TYPE2			RGB(0, 0, 255);
 #define _LIGHT_COLOR_TYPE3			RGB(255, 0, 255);
 
-// 문관련 정의.
+// 문관련 Definition.
 #define _DOOR_ISCLOSED				0
 #define _DOOR_ISOPEN				1
 
@@ -775,7 +775,7 @@
 #define CM_HIT						3014
 #define CM_LONGHIT					3019
 #define CM_POWERHIT					3018
-#define CM_SPELL					3017	// 보낸후 서버에서 승인이 오면 동작을 한다. 스펠동작이 끝난후 sm_magicfire가 오면 동작을 스탠드로 바꾼다.
+#define CM_SPELL					3017	// 보낸후 서버에서 승인이 오면 Action을 한다. 스펠Action이 끝난후 sm_magicfire가 오면 Action을 스탠드로 바꾼다.
 #define CM_WIDEHIT					3024
 #define CM_FIREHIT					3025
 #define CM_SAY						3030
@@ -887,7 +887,7 @@
 #define SM_CLEAROBJECT				633
 #define SM_EAT_OK					635
 #define SM_EAT_FAIL					636
-#define SM_MAGICFIRE				638		// 마법이 실행된다.
+#define SM_MAGICFIRE				638		// Spell이 실행된다.
 #define SM_MAGIC_LVEXP				640
 #define SM_DURACHANGE				642
 #define SM_GOLDCHANGE				653

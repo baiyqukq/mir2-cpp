@@ -1,4 +1,4 @@
-// 최대 버튼의 수
+// Maximum 버튼의 수
 
 #include "stdafx.h"
 #define MAX_TXT_BUTTON_COUNT	5
@@ -132,7 +132,7 @@ BOOL CTextButton::ReleaseButtons(VOID)
 /////////////////////////////////////////////////////////////////////////
 // nTextHeight: 실제 Text의 Height  
 // WndRect: 윈도우의 크기  
-// nMaxLine: 찍을수 있는 최대 라인수
+// nMaxLine: 찍을수 있는 Maximum 라인수
 /////////////////////////////////////////////////////////////////////////
 BOOL CTextButton::InitTxtBtn(INT nMaxLine,POINT StartPos,INT nLineGap)
 {

@@ -469,7 +469,7 @@ VOID CClientSocket::SendSay(CHAR *pszSay)
 
 VOID CClientSocket::SendSpellMsg(INT nMagicID, INT nTargetX, INT nTargetY, INT nTargetID)
 {
-//wParam  : ¸¶¹ý ID(wtag)
+//wParam  : Spell ID(wtag)
 //lParam1 : Å¸°ÙX
 //lParam2 : Å¸°ÙY
 //lParam3 : Å¸°Ù ¿ÀºêÁ§Æ® id(wTag)

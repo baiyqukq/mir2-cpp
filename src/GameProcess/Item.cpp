@@ -176,7 +176,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "파괴%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wDC), HIBYTE(m_stItemInfo.stStdItem.wDC));
 
 				if ( m_stItemInfo.stStdItem.wMC > 0 )
-					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "마법%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
+					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Spell%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
 
 				if ( m_stItemInfo.stStdItem.wSC > 0 )
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "도력%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wSC), HIBYTE(m_stItemInfo.stStdItem.wSC));
@@ -204,7 +204,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					{
 						if ( HIBYTE(g_xGameProc.m_xMyHero.m_stAbility.wMC) >= m_stItemInfo.stStdItem.bNeedLevel )
 						   bUseAble = TRUE;
-						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요마법력%d ", m_stItemInfo.stStdItem.bNeedLevel);
+						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요Spell력%d ", m_stItemInfo.stStdItem.bNeedLevel);
 					}
 					break;
 				case 3:
@@ -255,7 +255,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "파괴%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wDC), HIBYTE(m_stItemInfo.stStdItem.wDC));
 
 				if ( m_stItemInfo.stStdItem.wMC > 0 )
-					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "마법%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
+					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Spell%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
 
 				if ( m_stItemInfo.stStdItem.wSC > 0 )
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "도력%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wSC), HIBYTE(m_stItemInfo.stStdItem.wSC));
@@ -272,9 +272,9 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 				if ( HIBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
 				{
 					if ( HIBYTE(m_stItemInfo.stStdItem.wMAC) > 10 )
-						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "공격속도+%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC)-10);
+						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "Attack속도+%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC)-10);
 					else
-						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "공격속도-%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC));
+						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "Attack속도-%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC));
 				}
 
 				if ( LOBYTE(m_stItemInfo.stStdItem.wAC) > 0 )
@@ -303,7 +303,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					{
 						if ( HIBYTE(g_xGameProc.m_xMyHero.m_stAbility.wMC) >= m_stItemInfo.stStdItem.bNeedLevel )
 						   bUseAble = TRUE;
-						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요마법력%d ", m_stItemInfo.stStdItem.bNeedLevel);
+						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요Spell력%d ", m_stItemInfo.stStdItem.bNeedLevel);
 					}
 					break;
 				case 3:
@@ -350,7 +350,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 				if ( m_stItemInfo.stStdItem.bStdMode == 19 && m_stItemInfo.stStdItem.bStdMode == 20 )
 				{
 					if ( m_stItemInfo.stStdItem.wAC > 0 )
-						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "마법회피+%d ", HIBYTE(m_stItemInfo.stStdItem.wAC));
+						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Spell회피+%d ", HIBYTE(m_stItemInfo.stStdItem.wAC));
 
 					if ( LOBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
 						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "저주+%d ", LOBYTE(m_stItemInfo.stStdItem.wMAC));
@@ -365,10 +365,10 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "중독회복+%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC));
 
 					if ( LOBYTE(m_stItemInfo.stStdItem.wAC) > 0 )
-						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "공격속도+%d ", LOBYTE(m_stItemInfo.stStdItem.wAC));
+						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Attack속도+%d ", LOBYTE(m_stItemInfo.stStdItem.wAC));
 					
 					if ( LOBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
-						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "공격속도-%d ", LOBYTE(m_stItemInfo.stStdItem.wMAC));
+						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Attack속도-%d ", LOBYTE(m_stItemInfo.stStdItem.wMAC));
 				}
 				// 팔찌.
 				else if ( m_stItemInfo.stStdItem.bStdMode == 24 && m_stItemInfo.stStdItem.bStdMode == 26 )
@@ -393,7 +393,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "파괴%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wDC), HIBYTE(m_stItemInfo.stStdItem.wDC));
 
 				if ( m_stItemInfo.stStdItem.wMC > 0 )
-					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "마법%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
+					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Spell%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wMC), HIBYTE(m_stItemInfo.stStdItem.wMC));
 
 				if ( m_stItemInfo.stStdItem.wSC > 0 )
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "도력%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wSC), HIBYTE(m_stItemInfo.stStdItem.wSC));
@@ -421,7 +421,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					{
 						if ( HIBYTE(g_xGameProc.m_xMyHero.m_stAbility.wMC) >= m_stItemInfo.stStdItem.bNeedLevel )
 						   bUseAble = TRUE;
-						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요마법력%d ", m_stItemInfo.stStdItem.bNeedLevel);
+						sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "필요Spell력%d ", m_stItemInfo.stStdItem.bNeedLevel);
 					}
 					break;
 				case 3:
@@ -470,7 +470,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 				case 1:			// 말린고기.
 				case 2:			// 주먹밥.
 					break;
-				case 3:			// 특수한물약 OR 각종전서들.
+				case 3:			// Special한물약 OR 각종전서들.
 					sprintf(&szLineBuf[0][strlen(szLineBuf[0])], " 무게%d ", m_stItemInfo.stStdItem.bWeight);
 					g_xMainWnd.PutsHan(NULL, nX+sizeLen.cx, nY, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[0]);
 					break;
@@ -499,7 +499,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					case 1:
 						{
 							// 둘째줄.
-							sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 주술사마법책 ");
+							sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 주술사Spell책 ");
 							g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
 							sprintf(&szLineBuf[2][strlen(szLineBuf[2])], " 필요레벨%d ", m_stItemInfo.stStdItem.wDuraMax);
@@ -565,7 +565,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d 순도%d ", m_stItemInfo.stStdItem.bWeight, m_stItemInfo.nDura/1000);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
-				case 44:		// 상점에는 없는 특수 아이템.
+				case 44:		// 상점에는 없는 Special 아이템.
 					break;
 				case 45:		// 땅에 떨어질때 바뀌는 기능성 아이템.
 					break;

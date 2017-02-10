@@ -17,7 +17,7 @@ struct WILTextureContainer
 
     TCHAR   m_strWilFileName[80];
 	INT		m_nIdx;
-	WORD*	m_pwData;				// Surface로 로딩시킬때만 값이 정의된다. 그외엔 항상 NULL이다.<---???
+	WORD*	m_pwData;				// Surface로 로딩시킬때만 값이 Definition된다. 그외엔 항상 NULL이다.<---???
     DWORD   m_dwFlags;
     DWORD   m_dwWidth;
     DWORD   m_dwHeight;

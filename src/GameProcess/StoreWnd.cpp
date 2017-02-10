@@ -374,7 +374,7 @@ BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 					case 0:	// 물약류
 					case 1:	// 말린고기
 					case 2:	// 주먹밥
-					case 3:	// 특수한물약 or 각종전서들
+					case 3:	// Special한물약 or 각종전서들
 					case 4:	// 각종 책들
 					case 7:	// 묶음씨리즈
 					case 9:	// 약제들

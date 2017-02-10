@@ -251,7 +251,7 @@ BOOL CChatEdit::Create(HINSTANCE hInstance, HWND hWndParent, INT nX, INT nY, INT
 								 DEFAULT_QUALITY, DEFAULT_PITCH, "굴림체");
 
 	SendMessage(m_hChatEdit, WM_SETFONT, (WPARAM)m_hFontChatEdit, MAKELPARAM(TRUE, 0));
-	// 입력에디트윈도우의 최대입력문자 갯수 정의.
+	// 입력에디트윈도우의 최대입력문자 Number Definition.
 	SendMessage(m_hChatEdit, EM_LIMITTEXT, (WPARAM)95, 0);
 	ShowWindow(m_hChatEdit, SW_HIDE);
     UpdateWindow(m_hChatEdit);

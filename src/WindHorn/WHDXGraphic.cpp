@@ -1280,7 +1280,7 @@ BOOL CWHDXGraphicWindow::StringDivide(INT nDivideWidth, INT& nDividedLine, CHAR*
 
 			nEndLen = nCnt+1;
 
-			// 만약에 글자크기가 최대 글자크기를 넘어가면 최대치로 맞춰준다.
+			// 만약에 글자크기가 Maximum 글자크기를 넘어가면 최대치로 맞춰준다.
 			if ( nEndLen >= MAX_PATH )
 			{
 				szResult[MAX_PATH-1] = NULL;
@@ -1516,7 +1516,7 @@ HRESULT CWHDXGraphicWindow::DrawWithGDI(RECT rc, LPDIRECTDRAWSURFACE7 pSurface, 
 	Author :
 	Date :
 
-	Purpose   : 일반적인 그리기. 한픽셀씩 그린다. 스크린영역 클리핑, 소스영역 클리핑
+	Purpose   : Normal적인 그리기. 한픽셀씩 그린다. 스크린영역 클리핑, 소스영역 클리핑
 	Params   : INT nX
 	         INT nY
 	         INT nXSize
@@ -4420,7 +4420,7 @@ BOOL CWHDXGraphicWindow::DrawWithImageForCompClipRgnColor(INT nX, INT nY, INT nX
 					else if ( pwSrc[x] == 0xC1 )
 					{
 						x++;
-						nCntCopyWord = pwSrc[x];	// 갯수
+						nCntCopyWord = pwSrc[x];	// Number
 						x++;
 
 						nLastWidth = nCurrWidth;
@@ -4798,7 +4798,7 @@ BOOL CWHDXGraphicWindow::DrawWithImageForCompClipRgnGray(INT nX, INT nY, INT nXS
 					else if ( pwSrc[x] == 0xC1 )
 					{
 						x++;
-						nCntCopyWord = pwSrc[x];	// 갯수
+						nCntCopyWord = pwSrc[x];	// Number
 						x++;
 
 						nLastWidth = nCurrWidth;

@@ -136,18 +136,18 @@ VOID CStatusWnd::CreateStatusWnd(INT nID, CWHWilImageData* pxWndImage, INT nFram
 	SetRect(&m_rcCell[_U_DRESS],	96,  114, 146,  204);
 	SetRect(&m_rcCell[_U_WEAPON],	48,  70,   91,  154);
 
-	// 마법버튼초기화.
+	// Spell버튼초기화.
 	m_xMagicScrlBtn[0].CreateGameBtn(pxWndImage, 74, 75, nStartX+232, nStartY+147);
 	m_xMagicScrlBtn[1].CreateGameBtn(pxWndImage, 74, 75, nStartX+232, nStartY+253);
 
-	// 마법창초기화.
+	// Spell창초기화.
 	SetRect(&m_rcMagicCell[0], 39,  77, 74, 112);
 	SetRect(&m_rcMagicCell[1], 39, 115, 74, 149);
 	SetRect(&m_rcMagicCell[2], 39, 152, 74, 186);
 	SetRect(&m_rcMagicCell[3], 39, 188, 74, 223);
 	SetRect(&m_rcMagicCell[4], 39, 225, 74, 260);
 
-	// 마법 변수 초기화.
+	// Spell 변수 초기화.
 	m_pstMyMagic  = NULL;
 	m_bMyMagicCnt = 0;
 }
@@ -883,7 +883,7 @@ VOID CStatusWnd::ShowCharStatus()
 
 	ptStart.y += 20;
 	
-	g_xMainWnd.PutsHan(NULL, ptStart.x, ptStart.y, RGB(200, 225, 250), RGB(0, 0, 0), "마법회피", g_xMainWnd.CreateGameFont("굴림체", 9, 0, FW_BOLD));
+	g_xMainWnd.PutsHan(NULL, ptStart.x, ptStart.y, RGB(200, 225, 250), RGB(0, 0, 0), "Spell회피", g_xMainWnd.CreateGameFont("굴림체", 9, 0, FW_BOLD));
 	sprintf(szBuff, "+%d%", g_xGameProc.m_xMyHero.m_stSubAbility.wAntiMagic*10);
 	g_xMainWnd.PutsHan(NULL, ptStart.x+55, ptStart.y, RGB(250, 250, 250), RGB(0, 0, 0), szBuff);
 
@@ -927,7 +927,7 @@ VOID CStatusWnd::ShowCharStatus()
 
 /******************************************************************************************************************
 
-	캐릭터 마법창관련.
+	캐릭터 Spell창관련.
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowCharSetMagicWnd()

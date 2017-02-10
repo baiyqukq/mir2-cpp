@@ -343,23 +343,23 @@ VOID CSprite::SetInfo()
 	SetSprDfn(&m_stHeroSpr[32], 2560,  3, 100);			// _MT_HORSEHIT	
 
 	//~~~ Monster 스프라이트 설정. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	SetSprDfn(&m_stMonSpr[0],     0,  4, 300);			// 유휴동작.
-	SetSprDfn(&m_stMonSpr[1],    80,  6, 130);			// 걷기동작.
-	SetSprDfn(&m_stMonSpr[2],   160,  6, 120);			// 일반공격동작.
-	SetSprDfn(&m_stMonSpr[3],   240,  2, 300);			// 맞기동작.
-	SetSprDfn(&m_stMonSpr[4],   320, 10, 150);			// 죽기동작.
-	SetSprDfn(&m_stMonSpr[5],   400,  6, 150);			// 특수공격동작1.
-	SetSprDfn(&m_stMonSpr[6],   480, 10, 150);			// 특수공격동작2.
-	SetSprDfn(&m_stMonSpr[7],   560, 10, 150);			// 사라지기동작.
-	SetSprDfn(&m_stMonSpr[8],   640,  6, 150);			// 특수동작.
+	SetSprDfn(&m_stMonSpr[0],     0,  4, 300);			// Idle Behavior.
+	SetSprDfn(&m_stMonSpr[1],    80,  6, 130);			// 걷기Action.
+	SetSprDfn(&m_stMonSpr[2],   160,  6, 120);			// Normal Attack Action.
+	SetSprDfn(&m_stMonSpr[3],   240,  2, 300);			// 맞기Action.
+	SetSprDfn(&m_stMonSpr[4],   320, 10, 150);			// DieAction.
+	SetSprDfn(&m_stMonSpr[5],   400,  6, 150);			// SpecialAttackAction1.
+	SetSprDfn(&m_stMonSpr[6],   480, 10, 150);			// SpecialAttackAction2.
+	SetSprDfn(&m_stMonSpr[7],   560, 10, 150);			// 사라지기Action.
+	SetSprDfn(&m_stMonSpr[8],   640,  6, 150);			// SpecialAction.
 
 	//~~~ NPC 스프라이트 설정. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	SetSprDfn(&m_stNPCSpr[0],     0,  4, 300);			// 유휴동작.
-	SetSprDfn(&m_stNPCSpr[1],    30, 10, 300);			// 특수동작1.
-	SetSprDfn(&m_stNPCSpr[2],    60,  6, 300);			// 특수동작2.
+	SetSprDfn(&m_stNPCSpr[0],     0,  4, 300);			// Idle Behavior.
+	SetSprDfn(&m_stNPCSpr[1],    30, 10, 300);			// SpecialAction1.
+	SetSprDfn(&m_stNPCSpr[2],    60,  6, 300);			// SpecialAction2.
 
 	//~~~ Effect Frame Define. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	SetEffectInfo(&m_stEffectSpr[0],   230,  236, 100, _IMAGE_MAGIC,       _SKILL_BANWOL, 3, 4, 100, 100, 100, 100, 100, 170);	// 반월공격 12시.
+	SetEffectInfo(&m_stEffectSpr[0],   230,  236, 100, _IMAGE_MAGIC,       _SKILL_BANWOL, 3, 4, 100, 100, 100, 100, 100, 170);	// 반월Attack 12시.
 	SetEffectInfo(&m_stEffectSpr[1],    60,   70, 100, _IMAGE_MAGIC,    _SKILL_AMYOUNSUL, 3, 4, 100, 100, 100, 100, 160, 100, 255, 255, 255, _BLEND_NORMAL);	// 암연술 시전.
 	SetEffectInfo(&m_stEffectSpr[2],    90,   98, 100, _IMAGE_MAGIC,     _SKILL_FIREWIND, 3, 4, 100, 100, 100, 100, 140, 180);	// 화염풍.
 	SetEffectInfo(&m_stEffectSpr[3],  1820, 1828, 100, _IMAGE_MAGIC,         _SKILL_FIRE, 3, 4, 100, 100, 100, 100, 140, 180);	// 염사장 시전.
@@ -444,14 +444,14 @@ VOID CSprite::SetInfo()
 	SetEffectInfo(&m_stMagicSpr[39], 1070, 1071, 100, _IMAGE_MONMAGIC,      _MONMAGIC_MAARROW, 2, 3, 100, 100, 100, 150, 150, 150, 255, 255, 255, _BLEND_NORMAL, 255);	// 마궁사화살.
 	SetEffectInfo(&m_stMagicSpr[40],  800,  806, 100, _IMAGE_MONMAGIC,      _MONMAGIC_DUALAXE, 2, 3, 100, 100, 100, 150, 150, 150, 255, 255, 255, _BLEND_NORMAL, 255);	// 쌍도끼해골던지기.
 	SetEffectInfo(&m_stMagicSpr[41],  520,  527, 100, _IMAGE_MONMAGIC,     _MONMAGIC_COWFLAME, 2, 3, 100, 100, 100, 150, 150, 150);	// 화염우면귀.
-	SetEffectInfo(&m_stMagicSpr[42],  360,  370, 100, _IMAGE_MONMAGIC,  _MONMAGIC_BIGGINE_ATT, 2, 3, 100, 100, 100, 150, 150, 150);	// 촉룡신 공격.
-	SetEffectInfo(&m_stMagicSpr[43],  380,  400, 100, _IMAGE_MONMAGIC, _MONMAGIC_BIGGINE_CHAR, 2, 3, 100, 100, 100, 150, 150, 150);	// 촉룡신에 공격당함.
-	SetEffectInfo(&m_stMagicSpr[44],  320,  330,  70, _IMAGE_MONMAGIC,     _MONMAGIC_SANDFISH, 2, 3, 100, 100, 100, 150, 150, 150,  10,  10,  10, _BLEND_LIGHTINV, 0);		// 사어공격.
+	SetEffectInfo(&m_stMagicSpr[42],  360,  370, 100, _IMAGE_MONMAGIC,  _MONMAGIC_BIGGINE_ATT, 2, 3, 100, 100, 100, 150, 150, 150);	// 촉룡신 Attack.
+	SetEffectInfo(&m_stMagicSpr[43],  380,  400, 100, _IMAGE_MONMAGIC, _MONMAGIC_BIGGINE_CHAR, 2, 3, 100, 100, 100, 150, 150, 150);	// 촉룡신에 Attack당함.
+	SetEffectInfo(&m_stMagicSpr[44],  320,  330,  70, _IMAGE_MONMAGIC,     _MONMAGIC_SANDFISH, 2, 3, 100, 100, 100, 150, 150, 150,  10,  10,  10, _BLEND_LIGHTINV, 0);		// 사어Attack.
 	SetEffectInfo(&m_stMagicSpr[45],  260,  266, 100, _IMAGE_MONMAGIC,       _MONMAGIC_BAODIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 바보달드죽음.
 	SetEffectInfo(&m_stMagicSpr[46],  880,  886, 150, _IMAGE_MONMAGIC,        _MONMAGIC_SSEGI, 2, 3, 100, 100, 100, 150, 150, 150, 255, 255, 255, _BLEND_LIGHTINV, 15);		// 쐐기나방타액.
-	SetEffectInfo(&m_stMagicSpr[47],   60,   70, 100, _IMAGE_MONMAGIC,    _MONMAGIC_SINGI_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 몬스터죽기. 경갑옷기사, 홍의, 흑의마법사. // 방향구별은 없다.
-	SetEffectInfo(&m_stMagicSpr[48],  680,  689, 100, _IMAGE_MONMAGIC,     _MONMAGIC_HUSU_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 허수아비죽기.
-	SetEffectInfo(&m_stMagicSpr[49],  700,  708, 100, _IMAGE_MONMAGIC,   _MONMAGIC_ZOMBIE_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 좀비죽기.
+	SetEffectInfo(&m_stMagicSpr[47],   60,   70, 100, _IMAGE_MONMAGIC,    _MONMAGIC_SINGI_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 몬스터Die. 경갑옷기사, 홍의, 흑의Spell사. // 방향구별은 없다.
+	SetEffectInfo(&m_stMagicSpr[48],  680,  689, 100, _IMAGE_MONMAGIC,     _MONMAGIC_HUSU_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 허수아비Die.
+	SetEffectInfo(&m_stMagicSpr[49],  700,  708, 100, _IMAGE_MONMAGIC,   _MONMAGIC_ZOMBIE_DIE, 2, 3, 100, 100, 100, 150, 150, 150);	// 좀비Die.
 
 	SetEffectInfo(&m_stMagicSpr[50],  980,  983, 10, _IMAGE_MAGIC,	_SKILL_SINSU, 3, 4, 150, 150, 150, 200, 150, 180, 255, 255, 255, _BLEND_NORMAL, 255);	// 신수.
 
@@ -475,18 +475,18 @@ VOID CSprite::SetInfo()
 VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 {
 /*	//~~~ Monster 스프라이트 설정. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	SetSprDfn(&m_stMonSpr[0],    0,  4, 300);			// 유휴동작.
-	SetSprDfn(&m_stMonSpr[1],   80,  6, 130);			// 걷기동작.
-	SetSprDfn(&m_stMonSpr[2],  160,  6, 120);			// 일반공격동작1.
-	SetSprDfn(&m_stMonSpr[3],  240,  2, 300);			// 맞기동작.
-	SetSprDfn(&m_stMonSpr[4],  320, 10, 150);			// 죽기동작.
-	SetSprDfn(&m_stMonSpr[5],  400,  6, 150);			// 일반공격동작2.
-	SetSprDfn(&m_stMonSpr[6],  480, 10, 150);			// 마법공격동작1.
-	SetSprDfn(&m_stMonSpr[7],  560, 10, 150);			// 마법공격동작2.
-	SetSprDfn(&m_stMonSpr[8],  640,  6, 150);			// 나타나기, 사라지기.
-	SetSprDfn(&m_stMonSpr[9],  720,  6, 150);			// 특수동작1.
+	SetSprDfn(&m_stMonSpr[0],    0,  4, 300);			// Idle Behavior.
+	SetSprDfn(&m_stMonSpr[1],   80,  6, 130);			// 걷기Action.
+	SetSprDfn(&m_stMonSpr[2],  160,  6, 120);			// NormalAttackAction1.
+	SetSprDfn(&m_stMonSpr[3],  240,  2, 300);			// 맞기Action.
+	SetSprDfn(&m_stMonSpr[4],  320, 10, 150);			// DieAction.
+	SetSprDfn(&m_stMonSpr[5],  400,  6, 150);			// NormalAttackAction2.
+	SetSprDfn(&m_stMonSpr[6],  480, 10, 150);			// SpellAttackAction1.
+	SetSprDfn(&m_stMonSpr[7],  560, 10, 150);			// SpellAttackAction2.
+	SetSprDfn(&m_stMonSpr[8],  640,  6, 150);			// Appear, 사라지기.
+	SetSprDfn(&m_stMonSpr[9],  720,  6, 150);			// SpecialAction1.
 */
-	// 0. Monster Mtn -> 유휴동작.
+	// 0. Monster Mtn -> Idle Behavior.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -496,10 +496,10 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 1. Monster Mtn -> 걷기동작.
+	// 1. Monster Mtn -> 걷기Action.
 	SetSprDfn(&m_stMonSpr[1],    80,  6, 90);
 
-	// 2. Monster Mtn -> 일반공격동작1.
+	// 2. Monster Mtn -> NormalAttackAction1.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case 12: case 99:	
@@ -512,14 +512,14 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		SetSprDfn(&m_stMonSpr[2],  160,  6, 150);	// 사괴, 바쿠가르나, 바자울, 치유개미, 갑주개미, 론, 누마왕, 레디가르나, 데나가다코, 포루개미, 풍백, 누마왕1.
 		break;
 	case  4: case 10: case 11: case 13: case 17: case 18: case 94:
-		SetSprDfn(&m_stMonSpr[2],  160,  6, 170);	// 석장인, 모디젼, 모디젼1, 누마법로, 누마비장, 누마, 사어.
+		SetSprDfn(&m_stMonSpr[2],  160,  6, 170);	// 석장인, 모디젼, 모디젼1, 누Spell로, 누마비장, 누마, 사어.
 		break;
 	default:
 		SetSprDfn(&m_stMonSpr[2],  160,  6, 130);	
 		break;
 	}
 
-	// 3. Monster Mtn -> 맞기동작.
+	// 3. Monster Mtn -> 맞기Action.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -535,7 +535,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 4. Monster Mtn -> 죽기동작.
+	// 4. Monster Mtn -> DieAction.
 	switch ( wMonNum )
 	{
 	case  94:										// 사어
@@ -552,7 +552,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 5. Monster Mtn -> 일반공격동작2.
+	// 5. Monster Mtn -> NormalAttackAction2.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -563,7 +563,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 6. Monster Mtn -> 마법공격동작1.
+	// 6. Monster Mtn -> SpellAttackAction1.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -574,7 +574,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 7. Monster Mtn -> 마법공격동작2.
+	// 7. Monster Mtn -> SpellAttackAction2.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -585,7 +585,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 8. Monster Mtn -> 사라지기, 나타나기 동작.
+	// 8. Monster Mtn -> 사라지기, Appear Action.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:
@@ -605,7 +605,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 9. Monster Mtn -> 특수동작1.
+	// 9. Monster Mtn -> SpecialAction1.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case  3: case  4: case  5: case  6: case  7: case  8: case  9:

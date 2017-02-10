@@ -9,12 +9,12 @@
 
 *******************************************************************************************************************/
 
-//~~~ Hero와 몬스터, NPC를 위한 프레임정의. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~ Hero와 몬스터, NPC를 위한 FrameDefinition. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 typedef struct tagSPRFRMDEF
 {
-	WORD		wFstFrm;						// 동작의 시작 프레임.
-	WORD		wFrmCnt;						// 동작의 프레임갯수.
-	WORD		wDelay;							// 동작의 지연시간.
+	WORD		wFstFrm;						// Action의 시작 Frame.
+	WORD		wFrmCnt;						// Action의 FrameNumber.
+	WORD		wDelay;							// Action의 지연시간.
 }SPRFRMDEF, *LPSPRFRMDEF;
 
 
@@ -24,7 +24,7 @@ typedef struct tagSPRFRMDEF
 
 *******************************************************************************************************************/
 
-//~~~ 마법을 위한 프레임정의. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~ Spell을 위한 FrameDefinition. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 typedef struct tagEFFECTSPRINFO
 {
 	DWORD		dwFstFrm;
@@ -34,7 +34,7 @@ typedef struct tagEFFECTSPRINFO
 	WORD		wEffectIdx;
 	BYTE		bLightRadius[2];				// 광원 너비.
 	BYTE		bLightColor [2][3];				// 광원 색.
-	BYTE		bMagicColor [3];				// 마법 색.
+	BYTE		bMagicColor [3];				// Spell 색.
 	BYTE		bBlendType;
 	BYTE		bOpa;
 	BYTE		bSwingCnt;
@@ -44,18 +44,18 @@ typedef struct tagEFFECTSPRINFO
 class CSprite
 {
 public:
-	EFFECTSPRINFO		m_stEffectSpr[_MAX_EFFECT];			// 마법의 시전및 검법효과.
-	EFFECTSPRINFO		m_stMagicSpr[_MAX_MAGIC];			// 마법효과.
-	EFFECTSPRINFO		m_stExplosionSpr[_MAX_EXPLOSION];	// 마법폭발효과.
+	EFFECTSPRINFO		m_stEffectSpr[_MAX_EFFECT];			// Spell의 시전및 검법효과.
+	EFFECTSPRINFO		m_stMagicSpr[_MAX_MAGIC];			// Spell효과.
+	EFFECTSPRINFO		m_stExplosionSpr[_MAX_EXPLOSION];	// Spell폭발효과.
 
-	EFFECTSPRINFO		m_stMonEffectSpr[_MAX_EFFECT];			// 마법의 시전및 검법효과.
-	EFFECTSPRINFO		m_stMonMagicSpr[_MAX_MAGIC];			// 마법효과.
-	EFFECTSPRINFO		m_stMonExplosionSpr[_MAX_EXPLOSION];	// 마법폭발효과.
+	EFFECTSPRINFO		m_stMonEffectSpr[_MAX_EFFECT];			// Spell의 시전및 검법효과.
+	EFFECTSPRINFO		m_stMonMagicSpr[_MAX_MAGIC];			// Spell효과.
+	EFFECTSPRINFO		m_stMonExplosionSpr[_MAX_EXPLOSION];	// Spell폭발효과.
 
 
-	SPRFRMDEF			m_stHeroSpr[_MAX_HERO_MTN];			// Hero의 동작프레임 정의.
-	SPRFRMDEF			m_stMonSpr [_MAX_MON_MTN];			// Monster의 동작프레임 정의.
-	SPRFRMDEF			m_stNPCSpr [_MAX_MON_MTN];			// Monster의 동작프레임 정의.
+	SPRFRMDEF			m_stHeroSpr[_MAX_HERO_MTN];			// Hero의 ActionFrame Definition.
+	SPRFRMDEF			m_stMonSpr [_MAX_MON_MTN];			// Monster의 ActionFrame Definition.
+	SPRFRMDEF			m_stNPCSpr [_MAX_MON_MTN];			// Monster의 ActionFrame Definition.
 
 	BYTE				m_bWOrder[_MAX_HERO_REALFRAME];	
 

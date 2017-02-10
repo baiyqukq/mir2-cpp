@@ -7,3 +7,18 @@
 %s/일자/Date/g
 %s/수정자/Modifier/g
 %s/수정내용/Modified contents/g
+
+유휴동작	Idle Behavior
+최대	maximum
+동작	Action
+정의	Definition
+갯수	Number
+의		's
+일반	Normal
+공격	Attack
+마법	Spell
+죽기	Die
+나타나기	Appear
+특수	Special
+견디기	Frame
+달리기	Run

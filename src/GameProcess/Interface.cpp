@@ -1442,7 +1442,7 @@ BOOL CInterface::IsTopWindow(INT nID)
  	Author : 
 	Date :
 
-	Purpose   : Mouse LButtonDown이 일어났을때 인터페이스에서 할일을 정의한다.
+	Purpose   : Mouse LButtonDown이 일어났을때 인터페이스에서 할일을 Definition한다.
 	Params   : POINT ptMouse
 	Return   : BOOL
 
@@ -1554,7 +1554,7 @@ BOOL CInterface::OnLButtonDown(POINT ptMouse)
 	Author : 
 	Date :
 
-	Purpose   : Mouse LButtonUp이 일어났을때 인터페이스에서 할일을 정의한다.
+	Purpose   : Mouse LButtonUp이 일어났을때 인터페이스에서 할일을 Definition한다.
 	Params   : POINT ptMouse
 	Return   : BOOL
 
@@ -1727,7 +1727,7 @@ BOOL CInterface::OnLButtonUp(POINT ptMouse)
 	Author : 
 	Date :
 
-	Purpose   : Mouse Move가 일어났을때 인터페이스에서 할일을 정의한다.
+	Purpose   : Mouse Move가 일어났을때 인터페이스에서 할일을 Definition한다.
 	Params   : POINT ptMouse
 	Return   : BOOL
 

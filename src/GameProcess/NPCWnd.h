@@ -48,7 +48,7 @@ private:
 	ClickSellCommand(VOID);			// 팔다(@SELL)
 	ClickBuyCommand(VOID);			// 사다(@BUY)
 	ClickBuildGuildCommand(VOID);	// 문파설립(@@BUILDGUILDNOW)
-	ClickSpecialRepairCommand(VOID);// 특수수리(@SPECIALREPAIR)
+	ClickSpecialRepairCommand(VOID);// Special수리(@SPECIALREPAIR)
 	ClickMakeCommand(VOID);			// 만들다(@MAKE)
 */
 };

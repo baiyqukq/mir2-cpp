@@ -39,13 +39,13 @@ class CStatusWnd : public CGameWnd
 { 
 private:
 protected:
-	BYTE				m_bType;						// 0 : 장착창. 1 : 캐릭터 상태창.  2 : 캐릭터 마법 설정창.
+	BYTE				m_bType;						// 0 : 장착창. 1 : 캐릭터 상태창.  2 : 캐릭터 Spell 설정창.
 	CGameBtn			m_xStatusBtn[_MAX_STAUTS_BTN];
 
 	RECT				m_rcCell[_EQUIP_MAX_CELL];		// 인벤토리창의 각셀들의 영역.
 
-	RECT				m_rcMagicCell[_MAGIC_MAX_CELL];	// 마법세팅창의 각셀들의 영역.
-	INT					m_nStartLineNum;				// 마법창의 처음 라인의 번호. (마법리스트에 들어있는개수만큼 스크롤할수있다..)
+	RECT				m_rcMagicCell[_MAGIC_MAX_CELL];	// Spell세팅창의 각셀들의 영역.
+	INT					m_nStartLineNum;				// Spell창의 처음 라인의 번호. (Spell리스트에 들어있는개수만큼 스크롤할수있다..)
 	BYTE				m_bMagicIdxTable[_MAX_MAGIC_SKILL];
 	CGameBtn			m_xMagicScrlBtn[2];
 

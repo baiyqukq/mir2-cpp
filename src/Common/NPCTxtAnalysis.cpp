@@ -75,7 +75,7 @@ CHAR* CNPCTxtAnalysis::GetValidStr(CHAR* szSource,CHAR* szDest,CHAR* Divider)
 	nBuf_Count	=	0;
 	nCount		=	0;
 
-	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// 최대 길이보다 길면 실행을 취소 한다.
+	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// Maximum 길이보다 길면 실행을 취소 한다.
 	{
 		ZeroMemory(szDest,sizeof(szDest));
 		delete[] szBuffer;
@@ -157,7 +157,7 @@ CHAR* CNPCTxtAnalysis::GetValidStr(CHAR* szSource,CHAR* szDest,CHAR Divider)
 	nBuf_Count	=	0;
 	nCount		=	0;
 
-	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// 최대 길이보다 길면 실행을 취소 한다.
+	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// Maximum 길이보다 길면 실행을 취소 한다.
 	{
 		ZeroMemory(szDest,sizeof(szDest));
 		delete[] szBuffer;
@@ -238,7 +238,7 @@ CHAR* CNPCTxtAnalysis::GetValidStr(CHAR* szSource,INT nSrcLen,CHAR* szDest,INT n
 	nBuf_Count	=	0;
 	nCount		=	0;
 
-	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// 최대 길이보다 길면 실행을 취소 한다.
+	if (nSrcLen >= MAX_BUFFER_SIZE - 1 )				// Maximum 길이보다 길면 실행을 취소 한다.
 	{
 		ZeroMemory(szDest,nDestLen);
 		delete[] szBuffer;
@@ -615,8 +615,8 @@ void CNPCTxtAnalysis::AnalySisText(CDLList<CHAR*>* pxpTxt,INT nLineMax)
 						// 종결 <> 가 있으면 종료
 					}  // endifelse
 
-					if(strlen(Fdata)!=0)		// '<' 전에 있는 Text를 일반 Text에 추가
-					{	// 일반 Text 추가
+					if(strlen(Fdata)!=0)		// '<' 전에 있는 Text를 Normal Text에 추가
+					{	// Normal Text 추가
 						CMText* pxTmpTxt;
 						pxTmpTxt = new CMText;
 						pxTmpTxt->pText = new CHAR[strlen(Fdata)+1];
@@ -895,8 +895,8 @@ void CNPCTxtAnalysis::AnalySisText(CHAR* Msg)
 						// 종결 <> 가 있으면 종료
 					}
 
-					if(strlen(Fdata)!=0)		// '<' 전에 있는 Text를 일반 Text에 추가
-					{	// 일반 Text 추가
+					if(strlen(Fdata)!=0)		// '<' 전에 있는 Text를 Normal Text에 추가
+					{	// Normal Text 추가
 						CMText* pxTmpTxt;
 						pxTmpTxt = new CMText;
 						pxTmpTxt->pText = new CHAR[strlen(Fdata)+1];

@@ -97,7 +97,7 @@ protected:
 //	D3DVECTOR				m_vecEnvironment;		// 입자에 작용하는 환경변수(중력, 바람).
 	D3DVECTOR				m_vecBounding[2];		// 충돌체크영역 설정.
 
-	WORD					m_wNum;					// 입자의 갯수.
+	WORD					m_wNum;					// 입자의 Number.
 	CParticle*				m_pxParticle;			// 입자 개체.
     D3DVERTEX				m_avShape[4];			// Vertex.
 

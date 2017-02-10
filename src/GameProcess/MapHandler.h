@@ -83,7 +83,7 @@ public:
 	// 캐릭터의 이동과 관련된다.
 	SHORT			m_shStartViewTileX;				// 뷰영역의 시작 X Tile 좌표.(실제 스크린 시작 타일 좌표보다 조금 더 큰 사이즈이다.)
 	SHORT			m_shStartViewTileY;				// 뷰영역은 실제 스크린 영역보다 가로, 세로 1타일씩을 여분으로 둔다.
-	SHORT			m_shViewOffsetX;				// 스크롤한 X축한 길이.(캐릭터의 걷기동작의 프레임.)
+	SHORT			m_shViewOffsetX;				// 스크롤한 X축한 길이.(캐릭터의 걷기Action의 Frame.)
 	SHORT			m_shViewOffsetY;				
 
 	RECT			m_rcView;						// 맵기본타일이 그려질 영역.(화면클리핑을 위해서)

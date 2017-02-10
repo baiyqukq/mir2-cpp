@@ -630,7 +630,7 @@ VOID CGameProcess::AutoTargeting()
 		{
 			if ( m_xMyHero.m_stFeatureEx.bHorse == _HORSE_NONE && !m_pxSavedTargetActor->m_bIsDead )
 			{
-				// 공격한다.
+				// Attack한다.
 				ptTargetTile.x = m_xMyHero.m_wPosX;
 				ptTargetTile.y = m_xMyHero.m_wPosY;
 				m_xMyHero.SetMotionState(_MT_ONEHSWING, bDir, m_pxSavedTargetActor->m_dwIdentity, m_pxSavedTargetActor->m_bIsDead, &ptTargetTile);
@@ -1939,7 +1939,7 @@ LRESULT CGameProcess::OnLButtonDown(WPARAM wParam, LPARAM lParam)
 		{
 			if ( !m_pxMouseTargetActor->m_bIsDead )
 			{
-				// 공격대상 Actor정하기.
+				// Attack대상 Actor정하기.
 				m_pxSavedTargetActor = m_pxMouseTargetActor;
 			}
 
@@ -2375,7 +2375,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 		m_xMyHero.ChangeFeature(stFeature, m_xMyHero.m_stFeatureEx);
 	}	
 
-// 일반메시지.
+// Normal메시지.
 	g_xClientSocket.SendSay(g_xChatEditBox.m_szInputMsg);
 
 	if ( g_xChatEditBox.m_szInputMsg[0] == '/' )

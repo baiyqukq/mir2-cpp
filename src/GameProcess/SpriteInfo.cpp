@@ -81,7 +81,7 @@ VOID CSpriteInfo::SetHumanSpriteInfo()
       
 VOID CSpriteInfo::SetMonSpriteInfo()
 {
-	// »ç¸· µµ¸¶¹ì ÇÁ·¹ÀÓÁ¤ÀÇ.
+	// »ç¸· µµ¸¶¹ì FrameDefinition.
 	SetMonRaceInfo(&m_stMon[_RACE_LIZARD], _IMAGE_MONSTER, 0, 400);
 	SetMotionInfo(&m_stMon[_RACE_LIZARD].stMtn[_MT_MON_STAND],    0,  4, 6, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_LIZARD].stMtn[_MT_MON_WALK],    80,  6, 4, 150, FALSE);
@@ -93,7 +93,7 @@ VOID CSpriteInfo::SetMonSpriteInfo()
 	SetMotionInfo(&m_stMon[_RACE_LIZARD].stMtn[_MT_MON_DISAPPEAR],0,  0, 0, 0, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_LIZARD].stMtn[_MT_MON_CRITICAL], 0,  0, 0, 0, FALSE);
 
-	// ¾ßÇà±Í ÇÁ·¹ÀÓÁ¤ÀÇ.
+	// ¾ßÇà±Í FrameDefinition.
 	SetMonRaceInfo(&m_stMon[_RACE_NIGHTGHOST], _IMAGE_MONSTER, 400, 800);
 	SetMotionInfo(&m_stMon[_RACE_NIGHTGHOST].stMtn[_MT_MON_STAND],	 400+  0,  4, 6, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_NIGHTGHOST].stMtn[_MT_MON_WALK],	 400+ 80,  6, 4, 150, FALSE);
@@ -105,7 +105,7 @@ VOID CSpriteInfo::SetMonSpriteInfo()
 	SetMotionInfo(&m_stMon[_RACE_NIGHTGHOST].stMtn[_MT_MON_DISAPPEAR],	   0,  0, 0, 0, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_NIGHTGHOST].stMtn[_MT_MON_CRITICAL],	   0,  0, 0, 0, FALSE);
 
-	// ÃË¼ö±«¹° ÇÁ·¹ÀÓÁ¤ÀÇ.
+	// ÃË¼ö±«¹° FrameDefinition.
 	SetMonRaceInfo(&m_stMon[_RACE_THORN], _IMAGE_MONSTER, 800, 1200);
 	SetMotionInfo(&m_stMon[_RACE_THORN].stMtn[_MT_MON_STAND],	 800+  0,  4, 6, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_THORN].stMtn[_MT_MON_WALK],	 800+ 80,  6, 4, 150, FALSE);
@@ -117,7 +117,7 @@ VOID CSpriteInfo::SetMonSpriteInfo()
 	SetMotionInfo(&m_stMon[_RACE_THORN].stMtn[_MT_MON_DISAPPEAR],	   0,  0, 0, 0, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_THORN].stMtn[_MT_MON_CRITICAL],	   0,  0, 0, 0, FALSE);
 
-	// ¸ð·¡±«¹° ÇÁ·¹ÀÓÁ¤ÀÇ.
+	// ¸ð·¡±«¹° FrameDefinition.
 	SetMonRaceInfo(&m_stMon[_RACE_SANDMON], _IMAGE_MONSTER, 1200, 1680);
 	SetMotionInfo(&m_stMon[_RACE_SANDMON].stMtn[_MT_MON_STAND],	   1200+  0,  4, 6, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_SANDMON].stMtn[_MT_MON_WALK],	   1200+ 80,  6, 4, 150, FALSE);
@@ -129,7 +129,7 @@ VOID CSpriteInfo::SetMonSpriteInfo()
 	SetMotionInfo(&m_stMon[_RACE_SANDMON].stMtn[_MT_MON_DISAPPEAR],1200+400, 10, 0, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_SANDMON].stMtn[_MT_MON_CRITICAL],       0,  0, 0, 0, FALSE);
 
-	// °ñ·½ ÇÁ·¹ÀÓÁ¤ÀÇ.
+	// °ñ·½ FrameDefinition.
 	SetMonRaceInfo(&m_stMon[_RACE_GOLEM], _IMAGE_MONSTER, 1680, 2160);
 	SetMotionInfo(&m_stMon[_RACE_GOLEM].stMtn[_MT_MON_STAND],	 1680+  0,  4, 6, 150, FALSE);
 	SetMotionInfo(&m_stMon[_RACE_GOLEM].stMtn[_MT_MON_WALK],	 1680+ 80,  6, 4, 150, FALSE);

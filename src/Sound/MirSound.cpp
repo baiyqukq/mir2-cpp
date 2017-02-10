@@ -181,13 +181,13 @@ int CMirSound::CalsVolume(int Dis) // 수정 요망
 	if(Dis!=0)
 	{
 		l_Result = (int)((cos(_PI*(Dis/26.0)))*100);
-		l_Result = (101 - l_Result);		// 최대 볼룸 0 최소 볼륨 (-1)*x : 현제의 100-(x)%
+		l_Result = (101 - l_Result);		// Maximum 볼룸 0 최소 볼륨 (-1)*x : 현제의 100-(x)%
 		l_Result = m_lWavMaxVol+l_Result*(-20);			// 최소음량 -2000 ~ 최대음량 0
 		return l_Result;
 	}
 	else
 	{
-		return m_lWavMaxVol;							// 겹쳐 져 있거나 본인의 소리	최대 음량으로
+		return m_lWavMaxVol;							// 겹쳐 져 있거나 본인의 소리	Maximum 음량으로
 	}
 }
 

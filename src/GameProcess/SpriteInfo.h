@@ -22,7 +22,7 @@
 //#define	 _HUMAN_RACE_TYPE12			11		// 전문복 도사 여자.
 
 
-// 캐릭터 동작 Define.
+// 캐릭터 Action
 #define  _MAX_HUMAN_MTN				33
 
 #define  _MT_HUMAN_STAND			 0
@@ -76,7 +76,7 @@
 #define	 _RACE_GOLEM				 4
 
 
-// 몬스터 동작 Define
+// 몬스터 Action Define
 #define  _MAX_MON_MTN				 9	
 
 #define  _MT_MON_STAND				 0
@@ -143,7 +143,7 @@ public:
 
 
 
-// 프레임의 구조......
+// Frame의 구조......
 /*
 LPRACE
 
@@ -159,12 +159,12 @@ typedef struct tagRACETYPEINFO
 
 typedef struct tagMTNINFO
 {
-	BYTE	bMtnFrmOffset;				// 현재 동작에 대한 최대 프레임.
+	BYTE	bMtnFrmOffset;				// 현재 Action에 대한 Maximum Frame.
 	WORD	wDir;						// 방향이 있는비트에 1이 세팅된다.
-	BYTE	bStartFrm;					// 시작 프레임.
-	BYTE	bFrmCnt;					// 프레임의 갯수.
-	SHORT	shDelay;					// 현재 동작의 Delay.
-	BOOL	bReverse;					// 동작을 거꾸로 돌릴것인지의 여부.
+	BYTE	bStartFrm;					// 시작 Frame.
+	BYTE	bFrmCnt;					// Frame의 Number.
+	SHORT	shDelay;					// 현재 Action의 Delay.
+	BOOL	bReverse;					// Action을 거꾸로 돌릴것인지의 여부.
 }MTNFRMINFO, *LPMTNFRMINFO;
 */
 

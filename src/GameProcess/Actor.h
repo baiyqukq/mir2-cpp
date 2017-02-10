@@ -56,14 +56,14 @@ public:
 	RECT				m_rcActor;						// 현재 스크린상의Actor의 사각 영역.
 	RECT				m_rcTargetRgn;					// 현재 Actor의 타겟영역.
 
-	DWORD				m_dwFstFrame;					// 현재 동작의 시작 프레임.
-	DWORD				m_dwEndFrame;					// 현재 동작의 마지막프레임.
-	WORD				m_wDelay;						// 현재 동작에 대한 지연시간.
+	DWORD				m_dwFstFrame;					// 현재 Action의 시작 Frame.
+	DWORD				m_dwEndFrame;					// 현재 Action의 마지막Frame.
+	WORD				m_wDelay;						// 현재 Action에 대한 지연시간.
 
-	BYTE				m_bCurrMtn;						// 현재 동작.
+	BYTE				m_bCurrMtn;						// 현재 Action.
 	BYTE				m_bCurrDir;						// 현재 방향.
 	BYTE				m_bMoveDir;						// 현재 방향.
-	DWORD				m_dwCurrFrame;					// 현재 프레임.
+	DWORD				m_dwCurrFrame;					// 현재 Frame.
 	WORD				m_wCurrDelay;					// 현재 지연시간.
 
 	WORD				m_wOldPosX;						// 현재 행동이 있기전의 타일X좌표.
@@ -80,20 +80,20 @@ public:
 	BYTE				m_bMoveSpeed;					// 이동속도.
 
 	CWHQueue			m_xPacketQueue;					// Actor가 처리해야될 메시지를 저장하고 있는 큐.
-	BOOL				m_bMsgHurryCheck;				// 메시지가 2개이상 쌓여있을때는 프레임을 1프레임씩을 건너뛴다.
+	BOOL				m_bMsgHurryCheck;				// 메시지가 2개이상 쌓여있을때는 Frame을 1Frame씩을 건너뛴다.
 
 	BYTE				m_bBackStepFrame;
 	BYTE				m_bBackStepFrameCnt;
 
-	DWORD				m_dwCurrEffectFrame;			// 캐릭터 Effect현재 프레임.
-	DWORD				m_dwFstEffectFrame;				// 캐릭터 Effect처음 프레임.
-	DWORD				m_dwEndEffectFrame;				// 캐릭터 Effect마지막 프레임.
+	DWORD				m_dwCurrEffectFrame;			// 캐릭터 Effect현재 Frame.
+	DWORD				m_dwFstEffectFrame;				// 캐릭터 Effect처음 Frame.
+	DWORD				m_dwEndEffectFrame;				// 캐릭터 Effect마지막 Frame.
 	BYTE				m_bEffectFrame;
 	BYTE				m_bEffectFrameCnt;
 	BYTE				m_bLightRadius[2];				// 광원 너비.
 	BYTE				m_bLightColor [2][3];			// 광원 색.
 
-	BOOL				m_bUseEffect;					// 이펙트프레임을 사용.
+	BOOL				m_bUseEffect;					// 이펙트Frame을 사용.
 	BOOL				m_bUseSwordEffect;				// 검법효과 사용.
 
 	BOOL				m_bWarMode;
@@ -154,7 +154,7 @@ public:
 	BOOL LoadEffect(CImageHandler* pxImgHandler, WORD wEffectNum, BYTE bDir = 0);
 	VOID DrawWithEffected(INT nx, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF, BOOL bFocused = FALSE, BYTE bOpa = 50, WORD wState = _STATE_NOTUSED);
 //---------------------------------------------------------------------------------------------------------------//
-// 프레임 설정관련.
+// Frame 설정관련.
 	BOOL	CheckFeatureValidate(FEATURE stFeature);
 	BOOL	ChangeFeature(FEATURE stFeature);
 	virtual BOOL SetMotionFrame(BYTE bMtn, BYTE bDir);
@@ -175,7 +175,7 @@ public:
 	virtual VOID PlayActSound();
 
 //---------------------------------------------------------------------------------------------------------------//
-// 동작 진행.
+// Action 진행.
 	virtual BOOL UpdatePacketState();
 	virtual VOID UpdateMotionState(INT nLoopTime, BOOL bIsMoveTime);
 	virtual BOOL UpdateMove(BOOL bIsMoveTime);
@@ -374,7 +374,7 @@ typedef struct tagACTORABILITY
 
 typedef struct tagACTORSUBABILITY
 {
-	WORD wAntiMagic;		// 마법회피.
+	WORD wAntiMagic;		// Spell회피.
 	BYTE bHitPoint;			// 정확.
 	BYTE bSpeedPoint;		// 민첩.
 	BYTE bAntiPoison;		// 중독회피.
@@ -391,8 +391,8 @@ public:
 //---------------------------------------------------------------------------------------------------------------//
 //  캐릭터 보정용 변수.
 	DWORD			m_dwMotionLockTime;
-	BOOL			m_bInputLock;				// 캐릭터가 동작되면 어떤입력도 받지 않는다.
-	BOOL			m_bMotionLock;				// 캐릭터의 동작이 세팅되면 서버에서 동작승인이 오기전까진 어떤동작도 받지 않는다.
+	BOOL			m_bInputLock;				// 캐릭터가 Action되면 어떤입력도 받지 않는다.
+	BOOL			m_bMotionLock;				// 캐릭터의 Action이 세팅되면 서버에서 Action승인이 오기전까진 어떤Action도 받지 않는다.
 //---------------------------------------------------------------------------------------------------------------//
 
 	CMapHandler*	m_pxMap;
@@ -408,15 +408,15 @@ public:
 //---------------------------------------------------------------------------------------------------------------//
 //  캐릭터 Delay관련 변수.
 	DWORD			m_dwLastHitTime;						// 칼질이 들어갔을때의 틱 보관값.
-	DWORD			m_dwLastSpellTime;						// 마법이 들어갔을때의 틱 보관값.
+	DWORD			m_dwLastSpellTime;						// Spell이 들어갔을때의 틱 보관값.
 	DWORD			m_dwLastMagicTime;						// 염화결 시전후의 틱보관값.
 	DWORD			m_dwLastStruckTime;						// 맞았을때의 틱 보관값.
 	DWORD			m_dwLastPKStruckTime;
 	DWORD			m_dwLastRushTime;						// 무태보 시전후의 틱보관값.
 	DWORD			m_dwLastFireHitTime;					// 염화결 시전후의 틱보관값.
 
-	WORD			m_wMagicPKDelayTime;					// 마법으로 사람을 공격했을때의 패널티Delay.(걷기와 뛰기에 적용된다.)
-	WORD			m_wMagicDelayTime;						// 마법을쓰고 난후 다음마법이 들어갈때까지의 Delay.
+	WORD			m_wMagicPKDelayTime;					// Spell으로 사람을 Attack했을때의 패널티Delay.(걷기와 뛰기에 적용된다.)
+	WORD			m_wMagicDelayTime;						// Spell을쓰고 난후 다음Spell이 들어갈때까지의 Delay.
 //---------------------------------------------------------------------------------------------------------------//
 
 protected:

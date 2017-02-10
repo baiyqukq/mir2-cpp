@@ -26,7 +26,7 @@ private:
 	BOOL		m_bIsReady;
 	RECT		m_rtWndRect;			// 윈도우의 Rect 단, 글자가 표시되는 부분
 	INT			m_nTxtHeight;			// Text별 Height
-	INT			m_nMaxLine;				// 윈도우에 표시되는 최대 Line 수
+	INT			m_nMaxLine;				// 윈도우에 표시되는 Maximum Line 수
 	INT			m_nLineGap;
 	POINT		m_xStartPos;
 	BOOL		m_IsUseSubTxt;

@@ -33,7 +33,7 @@
 #define	SM_OUTOFCONNECTION		528			//	연결 해제됨
 #define	SM_PASSOK_SELECTSERVER	529			//	Password가 맞으므로  서버 Selection으로 넘어감(서버 List및 최근 접속서버 자료)
 #define	SM_SELECTSERVER_OK		530			//	서버선택 (접속 버서 IP등의 정보가 들어감)
-#define	SM_NEEDUPDATE_ACCOUNT	531			//	계정의 정보를 다시 입력하기 바람 창..
+#define	SM_NEEDUPDATE_ACCOUNT	531			//	계Definition 정보를 다시 입력하기 바람 창..
 #define	SM_UPDATEID_SUCCESS		532			//	계정정보 갱신 성공
 #define	SM_UPDATEID_FAIL		533			//	계정정보 갱신 실패
 
