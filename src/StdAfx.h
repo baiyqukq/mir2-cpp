@@ -12,7 +12,7 @@
 
 //#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
 
-#define _WM_USER_MSG_INPUTTED		WM_USER + 1005  // 메시지가 커맨드일경우 wParam값은 TRUE로 세팅된다.
+#define _WM_USER_MSG_INPUTTED		WM_USER + 1005  // Message가 커맨드일경우 wParam값은 TRUE로 세팅된다.
 
 #define _LOGIN_PROC		0
 #define _SVR_SEL_PROC	1

@@ -18,7 +18,7 @@ public:
 	VOID	CreateGuildWnd(INT nID, CWHWilImageData* pxWndImage, INT nFrameImgIdx, INT nStartX, INT nStartY, INT nWidth, INT nHeight, BOOL bCanMove);
 	VOID	ShowGuildWnd();
 public:
-//  메시지 함수.
+//  Message Function.
 	BOOL	OnLButtonDown(POINT ptMouse);
 	BOOL	OnLButtonUp(POINT ptMouse);
 	VOID	OnMouseMove(POINT ptMouse);

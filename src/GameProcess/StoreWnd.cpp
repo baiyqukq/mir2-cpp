@@ -238,7 +238,7 @@ BOOL CStoreWnd::OnLButtonDown(POINT ptMouse)
 
 BOOL CStoreWnd::SetBuyKinds(CHAR* Msg,INT Count)   // Eatch Button Divider '\n
 {
-	CNPCTxtAnalysis	tTxtAnalysis;				// 단지 GetValidStr함수를 사용하기 위해서..
+	CNPCTxtAnalysis	tTxtAnalysis;				// 단지 GetValidStrFunction를 사용하기 위해서..
 	CHAR*	szParam;
 	CHAR*	pszStr = new CHAR [MAX_MSG_LENGTH];
 
@@ -317,7 +317,7 @@ BOOL CStoreWnd::SetBuyKinds(CHAR* Msg,INT Count)   // Eatch Button Divider '\n
 
 BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 {
-	CNPCTxtAnalysis	tTxtAnalysis;				// 단지 GetValidStr함수를 사용하기 위해서..
+	CNPCTxtAnalysis	tTxtAnalysis;				// 단지 GetValidStrFunction를 사용하기 위해서..
 	CHAR*	szLastMsg = NULL;
 	CHAR	szDetailitem[MAX_PATH];
 

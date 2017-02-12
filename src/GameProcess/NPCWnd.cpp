@@ -684,7 +684,7 @@ BOOL	CNPCWnd::ClickCommandProcess(CMTxtBtn* ClickedBtn)		// 아래 에 있는 것들 종
 
 BOOL CNPCWnd::SendCommandToSrv(CHAR* szMsg)
 {
-	// 기본 메시지 처리
+	// 기본 Message 처리
 	g_xClientSocket.SendNPCMessage(CM_MERCHANTDLGSELECT,(DWORD)m_nNpcId,0,szMsg);
 	return FALSE;
 }
@@ -705,7 +705,7 @@ VOID CNPCWnd::SetWndRectReduce(VOID)
 
 VOID CNPCWnd::SetNpcEditBoxPos(VOID)
 {
-	// Edit Box 관련
+	// Edit Box Related
 //	m_rcEditBoxFrame.left = 247;
 //	m_rcEditBoxFrame.top = 256;
 //	m_rcEditBoxFrame.right = 467;

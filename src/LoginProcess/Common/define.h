@@ -49,12 +49,12 @@
 #define IMAGE_INDEX_LOGINBOX		2
 
 #define PUNISHMENT_ID_USING				1		//	"현재 본 ID는 사용중입니다."
-#define PUNISHMENT_ID_THEFT				2		//	"아이디 도용과 관련하여 계정이 블럭된 상태입니다."
-#define PUNISHMENT_DISTURB_GAME			3		//	"게임의 진행을 방해하여 계정이 블럭된 상태입니다."
-#define PUNISHMENT_BBS_CURSES			4		//	"게시판등에 욕설과 관련하여 계정이 블럭된 상태입니다."
+#define PUNISHMENT_ID_THEFT				2		//	"아이디 도용과 Related하여 계정이 블럭된 상태입니다."
+#define PUNISHMENT_DISTURB_GAME			3		//	"Game의 진행을 방해하여 계정이 블럭된 상태입니다."
+#define PUNISHMENT_BBS_CURSES			4		//	"게시판등에 욕설과 Related하여 계정이 블럭된 상태입니다."
 #define PUNISHMENT_CONFIRMED_CURSES		5		//	"상습적인 욕설로 인하여 계정이 블럭된 상태입니다."
-#define PUNISHMENT_USAGE_BUG			6		//	"버그를 이용한 게임으로 인하여 계정이 블럭된 상태 입니다."
-#define PUNISHMENT_ASSUMED_GAMEMASTER	7		//	"운영자 사칭등에 관련하여 계정이 블럭된 상태입니다."
+#define PUNISHMENT_USAGE_BUG			6		//	"버그를 이용한 Game으로 인하여 계정이 블럭된 상태 입니다."
+#define PUNISHMENT_ASSUMED_GAMEMASTER	7		//	"운영자 사칭등에 Related하여 계정이 블럭된 상태입니다."
 #define PUNISHMENT_SPREAD_FALLACY		8		//	"허위사실 유포등에 의하여 계정이 블럭된 상태입니다."
 
 //  New

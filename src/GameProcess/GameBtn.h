@@ -7,7 +7,7 @@ public:
 	RECT			m_rcBtn;
 
 	CWHWilImageData* m_pxBtnImage;
-	INT				m_nFocusImgIdx;			// 이미지 관련 변수들. 
+	INT				m_nFocusImgIdx;			// 이미지 Related 변수들.
 	INT				m_nClickImgIdx;			
 
 	BYTE			m_bBtnType;				// 0 : 포커스 상태를 가지지 않는다. 1: 포커스 있음.

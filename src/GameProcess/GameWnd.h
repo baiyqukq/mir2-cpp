@@ -9,7 +9,7 @@ public:
 	RECT			m_rcImgWnd;				// 윈도우의 이미지의영역. 
 	RECT			m_rcWnd;				// 윈도우의 화면영역. 
 
-	INT				 m_nFrameImgIdx;		// 이미지 관련 변수들. 
+	INT				 m_nFrameImgIdx;		// 이미지 Related 변수들.
 	CWHWilImageData* m_pxWndImage;
 
 	BOOL			m_bActive;				// 윈도우 활성화 여부. 

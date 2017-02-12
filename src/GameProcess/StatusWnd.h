@@ -53,7 +53,7 @@ protected:
 public:
 	CHAR				m_szEquipItemIdx[_EQUIP_MAX_CELL][12];
 	ITEMSET				m_stEquipItem[_EQUIP_MAX_CELL];
-	ITEMSET				m_stTakeOnItemSet;				// 장착시킬아이템을 착용여부 메시지를 받을때까지 임시적으로 저장한다.
+	ITEMSET				m_stTakeOnItemSet;				// 장착시킬아이템을 착용여부 Message를 받을때까지 임시적으로 저장한다.
 
 	BYTE				m_bMyMagicCnt;
 	LPCLIENTMAGICRCD	m_pstMyMagic;

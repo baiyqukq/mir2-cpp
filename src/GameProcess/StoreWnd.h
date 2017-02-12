@@ -85,7 +85,7 @@ public:
 	BOOL	SetSellKinds(CInventoryWnd*,CHAR Kind,INT nStdMode);
 	BOOL	SetSellItemLst(CInventoryWnd*,CHAR Kind,BYTE nStdMode,CHAR bKind);
 public:
-//  메시지 함수.
+//  Message Function.
 	BOOL	OnLButtonDown(POINT ptMouse);
 	BOOL	OnLButtonUp(POINT ptMouse);
 	VOID	OnMouseMove(POINT ptMouse);
@@ -93,7 +93,7 @@ public:
 	VOID	OnScrollDown();
 	VOID	OnScrollUp();
 
-	CWHQueue			m_xPacketQueue;					// NPC Chat에서 처리해야될 메시지를 저장하고 있는 큐.
+	CWHQueue			m_xPacketQueue;					// NPC Chat에서 처리해야될 Message를 저장하고 있는 큐.
 	BOOL	OnUpdateQueue(VOID);
 
 private:

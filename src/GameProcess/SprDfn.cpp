@@ -344,7 +344,7 @@ VOID CSprite::SetInfo()
 
 	//~~~ Monster 스프라이트 설정. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	SetSprDfn(&m_stMonSpr[0],     0,  4, 300);			// Idle Behavior.
-	SetSprDfn(&m_stMonSpr[1],    80,  6, 130);			// 걷기Action.
+	SetSprDfn(&m_stMonSpr[1],    80,  6, 130);			// Walk Action.
 	SetSprDfn(&m_stMonSpr[2],   160,  6, 120);			// Normal Attack Action.
 	SetSprDfn(&m_stMonSpr[3],   240,  2, 300);			// 맞기Action.
 	SetSprDfn(&m_stMonSpr[4],   320, 10, 150);			// DieAction.
@@ -476,7 +476,7 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 {
 /*	//~~~ Monster 스프라이트 설정. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	SetSprDfn(&m_stMonSpr[0],    0,  4, 300);			// Idle Behavior.
-	SetSprDfn(&m_stMonSpr[1],   80,  6, 130);			// 걷기Action.
+	SetSprDfn(&m_stMonSpr[1],   80,  6, 130);			// WalkAction.
 	SetSprDfn(&m_stMonSpr[2],  160,  6, 120);			// NormalAttackAction1.
 	SetSprDfn(&m_stMonSpr[3],  240,  2, 300);			// 맞기Action.
 	SetSprDfn(&m_stMonSpr[4],  320, 10, 150);			// DieAction.
@@ -496,10 +496,10 @@ VOID CSprite::SetMonFrameInfo(WORD wMonNum)
 		break;
 	}
 
-	// 1. Monster Mtn -> 걷기Action.
+	// 1. Monster Mtn -> Walk Action.
 	SetSprDfn(&m_stMonSpr[1],    80,  6, 90);
 
-	// 2. Monster Mtn -> NormalAttackAction1.
+	// 2. Monster Mtn -> Normal Attack Action1.
 	switch ( wMonNum )
 	{
 	case  0: case  1: case  2: case 12: case 99:	

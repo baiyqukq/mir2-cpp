@@ -62,7 +62,7 @@ CInterface::~CInterface()
 	Author : 
 	Date :
 
-	Purpose   : 인터페이스관련 변수및, 객체초기화.
+	Purpose   : 인터페이스Related 변수및, 객체초기화.
 	Return   : VOID
 
 	[Date][Modifier] : 수정내용
@@ -117,7 +117,7 @@ VOID CInterface::Init()
 	Author : 
 	Date :
 
-	Purpose   : 인터페이스관련 변수, 객체의 소멸및, 초기화.
+	Purpose   : 인터페이스Related 변수, 객체의 소멸및, 초기화.
 	Return   : VOID
 
 	[Date][Modifier] : 수정내용
@@ -210,7 +210,7 @@ VOID CInterface::CreateInterface(CImageHandler* pxImgHandler)
 	m_xInterBtn[ 1].CreateGameBtn(m_pxInterImg, 82, 83, m_rcMain.left+228, m_rcMain.top+0);		// 미니맵.
 	m_xInterBtn[ 2].CreateGameBtn(m_pxInterImg, 84, 85, m_rcMain.left+252, m_rcMain.top+0);		// 무공창.
 
-	m_xInterBtn[ 3].CreateGameBtn(m_pxInterImg, 90, 91, m_rcMain.left+161, m_rcMain.top+65);	// 게임종료.
+	m_xInterBtn[ 3].CreateGameBtn(m_pxInterImg, 90, 91, m_rcMain.left+161, m_rcMain.top+65);	// Game종료.
 	m_xInterBtn[ 4].CreateGameBtn(m_pxInterImg, 92, 93, m_rcMain.left+161, m_rcMain.top+101);	// 로그아웃.
 	m_xInterBtn[ 5].CreateGameBtn(m_pxInterImg, 94, 95, m_rcMain.left+616, m_rcMain.top+66);	// 그룹.
 	m_xInterBtn[ 6].CreateGameBtn(m_pxInterImg, 96, 97, m_rcMain.left+616, m_rcMain.top+102);	// 문파.
@@ -478,7 +478,7 @@ VOID CInterface::RenderInterface(INT nLoopTime, POINT ptMousePos)
 	// 스크롤바.
 	m_xScrlBar.ShowScrlBar(584, 404, m_nFstLine, m_xChat.GetCounter());
 
-	// 클라이언트메시지(왼쪽상단).
+	// 클라이언트Message(왼쪽상단).
 	m_xClientSysMsg.ShowSysMsg(nLoopTime, 30, 30);
 
 	// 용기
@@ -948,7 +948,7 @@ VOID CInterface::DeleteWindowToList(INT nID)
 	Date :
 
 	Purpose   : nID인 윈도우를 윈도우리스트에 추가시키거나 삭제시키며, 추가의 경우, 윈도우의 상태를 최상위 상태로 세팅한다.
-			 윈도우가 키입력을 받아서 화면에 나올때 호출하는 함수이다.
+			 윈도우가 키입력을 받아서 화면에 나올때 호출하는 Function이다.
 	Params   : INT nID
 	Return   : VOID
 
@@ -1433,7 +1433,7 @@ BOOL CInterface::IsTopWindow(INT nID)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 메시지 입력관련부분/////////////////////////////////////////////////////////////////////////////////////////
+// Message 입력Related부분/////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************************************************
 

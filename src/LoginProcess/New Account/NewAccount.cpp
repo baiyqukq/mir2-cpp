@@ -122,7 +122,7 @@ HRESULT	CNewAccount::OnButtonUp(WPARAM wParam, LPARAM lParam)
 		{	switch(m_xButtons[i].m_nButtonID)
 			{	case IMG_IDX_BTN_NEW:
 				{
-					//m_nProgress = PRG_NEW_ACCOUNT;	- > New Account로 넘기는 함수
+					//m_nProgress = PRG_NEW_ACCOUNT;	- > New Account로 넘기는 Function
 					SetFocusBefore();
 					SetWindowText(g_xChatEditBox.GetSafehWnd(),NULL);
 					m_nUserState = LGM_INPUT_USER_ID;
@@ -131,7 +131,7 @@ HRESULT	CNewAccount::OnButtonUp(WPARAM wParam, LPARAM lParam)
 				}
 			case IMG_IDX_BTN_CHGPASS:
 				{	// 임시로 종료버튼으로 이용
-					//	Avi 관련 함수 종료 하는 코드
+					//	Avi Related Function 종료 하는 코드
 					//	break; 
 				}
 //						case BTN_EXIT:

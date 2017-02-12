@@ -263,7 +263,7 @@ VOID CStatusWnd::SetStatusBtnInit()
 
 /******************************************************************************************************************
 
-	캐릭터 장착창관련.
+	캐릭터 장착창Related.
 
 *******************************************************************************************************************/
 /******************************************************************************************************************
@@ -775,7 +775,7 @@ VOID CStatusWnd::SetEquipFromTakeOn()
 
 /******************************************************************************************************************
 
-	캐릭터 상태정보창관련.
+	캐릭터 상태정보창Related.
 
 *******************************************************************************************************************/
 /******************************************************************************************************************
@@ -927,7 +927,7 @@ VOID CStatusWnd::ShowCharStatus()
 
 /******************************************************************************************************************
 
-	캐릭터 Spell창관련.
+	캐릭터 Spell창Related.
 
 *******************************************************************************************************************/
 VOID CStatusWnd::ShowCharSetMagicWnd()
@@ -1252,12 +1252,12 @@ BOOL CStatusWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 				// 공통(마우스)아이템셋이 비어있으면,
 				if ( !pstCommonItemSet->bSetted )
 				{				  
-					// 마우스에 아이템을 붙여놓으면 인벤토리 윈도에서 클릭하는순간 CM_TAKEOFFITEM메시지를 보낸다.
+					// 마우스에 아이템을 붙여놓으면 인벤토리 윈도에서 클릭하는순간 CM_TAKEOFFITEMMessage를 보낸다.
 					SetCommonFromEquip(nEquipNum, pstCommonItemSet);
 				}
 				// 공통(마우스)아이템셋은 있고, 서버로부터 응답신호를 기다리는 중이 아니면,
 				// 공통아이템을 m_stTakeOnItemSet에 아이템을 세팅해두고, 현재 클릭된 장착창 아이템을 공통아이템으로 세팅하고나서,
-				// CM_TAKEONITEM메시지를 보낸다.
+				// CM_TAKEONITEMMessage를 보낸다.
 				else if ( pstCommonItemSet->bSetted && !pstCommonItemSet->bWaitResponse )
 				{
 					// 보내기전 영역이 서로 맞는가(반지자리에 반지가 잘들어갔는지)를 체크한다.
@@ -1278,7 +1278,7 @@ BOOL CStatusWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 				{	
 					if ( CheckEquipItem(&pstCommonItemSet->xItem, nEquipNum, ptMouse) )
 					{
-						// 서버로 메시지를 보낼필요는 없다. 아이템을 벗었다가 다시착용한경우.
+						// 서버로 Message를 보낼필요는 없다. 아이템을 벗었다가 다시착용한경우.
 						if ( pstCommonItemSet->bIsEquipItem )
 						{
 							SetEquipFromCommon(pstCommonItemSet->xItem.m_shCellNum, pstCommonItemSet);

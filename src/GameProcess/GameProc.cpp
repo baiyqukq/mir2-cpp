@@ -10,7 +10,7 @@ void DevideScript(char *pszScript);
 
 /******************************************************************************************************************
 
-	게임 플레이 관련 함수들.
+	Game Game Related Function.
 
 *******************************************************************************************************************/
 /******************************************************************************************************************
@@ -1712,7 +1712,7 @@ VOID CGameProcess::RenderObject(INT nLoopTime)
 
 /******************************************************************************************************************
 
-	메시지 관련 함수.
+	Message Related Function.
 
 *******************************************************************************************************************/
 LRESULT CGameProcess::OnDestroy(WPARAM wParam, LPARAM lParam)
@@ -1889,7 +1889,7 @@ LRESULT CGameProcess::OnLButtonDown(WPARAM wParam, LPARAM lParam)
 {	
 	POINT ptTaretTilePos;
 
-	// 게임데이타가 로드되었는지...
+	// Game데이타가 로드되었는지...
 	if(m_xNotice.IsActive())
 	{
 		m_xNotice.OnButtonDown(m_ptMousePos);
@@ -2214,7 +2214,7 @@ LRESULT CGameProcess::OnKeyDown(WPARAM wParam, LPARAM lParam)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 유저 디파인 메시지관련 함수.
+// 유저 디파인 MessageRelated Function.
 LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 {
 	if ( m_xInterface.OnMsgInputted(wParam, lParam) )
@@ -2225,7 +2225,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 	if ( g_xChatEditBox.m_szInputMsg[0] == NULL )
 		return 0L;
 
-	// 커맨드 메시지.
+	// 커맨드 Message.
 	if ( wParam )
 	{
 		CommandAnalyze();
@@ -2375,7 +2375,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 		m_xMyHero.ChangeFeature(stFeature, m_xMyHero.m_stFeatureEx);
 	}	
 
-// Normal메시지.
+// NormalMessage.
 	g_xClientSocket.SendSay(g_xChatEditBox.m_szInputMsg);
 
 	if ( g_xChatEditBox.m_szInputMsg[0] == '/' )
@@ -2401,7 +2401,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	기타 함수및 디버그용 함수.
+	기타 Function및 디버그용 Function.
 
 *******************************************************************************************************************/
 VOID CGameProcess::ShowStatus(INT nStartX, INT nStartY)

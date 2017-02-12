@@ -41,9 +41,13 @@ public:
 	VOID	OnLButtonUp(POINT xPoint);
 public:
 	__inline BOOL	IsInRect(int nPosX, int nPosY)
-	{	if (nPosX >= m_Rect.left && nPosX <= m_Rect.right && 
-			nPosY >= m_Rect.top && nPosY <= m_Rect.bottom) return TRUE;
-		else return FALSE;	}
+	{
+		if (nPosX >= m_Rect.left && nPosX <= m_Rect.right &&
+			nPosY >= m_Rect.top && nPosY <= m_Rect.bottom)
+			return TRUE;
+		else
+			return FALSE;
+	}
 
 	INT		m_nButtonID;
 	HWND	m_hParentWnd;

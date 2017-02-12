@@ -22,8 +22,8 @@ typedef struct tagLIGHTINFO
 	CHAR	cLightColorType;
 }LIGHTINFO, *LPLIGHTINFO;
 
-// 맵파일 로딩관련 정보저장.
-// 현재 있는 지역의 전체 맵에 관련된 사항을 보관한다.
+// 맵파일 로딩Related 정보저장.
+// 현재 있는 지역의 전체 맵에 Related된 사항을 보관한다.
 typedef struct tagMAPFILEHEADER
 {
 	CHAR	szDesc[20];
@@ -80,10 +80,10 @@ public:
 
 	MAPFILEHEADER	m_stMapFileHeader;				// 로딩된 맵파일의 헤더.
 
-	// 캐릭터의 이동과 관련된다.
+	// 캐릭터의 이동과 Related된다.
 	SHORT			m_shStartViewTileX;				// 뷰영역의 시작 X Tile 좌표.(실제 스크린 시작 타일 좌표보다 조금 더 큰 사이즈이다.)
 	SHORT			m_shStartViewTileY;				// 뷰영역은 실제 스크린 영역보다 가로, 세로 1타일씩을 여분으로 둔다.
-	SHORT			m_shViewOffsetX;				// 스크롤한 X축한 길이.(캐릭터의 걷기Action의 Frame.)
+	SHORT			m_shViewOffsetX;				// 스크롤한 X축한 길이.(캐릭터의 WalkAction의 Frame.)
 	SHORT			m_shViewOffsetY;				
 
 	RECT			m_rcView;						// 맵기본타일이 그려질 영역.(화면클리핑을 위해서)
@@ -111,7 +111,7 @@ public:
 	VOID			DestroyMapHandler();			// 클래스 정보 초기화및 메모리 해제.
 
 	BOOL			LoadMapData(CHAR* szMapFile);	// 적용되는 맵의 데이타를 로딩.(맵이 바뀔때마다 불려진다.)
-	VOID			LoadMapImage(CImageHandler* pxImgHandler);					// 맵에 관련된 이미지 데이타 로딩(메모리맵사용).
+	VOID			LoadMapImage(CImageHandler* pxImgHandler);					// 맵에 Related된 이미지 데이타 로딩(메모리맵사용).
 	VOID			LoadNewMapBuffer();				// 맵이 처음 로딩되었을때 타일, SM타일 기록버퍼에 최초의 내용을 적용한다.
 
 	VOID			FreeMapData();					// 적용되는 맵의 데이타를 해제.(맵이 바뀔때마다 불려진다.)
@@ -120,7 +120,7 @@ public:
 //	VOID			DrawOpenDoor(INT nX, INT nY);
 //	VOID			SetDoorIndex();
 
-	VOID			ScrollMap(INT nCharDir, INT nCharFrame, INT nSpeed);		// 캐릭터 이동시 맵의 Scroll관련 변수들 적용.
+	VOID			ScrollMap(INT nCharDir, INT nCharFrame, INT nSpeed);		// 캐릭터 이동시 맵의 ScrollRelated 변수들 적용.
 	VOID			ScrollMap(INT nCharDir, WORD wCurrDelay, WORD wMoveDelay, INT nSpeed);
 	VOID			SetMovedTileBuffer(SHORT shMovedTileX, SHORT shMovedTileY);	// 캐릭터 이동시 새로 갱신되는 기본 이미지(타일, SM타일)를 적용.
 	VOID			SetStartViewTile(INT nX, INT nY);							// 그리는 뷰영역의 초기치세팅.
@@ -135,7 +135,7 @@ public:
 	BYTE			CalcDirection8(WORD wFireTileX, WORD wFireTileY, WORD wDestTileX, WORD wDestTileY);
 
 
-//  현재 타일에 대한 맵속성 얻기 함수들.
+//  현재 타일에 대한 맵속성 얻기 Function.
 	BYTE			GetTileAttribute(INT nX, INT nY);
 	BYTE			GetEventNum(INT nX, INT nY);
 //	BOOL			GetDoorState(INT nX, INT nY);

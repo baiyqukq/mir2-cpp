@@ -79,8 +79,8 @@ public:
 	SHORT				m_shScrnPosY;					// 중심점을 고려하지 않은 화면상의 Y좌표.
 	BYTE				m_bMoveSpeed;					// 이동속도.
 
-	CWHQueue			m_xPacketQueue;					// Actor가 처리해야될 메시지를 저장하고 있는 큐.
-	BOOL				m_bMsgHurryCheck;				// 메시지가 2개이상 쌓여있을때는 Frame을 1Frame씩을 건너뛴다.
+	CWHQueue			m_xPacketQueue;					// Actor가 처리해야될 Message를 저장하고 있는 큐.
+	BOOL				m_bMsgHurryCheck;				// Message가 2개이상 쌓여있을때는 Frame을 1Frame씩을 건너뛴다.
 
 	BYTE				m_bBackStepFrame;
 	BYTE				m_bBackStepFrameCnt;
@@ -133,8 +133,8 @@ public:
 
 	INT					m_nDividedChatLine;
 	DWORD				m_wCurrChatDelay;
-	CHAR				m_szChatMsg[MAX_PATH];			// 채팅메시지.
-	CHAR				m_szChatMsgArg[5][MAX_PATH];	// 채팅메시지를 5개의 스트링으로 구분한것.
+	CHAR				m_szChatMsg[MAX_PATH];			// 채팅Message.
+	CHAR				m_szChatMsgArg[5][MAX_PATH];	// 채팅Message를 5개의 스트링으로 구분한것.
 
 public:
 //---------------------------------------------------------------------------------------------------------------//
@@ -154,7 +154,7 @@ public:
 	BOOL LoadEffect(CImageHandler* pxImgHandler, WORD wEffectNum, BYTE bDir = 0);
 	VOID DrawWithEffected(INT nx, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF, BOOL bFocused = FALSE, BYTE bOpa = 50, WORD wState = _STATE_NOTUSED);
 //---------------------------------------------------------------------------------------------------------------//
-// Frame 설정관련.
+// Frame 설정Related.
 	BOOL	CheckFeatureValidate(FEATURE stFeature);
 	BOOL	ChangeFeature(FEATURE stFeature);
 	virtual BOOL SetMotionFrame(BYTE bMtn, BYTE bDir);
@@ -403,10 +403,10 @@ public:
 	BYTE		    m_bJob;
 	UINT			m_nGlod;
 
-	CWHQueue		m_xPriorPacketQueue;					// Actor가 처리해야될 메시지를 저장하고 있는 큐.
+	CWHQueue		m_xPriorPacketQueue;					// Actor가 처리해야될 Message를 저장하고 있는 큐.
 
 //---------------------------------------------------------------------------------------------------------------//
-//  캐릭터 Delay관련 변수.
+//  캐릭터 DelayRelated 변수.
 	DWORD			m_dwLastHitTime;						// 칼질이 들어갔을때의 틱 보관값.
 	DWORD			m_dwLastSpellTime;						// Spell이 들어갔을때의 틱 보관값.
 	DWORD			m_dwLastMagicTime;						// 염화결 시전후의 틱보관값.
@@ -415,7 +415,7 @@ public:
 	DWORD			m_dwLastRushTime;						// 무태보 시전후의 틱보관값.
 	DWORD			m_dwLastFireHitTime;					// 염화결 시전후의 틱보관값.
 
-	WORD			m_wMagicPKDelayTime;					// Spell으로 사람을 Attack했을때의 패널티Delay.(걷기와 뛰기에 적용된다.)
+	WORD			m_wMagicPKDelayTime;					// Spell으로 사람을 Attack했을때의 패널티Delay.(Walk와 뛰기에 적용된다.)
 	WORD			m_wMagicDelayTime;						// Spell을쓰고 난후 다음Spell이 들어갈때까지의 Delay.
 //---------------------------------------------------------------------------------------------------------------//
 
@@ -459,13 +459,13 @@ public:
 	}
 
 //---------------------------------------------------------------------------------------------------------------//
-//  캐릭터 Delay관련 함수.
+//  캐릭터 DelayRelated Function.
 	BOOL CanNextHit();									// 지금 칼질할수 있나의 여부. 레벨과 착용무게에 따라 달라진다.
-	BOOL CanWalk();										// Delay와 관련지어서 캐릭터가 움직일수 있는지의 여부.
-	BOOL CanRun();										// Delay와 관련지어서 캐릭터가 움직일수 있는지의 여부.
+	BOOL CanWalk();										// Delay와 Related지어서 캐릭터가 움직일수 있는지의 여부.
+	BOOL CanRun();										// Delay와 Related지어서 캐릭터가 움직일수 있는지의 여부.
 //---------------------------------------------------------------------------------------------------------------//
 //---------------------------------------------------------------------------------------------------------------//
-//  유저 입력함수.
+//  유저 입력Function.
 	BOOL OnLButtonDown(POINT ptMouse, INT nTargetID = -1, BOOL bIsDead = FALSE, POINT* lpptTargetPos = NULL);
 	BOOL OnRButtonDown(POINT ptMouse);
 	BOOL OnKeyDown(WPARAM wParam, LPARAM lParam, POINT ptMouse, POINT ptTargetPos, INT nMosueTargetID, FEATURE stTargetFeature);

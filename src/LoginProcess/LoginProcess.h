@@ -10,6 +10,10 @@
 #endif // _MSC_VER > 1000
 
 
+class CLogin;
+class CLoginAvi;
+class CSelectSrv;
+
 class CLoginProcess : public CWHDefProcess  
 {
 public:
@@ -86,9 +90,13 @@ private:
 	void				OnSocketMessageRecieve(char *szMsg);
 
 	__inline BOOL		IsInRect(int nPosX, int nPosY, RECT rc)
-	{	if (nPosX >= rc.left && nPosX <= rc.right && 
-			nPosY >= rc.top && nPosY <= rc.bottom) return TRUE;
-		else return FALSE;	}
+	{
+		if (nPosX >= rc.left && nPosX <= rc.right &&
+			nPosY >= rc.top && nPosY <= rc.bottom)
+			return TRUE;
+		else
+			return FALSE;
+	}
 
 	BOOL				StringDivideLen(INT nDivideLen, INT& nDividedLine, CHAR* szSrc,CDLList<CHAR*>* m_pxpStr);
 };

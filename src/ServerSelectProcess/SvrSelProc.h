@@ -16,18 +16,18 @@
 
 class CSvrSelProcess : public CWHDefProcess
 {
-public:
-	 CSvrSelProcess();
-	~CSvrSelProcess();
-private:
-	virtual LRESULT DefMainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-	LRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
-public:
-	VOID	Load();
-	VOID	DeleteProc();
-	VOID	SetNextProc();
-	VOID	RenderScene(INT nLoopTime);
-	virtual VOID ShowStatus(INT nStartX, INT nStartY);
+	public:
+		CSvrSelProcess();
+		~CSvrSelProcess();
+	private:
+		virtual LRESULT DefMainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+		LRESULT OnKeyDown(WPARAM wParam, LPARAM lParam);
+	public:
+		VOID	Load();
+		VOID	DeleteProc();
+		VOID	SetNextProc();
+		VOID	RenderScene(INT nLoopTime);
+		virtual VOID ShowStatus(INT nStartX, INT nStartY);
 };
 
 

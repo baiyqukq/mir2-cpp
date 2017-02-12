@@ -144,21 +144,21 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	WORD					ConvertColor24To16(COLORREF dwColor);
-	// 렌더링 함수모음.
-	// 1. GDI용 그리기 함수.(선, 사각형등을 백서피스에 그린다.)
+	// 렌더링 Function모음.
+	// 1. GDI용 그리기 Function.(선, 사각형등을 백서피스에 그린다.)
 	HRESULT					DrawWithGDI(RECT rc, LPDIRECTDRAWSURFACE7 pSurface, DWORD dwColor, BYTE bKind);
-	// 2. WORD형 데이타 그리기 함수.(픽셀단위로 컬러키를 검사하면서 백서피스에 그린다.)
+	// 2. WORD형 데이타 그리기 Function.(픽셀단위로 컬러키를 검사하면서 백서피스에 그린다.)
 	BOOL					DrawWithImage(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc);
-	// 3. WORD형 데이타 그리기 함수.(라인단위로 컬러키를 고려하지 않고 백서피스의 클리핑 내부영역에만 그린다.)
+	// 3. WORD형 데이타 그리기 Function.(라인단위로 컬러키를 고려하지 않고 백서피스의 클리핑 내부영역에만 그린다.)
 	BOOL					DrawWithImagePerLineClipRgn(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wClipWidth, WORD wClipHeight);
-	// 4. Surface형 데이타 그리기 함수.(소스의 컬러키를 고려하면서 백서피스에 그린다.)
+	// 4. Surface형 데이타 그리기 Function.(소스의 컬러키를 고려하면서 백서피스에 그린다.)
 	BOOL					DrawWithSurface(INT nX, INT nY, INT nXSize, INT nYSize, LPDIRECTDRAWSURFACE7 pddsSrc);
 
 	// wChooseColor1은 염색옷(0xC2)에 대해서, wChooseColor2(0xC3)는 머리등(칼, 기타 변하는색)의 염색으로 쓴다.
-	// 5. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(백서피스에 그린다.)
+	// 5. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(백서피스에 그린다.)
 	BOOL					DrawWithImageForComp(INT nX, INT nY, RECT rcSrc, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
 	BOOL					DrawWithImageForComp(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
-	// 6. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(백서피스의 클리핑 내부영역에만 그린다.)
+	// 6. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(백서피스의 클리핑 내부영역에만 그린다.)
 	BOOL					DrawWithImageForCompClipRgnBase(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wClipWidth, WORD wClipHeight, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
 	__inline VOID			DrawWithImageForCompClipRgn(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wClipWidth, WORD wClipHeight, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF, BOOL bLighted = FALSE)
 	{
@@ -167,12 +167,12 @@ public:
 	}
 
 
-	// 7. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(소스메모리의 영역에서 데스트영역메모리로 그린다.)
+	// 7. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(소스메모리의 영역에서 데스트영역메모리로 그린다.)
 	BOOL					DrawWithImageForCompMemToMem(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, INT nDstXSize, INT nDstYSize, WORD* pwDst, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
-	// 8. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(압축된 데이타의 소스메모리의 영역에서 일부렉트영역만을 데스트영역메모리로 그린다.)
+	// 8. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(압축된 데이타의 소스메모리의 영역에서 일부렉트영역만을 데스트영역메모리로 그린다.)
 	BOOL					DrawWithImageForCompToMem(RECT rcWanted, WORD* pwSrc, WORD wChooseColor1, WORD wChooseColor2, WORD* pwDst);
 	BOOL					DrawWithImageForCompColorToMem(RECT rcWanted, WORD* pwSrc, WORD wColor, WORD* pwDst);
-	// 9. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(압축된 데이타의 소스영역과 데스트영역의 교차렉트를 알파블렌딩해서 백서피스에그린다.)
+	// 9. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(압축된 데이타의 소스영역과 데스트영역의 교차렉트를 알파블렌딩해서 백서피스에그린다.)
 	BOOL					DrawWithABlendForIntersectCompData(INT nSrcX, INT nSrcY, 
 															   INT nSrcXSize, INT nSrcYSize, WORD* pwSrc,
 															   INT nDstX, INT nDstY,
@@ -182,18 +182,18 @@ public:
 															   WORD wSrcChooseColor1 = 0XFFFF, WORD wSrcChooseColor2 = 0XFFFF,
 															   WORD wDstChooseColor1 = 0XFFFF, WORD wDstChooseColor2 = 0XFFFF,
 															   WORD wSrcColor = 0XFFFF, WORD wDstColor = 0XFFFF);
-	// 10. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(압축된 데이타의 소스영역을 백서피스와 알파블렌딩한다.)
+	// 10. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(압축된 데이타의 소스영역을 백서피스와 알파블렌딩한다.)
 	BOOL					DrawWithABlendCompDataWithBackBuffer(INT nX, INT nY, 
 																 INT nXSize, INT nYSize, WORD* pwSrc,
 																 WORD wClipWidth, WORD wClipHeight,
 																 WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF, BYTE bOpa = 50);
-	// 11. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(압축된 데이타의 소스영역을 원하는 컬러로 라이팅 상태로(밝게) 백서피스에 그린다.)
+	// 11. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(압축된 데이타의 소스영역을 원하는 컬러로 라이팅 상태로(밝게) 백서피스에 그린다.)
 	BOOL					DrawWithABlendCompDataWithLightedColor(INT nX, INT nY, 
 																   INT nXSize, INT nYSize, WORD* pwSrc,
 																   WORD wClipWidth, WORD wClipHeight,
 																   WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
-	// 그림자 그리기 함수.
-	// 12. 압축(0번)및 염색된 WORD형 데이타 그리기 함수.(압축된 데이타의 소스영역의 그림자를 백서피스에 알파블렌딩한다. 그림자는 높이가 절반으로 줄어들고 넓이는 YSize만큼 늘어나서 기울여 백서피스에 찍힌다.)
+	// 그림자 그리기 Function.
+	// 12. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(압축된 데이타의 소스영역의 그림자를 백서피스에 알파블렌딩한다. 그림자는 높이가 절반으로 줄어들고 넓이는 YSize만큼 늘어나서 기울여 백서피스에 찍힌다.)
 	BOOL					DrawWithShadowABlend(INT nX, INT nY, 
 												 INT nXSize, INT nYSize, WORD* pwSrc,
 												 WORD wClipWidth, WORD wClipHeight, WORD* pwShadowClrSrc,

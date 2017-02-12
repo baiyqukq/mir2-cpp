@@ -2,7 +2,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include "StdAfx.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -825,7 +825,7 @@ VOID CLoginProcess::RenderPatch(int nLoopTime)
 	{
 		HINSTANCE hLib;
 		hLib = LoadLibrary(MESSAGE_DLL_1);
-		SetErrorMessage(300,m_szErrorMsg);		// 헤당 Error 메시지 찾기
+		SetErrorMessage(300,m_szErrorMsg);		// 헤당 Error Message 찾기
 		FreeLibrary(hLib);
 		MessageBox(g_xMainWnd.GetSafehWnd(),m_szErrorMsg,"Error",MB_OK);
 	}

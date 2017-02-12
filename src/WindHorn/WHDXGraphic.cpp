@@ -710,7 +710,7 @@ HRESULT CWHDXGraphicWindow::CreatePrimarySurface()
 
 	    GetWindowRect(m_hWnd, &rcTemp);
 		
-		// 클라이언트영역의 크기를 잡는부분은 윈도우의 생성과 관련이 있다.
+		// 클라이언트영역의 크기를 잡는부분은 윈도우의 생성과 Related이 있다.
 		// 화면해상도 즉, 클라이언트 사각형 영역의 크기를 얻어온다.
 		SetRect(&rcTemp, 0, 0, m_stDisplayInfo.wWidth, m_stDisplayInfo.wHeight);
 
@@ -1402,7 +1402,7 @@ DXG_MASKINFO CWHDXGraphicWindow::GetRGBMaskInfoIN16Bits(LPDIRECTDRAWSURFACE7 pSu
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 그리는 함수들 모음.
+// 그리는 Function 모음.
 
 WORD CWHDXGraphicWindow::ConvertColor24To16(COLORREF dwColor)
 {

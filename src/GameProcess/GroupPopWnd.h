@@ -18,7 +18,7 @@ public:
 	virtual VOID Destroy();
 
 public:
-//  메시지 함수.
+//  Message Function.
 	BOOL	OnLButtonDown(POINT ptMouse);
 	BOOL	OnLButtonUp(POINT ptMouse);
 	VOID	OnMouseMove(POINT ptMouse);

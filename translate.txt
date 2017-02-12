@@ -22,3 +22,4 @@
 특수	Special
 견디기	Frame
 달리기	Run
+걷기	Walk

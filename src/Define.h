@@ -39,8 +39,8 @@
 /******************************************************************************************************************
 	#1. User Define Message
 *******************************************************************************************************************/
-#define _WM_USER_MSG_INPUTTED		WM_USER + 1005				// 에디트박스 입력메시지. 메시지가 커맨드일경우 wParam값은 TRUE로 세팅된다.
-#define ID_SOCKCLIENT_EVENT_MSG		WM_USER + 1000				// 소켓이벤트메시지.
+#define _WM_USER_MSG_INPUTTED		WM_USER + 1005				// 에디트박스 입력Message. Message가 커맨드일경우 wParam값은 TRUE로 세팅된다.
+#define ID_SOCKCLIENT_EVENT_MSG		WM_USER + 1000				// 소켓이벤트Message.
 
 
 
@@ -251,7 +251,7 @@
 /******************************************************************************************************************
 	#1. Sprite Define
 *******************************************************************************************************************/
-// Hero's Action Definition.(게임내의 모든 Action을 Definition한다.)
+// Hero's Action Definition.(Game내의 모든 Action을 Definition한다.)
 
 #define _MAX_HERO_MTN				33			// Maximum Action Number.
 #define _MAX_HERO_FRAME				3000		// 다음 Hero로 넘어가는 Maximum Frame Number.
@@ -291,7 +291,7 @@
 #define _MT_HORSERUN				31			// 승마모드 Run.
 #define _MT_HORSEHIT				32			// 승마모드 맞기.
 
-// Monste's Action Definition.(게임내의 모든 Action을 Definition한다.)
+// Monste's Action Definition.(Game내의 모든 Action을 Definition한다.)
 #define _MAX_MON_MTN				10			// Maximum Action Number.
 #define _MAX_MON_FRAME				1000		// 다음 Mon로 넘어가는 Maximum Frame Number.
 
@@ -307,8 +307,8 @@
 #define _MT_MON_SPECIAL_MTN			9			// Special Action1.
 
 
-// NPC's Action Definition.(게임내의 모든 Action을 Definition한다.)
-// NPC 관련Definition.
+// NPC's Action Definition.(Game내의 모든 Action을 Definition한다.)
+// NPC RelatedDefinition.
 #define _MAX_NPC_MTN				3			// Maximum Action Number.
 #define _MAX_NPC_FRAME				100			// 다음 NPC로 넘어가는 Maximum Frame Number.
 
@@ -350,7 +350,7 @@
 
 
 
-// Spell효과관련Definition.
+// Spell효과RelatedDefinition.
 #define _MAX_EFFECT					33
 #define _MAX_MAGIC					52
 #define _MAX_EXPLOSION				8
@@ -656,31 +656,31 @@
 #define _VIEW_CELL_Y_START			-157
 #define _MAX_TILE_FILE				14
 
-// 포그색 관련 속성.
+// 포그색 Related 속성.
 #define _FOG_COLOR_TYPE0			RGB(0, 0, 0);
 #define _FOG_COLOR_TYPE1			RGB(100, 10, 10);
 #define _FOG_COLOR_TYPE2			RGB(10, 255, 10);
 #define _FOG_COLOR_TYPE3			RGB(10, 10, 255);
 
-// 속성 관련 Definition.
+// 속성 Related Definition.
 #define _CAN_WALK					0
 #define _CAN_NOTWALK	 			1
 #define _CAN_FLY					0
 #define _CAN_NOTFLY					1
 
-// 라이트 크기 관련 Definition.
+// 라이트 크기 Related Definition.
 #define _LIGHT_SIZE_TYPE0			3
 #define _LIGHT_SIZE_TYPE1			4
 #define _LIGHT_SIZE_TYPE2			5
 #define _LIGHT_SIZE_TYPE3			6
 
-// 라이트 색 관련 Definition.
+// 라이트 색 Related Definition.
 #define _LIGHT_COLOR_TYPE0			RGB(255, 0, 0);
 #define _LIGHT_COLOR_TYPE1			RGB(0, 255, 0);
 #define _LIGHT_COLOR_TYPE2			RGB(0, 0, 255);
 #define _LIGHT_COLOR_TYPE3			RGB(255, 0, 255);
 
-// 문관련 Definition.
+// 문Related Definition.
 #define _DOOR_ISCLOSED				0
 #define _DOOR_ISOPEN				1
 
@@ -790,7 +790,7 @@
 //용기
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 공통
-#define	CM_CLICKNPC					1010	// 이 메시지를 서버로 보내어 해당 MPC의 정보를 받는다.
+#define	CM_CLICKNPC					1010	// 이 Message를 서버로 보내어 해당 MPC의 정보를 받는다.
 #define	CM_MERCHANTDLGSELECT		1011	// 사용자가 NPC대화중 Tag가 존재하는 부분을 Click했을경우 보내어진다.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 팔기
