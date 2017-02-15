@@ -362,7 +362,7 @@ BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 			
 			m_xItems.AddNode(pxClItem);
 
-//			szMakeIndex[12]; // A:무기 B:옷 C:반지,팔찌,목걸이 G:기타
+//			szMakeIndex[12]; // A:Weapon B:Dress C:Ring,Bracelet,Necklace G:기타
 			sprintf(szTemp1,"%d전",pxClItem->stStdItem.nPrice);
 /*			switch(pxClItem->szMakeIndex[0])
 			{
@@ -504,7 +504,7 @@ BOOL CStoreWnd::SetSellItemLst(CInventoryWnd* pxInvenWnd,CHAR Kind,BYTE nStdMode
 					}
 					else
 					{
-						// 무기나 갑옷은 그냥 넣어도 무관..
+						// Weapon나 갑Dress은 그냥 넣어도 무관..
 						m_xItems.AddNode(pxItem);
 						strcpy(szTemp1,pxItem->stStdItem.szName);
 						itoa(pxItem->nDura,szTemp2,10);
@@ -528,7 +528,7 @@ BOOL CStoreWnd::SetSellItemLst(CInventoryWnd* pxInvenWnd,CHAR Kind,BYTE nStdMode
 //		for(int i=0 ; i<60; i++)
 //		{
 //			pxItem = &pxInvenWnd->m_stInventoryItem[i].xItem.m_stItemInfo;
-			// 무기나 갑옷은 그냥 넣어도 무관..
+			// Weapon나 갑Dress은 그냥 넣어도 무관..
 //			m_xItems.AddNode(pxItem);
 //			strcpy(szTemp1,pxItem->stStdItem.szName);
 //			itoa(pxItem->nDura,szTemp2,10);

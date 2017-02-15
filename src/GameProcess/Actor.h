@@ -266,7 +266,7 @@ private:
 public:
 	FEATUREEX			m_stFeatureEx;
 
-	BYTE				m_bWeaponImgIdx;				// 현재 Actor 무기가 가질 이미지구조체의 번호.
+	BYTE				m_bWeaponImgIdx;				// 현재 Actor Weapon가 가질 이미지구조체의 번호.
 	BYTE				m_bHairImgIdx;					// 현재 Actor 머리가 가질 이미지구조체의 번호.
 	BYTE				m_bHorseImgIdx;					// 현재 Actor 말이   가질 이미지구조체의 번호.
 

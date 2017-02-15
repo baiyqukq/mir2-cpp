@@ -1260,7 +1260,7 @@ BOOL CStatusWnd::OnLButtonUp(LPCOMMONITEMSET pstCommonItemSet, POINT ptMouse)
 				// CM_TAKEONITEMMessage를 보낸다.
 				else if ( pstCommonItemSet->bSetted && !pstCommonItemSet->bWaitResponse )
 				{
-					// 보내기전 영역이 서로 맞는가(반지자리에 반지가 잘들어갔는지)를 체크한다.
+					// 보내기전 영역이 서로 맞는가(Ring자리에 Ring가 잘들어갔는지)를 체크한다.
 					if ( CheckEquipItem(&pstCommonItemSet->xItem, nEquipNum, ptMouse) )
 					{
 						SetTakeOnFromCommon(nEquipNum, pstCommonItemSet);

@@ -2244,7 +2244,8 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 	sscanf(g_xChatEditBox.m_szInputMsg, "%[^ ]%*c %[^ ]%*c %[^ ]%*c %[^ ]%*c %[^ ]%*c", szCommand, szArg1, szArg2, szArg3, szArg4);
 	INT nArg1;	INT nArg2;	INT nArg3;	INT nArg4;
 	nArg1 = nArg2 = nArg3 = nArg4 = 0;
-	if ( !strcmp(szCommand, "@¿Ê¿°»ö") )
+
+	if ( !strcmp(szCommand, "@dress¿°»ö") )
 	{
 		nArg1 = atoi(szArg1);
 		nArg2 = atoi(szArg2);
@@ -2252,7 +2253,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 		
 		WORD wColor = g_xMainWnd.ConvertColor24To16(RGB(nArg3, nArg2, nArg1));
 
-		sprintf(g_xChatEditBox.m_szInputMsg, "@¿Ê¿°»ö %d", wColor );
+		sprintf(g_xChatEditBox.m_szInputMsg, "@Dress¿°»ö %d", wColor );
 		m_xMyHero.m_stFeatureEx.wDressColor = wColor;
 	}	
 	else if ( !strcmp(szCommand, "@speed") )

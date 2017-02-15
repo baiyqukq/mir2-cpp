@@ -135,23 +135,23 @@
 #define _INVENTORY_CELL_WIDTH		38
 #define _INVENTORY_CELL_HEIGHT		38
 
-#define _CHAT_COLOR1				0	//RGB(  0,   0,   0); // 투과색.
-#define _CHAT_COLOR2				1	//RGB( 10,  10,  10); // 검정색.
-#define _CHAT_COLOR3				2	//RGB(255, 255, 255); // 흰색.
-#define _CHAT_COLOR4				3	//RGB(255,   0,   0); // 빨강.
-#define _CHAT_COLOR5				4	//RGB(  0, 255,   0); // 녹색.
-#define _CHAT_COLOR6				5	//RGB(  0,   0, 255); // 푸른색
-#define _CHAT_COLOR7				6	//RGB(255, 255,   0); // 노랑색.
-#define _CHAT_COLOR8				7	//RGB(255, 128,   0); // 주황색
+#define _CHAT_COLOR1				0	//RGB(  0,   0,   0); // Transparent.
+#define _CHAT_COLOR2				1	//RGB( 10,  10,  10); // Black.
+#define _CHAT_COLOR3				2	//RGB(255, 255, 255); // White.
+#define _CHAT_COLOR4				3	//RGB(255,   0,   0); // Red.
+#define _CHAT_COLOR5				4	//RGB(  0, 255,   0); // Green.
+#define _CHAT_COLOR6				5	//RGB(  0,   0, 255); // Blue
+#define _CHAT_COLOR7				6	//RGB(255, 255,   0); // Yellow.
+#define _CHAT_COLOR8				7	//RGB(255, 128,   0); // Orange
 
-#define _USER_NAMECLR1				255	//RGB(255, 255, 255); 흰색
+#define _USER_NAMECLR1				255	//RGB(255, 255, 255); White
 #define _USER_NAMECLR2				251	//RGB(255, 255,   0); 노란색
 #define _USER_NAMECLR3				249	//RGB(255,   0,   0); 빨간색
 #define _USER_NAMECLR4				125	//RGB(255,   0,   0); ??색(결계안 몬스터색)
 #define _USER_NAMECLR5				47	//RGB(165,  99,  57); 갈색
-#define _USER_NAMECLR6				180	//RGB(  0,   0, 255); 푸른색
-#define _USER_NAMECLR7				69	//RGB(239, 107,   0); 주황색
-#define _USER_NAMECLR8				221	//RGB(  0, 148,   0); 녹색
+#define _USER_NAMECLR6				180	//RGB(  0,   0, 255); Blue
+#define _USER_NAMECLR7				69	//RGB(239, 107,   0); Orange
+#define _USER_NAMECLR8				221	//RGB(  0, 148,   0); Green
 #define _USER_NAMECLR9				254	//RGB(  0, 255, 255); 색
 #define _USER_NAMECLR10				147	//RGB(140, 214, 239); 색
 #define _USER_NAMECLR11				154	//RGB( 57, 181, 239); 색
@@ -266,7 +266,7 @@
 #define _MT_PUSHBACKFLY				6			// 뒤로 날라서 밀려나기.
 #define _MT_ATTACKMODE				7			// 전투모드.
 #define _MT_CUT						8			// Cut Meat.
-#define _MT_ONEVSWING				9			// 한손 종베기.(Action 9번부터 14번까지에서 무기의 종류에 따라 Action이 정해진다.)
+#define _MT_ONEVSWING				9			// 한손 종베기.(Action 9번부터 14번까지에서 Weapon의 종류에 따라 Action이 정해진다.)
 #define _MT_TWOVSWING				10			// 두손 종베기.
 #define _MT_ONEHSWING				11			// 한손 횡베기.
 #define _MT_TWOHSWING				12			// 두손 횡베기.	
@@ -317,7 +317,7 @@
 #define _MT_NPC_ACT02				2			// SpecialAction2.
 
 // 기도.							0			
-// 무기대장장이.					1			
+// Weapon대장장이.					1
 // 방어구대장장이.					2			
 // 여관종업원.						3			
 // 카운터.							4			
@@ -416,14 +416,14 @@
 /******************************************************************************************************************
 	#1. Interface
 *******************************************************************************************************************/
-#define _CHAT_COLOR1				0	//RGB(  0,   0,   0); // 투과색.
-#define _CHAT_COLOR2				1	//RGB( 10,  10,  10); // 검정색.
-#define _CHAT_COLOR3				2	//RGB(255, 255, 255); // 흰색.
-#define _CHAT_COLOR4				3	//RGB(255,   0,   0); // 빨강.
-#define _CHAT_COLOR5				4	//RGB(  0, 255,   0); // 녹색.
-#define _CHAT_COLOR6				5	//RGB(  0,   0, 255); // 푸른색
-#define _CHAT_COLOR7				6	//RGB(255, 255,   0); // 노랑색.
-#define _CHAT_COLOR8				7	//RGB(255, 128,   0); // 주황색
+#define _CHAT_COLOR1				0	//RGB(  0,   0,   0); // Transparent.
+#define _CHAT_COLOR2				1	//RGB( 10,  10,  10); // Black.
+#define _CHAT_COLOR3				2	//RGB(255, 255, 255); // White.
+#define _CHAT_COLOR4				3	//RGB(255,   0,   0); // Red.
+#define _CHAT_COLOR5				4	//RGB(  0, 255,   0); // Green.
+#define _CHAT_COLOR6				5	//RGB(  0,   0, 255); // Blue
+#define _CHAT_COLOR7				6	//RGB(255, 255,   0); // Yellow.
+#define _CHAT_COLOR8				7	//RGB(255, 128,   0); // Orange
 
 #define _INPUT_EDITWND_XPOS			223
 #define _INPUT_EDITWND_YPOS			549
@@ -600,7 +600,7 @@
 #define _MONMAGIC_EXPLODE			101			// 폭발Spell.(돌골렘죽을때, 론Attack시)
 #define _MONMAGIC_BLACK1			102			// 흑Spell사. (Spell(시전))
 #define _MONMAGIC_BLACK2			103			// 흑Spell사. (Spell(Spell))
-#define _MONMAGIC_DIE				104			// 흑Spell사, 경갑옷기사, 홍Spell사, 신기선보스변신전 죽음.(효과)
+#define _MONMAGIC_DIE				104			// 흑Spell사, 경갑Dress기사, 홍Spell사, 신기선보스변신전 죽음.(효과)
 #define _MONMAGIC_ANTHEAL			105			// 치유개미힐링(발사Spell, 폭발효과.)
 #define _MONMAGIC_GREATANT			106			// 거대개미.(Attack한 캐릭터위에)(Spell)
 #define _MONMAGIC_MAGENUMA			108			// 결계.

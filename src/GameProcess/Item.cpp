@@ -31,9 +31,9 @@ BOOL CItem::SetItem(CLIENTITEMRCD stItemInfo, SHORT shInventoryNum)
 	m_stItemInfo = stItemInfo;
 	m_shCellNum = shInventoryNum;
 /*
-a:무기
-b:옷
-c:반지 팔찌 목걸이
+a:Weapon
+b:Dress
+c:Ring Bracelet Necklace
 g:기타
 */
 /*
@@ -52,12 +52,12 @@ g:기타
 
 	switch ( m_stItemInfo.stStdItem.bStdMode )
 	{
-	// 무기.
+	// Weapon.
 	case 5:		
 	case 6:		
 		m_bAttr = _U_WEAPON;
 		break;
-	// 옷.
+	// Dress.
 	case 10:
 	case 11:
 		m_bAttr = _U_DRESS;
@@ -146,7 +146,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 	{
 		switch ( m_stItemInfo.stStdItem.bStdMode )
 		{
-		// 남자옷, 여자옷.
+		// 남자Dress, 여자Dress.
 		case 10:
 		case 11:
 			{
@@ -222,7 +222,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap*2, RGB(250, 0, 0), RGB(0, 0, 0), szLineBuf[2]);
 			}
 			break;
-		// 무기.
+		// Weapon.
 		case 5:
 		case 6:
 			{
@@ -323,12 +323,12 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			}
 			break;			
         case 15:	//모자,투구
-        case 19:	//목걸이
+		case 19:	//Necklace
 		case 20:
 		case 21:  
-        case 22:	//반지
+		case 22:	//Ring
 		case 23:  
-        case 24:	//팔찌
+		case 24:	//Bracelet
 		case 26:  
 			{
 				bUseAble = FALSE;
@@ -346,7 +346,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 				g_xMainWnd.PutsHan(NULL, nX+sizeLen.cx, nY, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[0]);
 
 				// 두번째줄.
-				// 목걸이.
+				// Necklace.
 				if ( m_stItemInfo.stStdItem.bStdMode == 19 && m_stItemInfo.stStdItem.bStdMode == 20 )
 				{
 					if ( m_stItemInfo.stStdItem.wAC > 0 )
@@ -358,7 +358,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					if ( HIBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
 						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "행운+%d ", HIBYTE(m_stItemInfo.stStdItem.wMAC));		
 				}				
-				// 반지.
+				// Ring.
 				if ( m_stItemInfo.stStdItem.bStdMode == 22 && m_stItemInfo.stStdItem.bStdMode == 23 )
 				{
 					if ( HIBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
@@ -370,7 +370,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					if ( LOBYTE(m_stItemInfo.stStdItem.wMAC) > 0 )
 						sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "Attack속도-%d ", LOBYTE(m_stItemInfo.stStdItem.wMAC));
 				}
-				// 팔찌.
+				// Bracelet.
 				else if ( m_stItemInfo.stStdItem.bStdMode == 24 && m_stItemInfo.stStdItem.bStdMode == 26 )
 				{
 					if ( m_stItemInfo.stStdItem.wAC > 0 )

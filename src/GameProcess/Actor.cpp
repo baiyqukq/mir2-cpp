@@ -3798,7 +3798,7 @@ BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, B
 		}
 	} 
 
-	// 무기.
+	// Weapon.
 	if ( m_stFeature.bWeapon != _WEAPON_NONE && m_pxWeaponImage != NULL )
 	{
 		if ( m_bCurrMtn < _MAX_WEAPON_MTN )
@@ -3872,7 +3872,7 @@ BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, B
 	BYTE bOpaRate = 70;
 	WORD wState   = GetCharState();
 
-	// 무기.
+	// Weapon.
 	if ( m_stFeature.bWeapon != _WEAPON_NONE && m_pxWeaponImage != NULL )
 	{
 		if ( m_bCurrMtn < _MAX_WEAPON_MTN )
@@ -4005,7 +4005,7 @@ BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, B
 		}
 	}
 
-	// 무기를 먼저 그려야될방향.
+	// Weapon를 먼저 그려야될방향.
 	if ( m_stFeature.bWeapon != _WEAPON_NONE && m_pxWeaponImage != NULL && g_xSpriteInfo.m_bWOrder[(m_dwCurrFrame-(_MAX_HERO_FRAME*m_stFeature.bDress))] )
 	{
 		if ( m_bCurrMtn < _MAX_WEAPON_MTN )
@@ -4034,7 +4034,7 @@ BOOL CHero::DrawActor(CMapHandler* pxMap, BOOL bFocused, BOOL bShadowAblended, B
 				         m_stFeatureEx.wDressColor, m_stFeatureEx.wHairColor, bFocused, bOpaRate, wState);
 	}			
 
-	// 무기를 나중에 그려야될 방향.
+	// Weapon를 나중에 그려야될 방향.
 	if ( m_stFeature.bWeapon != _WEAPON_NONE && m_pxWeaponImage != NULL && !g_xSpriteInfo.m_bWOrder[(m_dwCurrFrame-(_MAX_HERO_FRAME*m_stFeature.bDress))] ) 
 	{
 		if ( m_bCurrMtn < _MAX_WEAPON_MTN )

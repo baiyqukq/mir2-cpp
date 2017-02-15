@@ -3,6 +3,10 @@
 
 
 #pragma pack(1)
+
+/**
+ * \brief Standard item
+ */
 typedef struct tagSTANDARDITEM
 {
 	CHAR			szName[15];
@@ -32,6 +36,9 @@ typedef struct tagSTANDARDITEM
 	int				nPrice;
 }STANDARDITEM, *LPSTANDARDITEM;
 
+/**
+ * \brief Client item rcd
+ */
 typedef struct tagCLIENTITEMRCD
 {
 	STANDARDITEM	stStdItem;
@@ -40,6 +47,9 @@ typedef struct tagCLIENTITEMRCD
 	WORD			nDuraMax;
 }CLIENTITEMRCD, *LPCLIENTITEMRCD;
 
+/**
+ * \brief Ground item
+ */
 typedef struct tagGROUNDITEM
 {
 	INT				nRecog;
@@ -48,6 +58,7 @@ typedef struct tagGROUNDITEM
 	WORD			wLooks;
 	CHAR			szItemName[40];
 }GROUNDITEM, *LPGROUNDITEM;
+
 #pragma pack(8)
 
 
