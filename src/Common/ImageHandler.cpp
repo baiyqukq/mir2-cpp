@@ -124,7 +124,7 @@ VOID CImageHandler::LoadAllImage(BOOL bIsMemMapped, BOOL bComp)
 		".\\Data\\WM-Weapon3.wil",							//25
 		".\\Data\\WM-Weapon4.wil",							//26
 
-		//~~~ 아이템 및 인터페이스, Spell, 기타이미지. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //~~~ 아이템 및 인터페이스, Spell, Other이미지. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		".\\Data\\Magic.wil",								//27
 		".\\Data\\Inventory.wil",							//29
 		".\\Data\\Equip.wil",								//29

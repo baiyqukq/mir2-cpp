@@ -355,18 +355,18 @@ BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 			
 			//		szTemp	 =	new CHAR[50];
 			CHAR szTemp1[50];	// 가격
-			CHAR szTemp2[50];	// 기타
+            CHAR szTemp2[50];	// Other
 			
 			ZeroMemory(szTemp1,50);
 			ZeroMemory(szTemp2,50);
 			
 			m_xItems.AddNode(pxClItem);
 
-//			szMakeIndex[12]; // A:Weapon B:Dress C:Ring,Bracelet,Necklace G:기타
+//			szMakeIndex[12]; // A:Weapon B:Dress C:Ring,Bracelet,Necklace G:Other
 			sprintf(szTemp1,"%d전",pxClItem->stStdItem.nPrice);
 /*			switch(pxClItem->szMakeIndex[0])
 			{
-			case 'G':	// 기타
+            case 'G':	// Other
 			case 'g':
 				{
 					switch(pxClItem->stStdItem.bStdMode)
@@ -379,7 +379,7 @@ BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 					case 7:	// 묶음씨리즈
 					case 9:	// 약제들
 						break;
-					case 5:	// 독가루
+                    case 5:	// Poison Powder
 						sprintf(szTemp2,"%d",pxClItem->nDura);
 						break;
 					case 8:	// 먹지 못하는 고기
@@ -388,8 +388,8 @@ BOOL CStoreWnd::SetBuyItemLst(CHAR* Msg,INT Count)
 					case 10:	// 광석
 						sprintf(szTemp2,"순도 %d",pxClItem->nDura);
 						break;
-					case 6:	// 횃불,초
-					default:	// 기타
+                    case 6:	// Torch,초
+                    default:	// Other
 						sprintf(szTemp2,"내구 %d",pxClItem->nDura);
 						break;
 					}
@@ -486,7 +486,7 @@ BOOL CStoreWnd::SetSellItemLst(CInventoryWnd* pxInvenWnd,CHAR Kind,BYTE nStdMode
 					if(bKind!='a' && bKind!='A' && bKind!='b' && bKind!='B')
 					{
 						if(nStdMode==pxItem->stStdItem.bStdMode)
-						{	// 기타는 다시 걸러 주어야 한다.
+                        {	// Other는 다시 걸러 주어야 한다.
 							m_xItems.AddNode(pxItem);
 							strcpy(szTemp1,pxItem->stStdItem.szName);
 							itoa(pxItem->nDura,szTemp2,10);

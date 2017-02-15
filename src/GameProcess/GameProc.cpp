@@ -2402,7 +2402,7 @@ LRESULT CGameProcess::OnMsgInputted(WPARAM wParam, LPARAM lParam)
 
 /******************************************************************************************************************
 
-	기타 Function및 디버그용 Function.
+    Other Function및 디버그용 Function.
 
 *******************************************************************************************************************/
 VOID CGameProcess::ShowStatus(INT nStartX, INT nStartY)

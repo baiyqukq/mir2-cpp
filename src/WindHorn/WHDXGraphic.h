@@ -154,7 +154,7 @@ public:
 	// 4. Surface형 데이타 그리기 Function.(소스의 컬러키를 고려하면서 백서피스에 그린다.)
 	BOOL					DrawWithSurface(INT nX, INT nY, INT nXSize, INT nYSize, LPDIRECTDRAWSURFACE7 pddsSrc);
 
-	// wChooseColor1은 염색Dress(0xC2)에 대해서, wChooseColor2(0xC3)는 머리등(칼, 기타 변하는색)의 염색으로 쓴다.
+    // wChooseColor1은 염색Dress(0xC2)에 대해서, wChooseColor2(0xC3)는 머리등(칼, Other 변하는색)의 염색으로 쓴다.
 	// 5. 압축(0번)및 염색된 WORD형 데이타 그리기 Function.(백서피스에 그린다.)
 	BOOL					DrawWithImageForComp(INT nX, INT nY, RECT rcSrc, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);
 	BOOL					DrawWithImageForComp(INT nX, INT nY, INT nXSize, INT nYSize, WORD* pwSrc, WORD wChooseColor1 = 0XFFFF, WORD wChooseColor2 = 0XFFFF);

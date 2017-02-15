@@ -34,7 +34,7 @@ BOOL CItem::SetItem(CLIENTITEMRCD stItemInfo, SHORT shInventoryNum)
 a:Weapon
 b:Dress
 c:Ring Bracelet Necklace
-g:기타
+g:Other
 */
 /*
 #define _U_DRESS					0
@@ -78,11 +78,11 @@ g:기타
 	case 26:
 		m_bAttr = _U_ARMRINGL;
 		break;
-	// 초, 횃불.
+    // 초, Torch.
 	case 30:
 		m_bAttr = _U_RIGHTHAND;
 		break;
-	// 독가루, 부적.
+    // Poison Powder, Charm.
 	case 25:
 		m_bAttr = _U_ARMRINGL;
 		break;
@@ -96,6 +96,7 @@ BOOL CItem::DrawItem(INT nX, INT nY, BYTE bItemType)
 {
 	CWHWilImageData*	pxItemImg;	
 	BOOL bDrawItem = FALSE;
+
 	switch ( bItemType )
 	{
 	case _ITEM_TYPE_INVENTORY:
@@ -152,11 +153,12 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			{
 				bUseAble = FALSE;
 
-				// 첫째줄.
+                // First line.
 				if ( m_stItemInfo.stStdItem.szName[20] )
 					g_xMainWnd.StringPlus(szName, &m_stItemInfo.stStdItem.szName[20], " ", &m_stItemInfo.stStdItem.szName[0], "");
 				else
 					strcpy(szName, m_stItemInfo.stStdItem.szName);
+
 				g_xMainWnd.PutsHan(NULL, nX, nY, RGB(250, 250, 0), RGB(0, 0, 0), szName);
 				sizeLen = g_xMainWnd.GetStrLength(NULL, NULL, szName);
 
@@ -164,8 +166,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 
 				g_xMainWnd.PutsHan(NULL, nX+sizeLen.cx, nY, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[0]);
 				
-
-				// 둘째줄.
+                // Second line.
 				if ( m_stItemInfo.stStdItem.wAC > 0 )
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "방어%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wAC), HIBYTE(m_stItemInfo.stStdItem.wAC));
 
@@ -183,7 +184,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 
 				g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
-				// 세째줄.
+                // Third line.
 				switch ( m_stItemInfo.stStdItem.bNeed )
 				{
 				case 0:
@@ -228,7 +229,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			{
 				bUseAble = FALSE;
 
-				// 첫째줄.
+                // First line.
 				if ( (m_stItemInfo.stStdItem.bNeedIdentify & 0X01) != 0 )			
 				{
 					if ( m_stItemInfo.stStdItem.szName[20] )
@@ -250,7 +251,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 				sprintf(szLineBuf[0], " 무게%d 내구%d/%d", (m_stItemInfo.stStdItem.bWeight), (m_stItemInfo.nDura/1000), (m_stItemInfo.nDuraMax)/1000);
 				g_xMainWnd.PutsHan(NULL, nX+sizeLen.cx, nY, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[0]);
 
-				// 둘째줄.
+                // Second line.
 				if ( m_stItemInfo.stStdItem.wDC > 0 )
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], "파괴%d-%d ", LOBYTE(m_stItemInfo.stStdItem.wDC), HIBYTE(m_stItemInfo.stStdItem.wDC));
 
@@ -265,7 +266,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 
 				g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
-				// 세째줄.
+                // Third line.
 				if ( HIBYTE(m_stItemInfo.stStdItem.wAC) > 0 )
 					sprintf(&szLineBuf[2][strlen(szLineBuf[2])], "정확+%d ", HIBYTE(m_stItemInfo.stStdItem.wAC));
 
@@ -333,7 +334,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			{
 				bUseAble = FALSE;
 
-				// 첫째줄.
+                // First line.
 				if ( m_stItemInfo.stStdItem.szName[20] )
 					g_xMainWnd.StringPlus(szName, &m_stItemInfo.stStdItem.szName[20], " ", &m_stItemInfo.stStdItem.szName[0], "");
 				else
@@ -345,7 +346,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 
 				g_xMainWnd.PutsHan(NULL, nX+sizeLen.cx, nY, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[0]);
 
-				// 두번째줄.
+                // Second line.
 				// Necklace.
 				if ( m_stItemInfo.stStdItem.bStdMode == 19 && m_stItemInfo.stStdItem.bStdMode == 20 )
 				{
@@ -400,7 +401,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 
 				g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
-				// 세번째줄.
+                // Third line.
 				switch ( m_stItemInfo.stStdItem.bNeed )
 				{
 				case 0:
@@ -440,7 +441,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			}
 			break;
 
-/*		case 25:	//뿌리는 독가루
+/*		case 25:	//뿌리는 Poison Powder
 		case 30:	//초,횟불
 		case 40:	//고기덩어리
 		case 42:
@@ -449,7 +450,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 			{
 				bUseAble = FALSE;
 
-				// 첫번째줄.
+                // First line.
 				g_xMainWnd.PutsHan(NULL, nX, nY, RGB(250, 250, 0), RGB(0, 0, 0), m_stItemInfo.stStdItem.szName);
 				sizeLen = g_xMainWnd.GetStrLength(NULL, NULL, m_stItemInfo.stStdItem.szName);
 
@@ -482,7 +483,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					{
 					case 0:
 						{
-							// 둘째줄.
+                            // Second line.
 							sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 전사무공비급 ");
 							g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
@@ -498,7 +499,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 						break;
 					case 1:
 						{
-							// 둘째줄.
+                            // Second line.
 							sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 주술사Spell책 ");
 							g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
@@ -531,37 +532,37 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 						break;
 					}
 					break;						
-				case 25:			// 각종 독가루.
-					// 첫번째줄.
+                case 25:			// 각종 Poison Powder.
+                    // First line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d ", m_stItemInfo.stStdItem.bWeight);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 
-					// 두번째줄.
+                    // Second line.
 					sprintf(&szLineBuf[2][strlen(szLineBuf[2])], " 사용%d/%d ", m_stItemInfo.nDura, m_stItemInfo.nDuraMax);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap*2, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[2]);
 					break;
-				case 30:			// 횃불과 초.
-					// 두번째줄.
+                case 30:			// Torch과 초.
+                    // Second line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d 내구%d/%d ", m_stItemInfo.stStdItem.bWeight, m_stItemInfo.nDura/1000, m_stItemInfo.nDuraMax/1000);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
 				case 31:			// 각종묶음시리즈.
-					// 첫번째줄.
+                    // First line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d ", m_stItemInfo.stStdItem.bWeight);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
 				case 40:		// 각종고기들(고기덩어리)
-					// 두번째줄.
+                    // Second line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d 품질%d/%d ", m_stItemInfo.stStdItem.bWeight, m_stItemInfo.nDura/1000, m_stItemInfo.nDuraMax/1000);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
 				case 42:			// 각종약재들.
-					// 두번째줄.
+                    // Second line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d 약재 ", m_stItemInfo.stStdItem.bWeight);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
 				case 43:		// 각종광석들.
-					// 두번째줄.
+                    // Second line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d 순도%d ", m_stItemInfo.stStdItem.bWeight, m_stItemInfo.nDura/1000);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
@@ -571,7 +572,7 @@ VOID CItem::ShowItemStatus(INT nX, INT nY)
 					break;
 				case 46:		// 기능은 없는 단순아이템.
 				default:
-					// 두번째줄.
+                    // Second line.
 					sprintf(&szLineBuf[1][strlen(szLineBuf[1])], " 무게%d ", m_stItemInfo.stStdItem.bWeight);
 					g_xMainWnd.PutsHan(NULL, nX, nY+nLineGap, RGB(250, 250, 250), RGB(0, 0, 0), szLineBuf[1]);
 					break;
