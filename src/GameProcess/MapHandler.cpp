@@ -22,7 +22,7 @@
 	Purpose   :
 	Return   :
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 CMapHandler::CMapHandler()
@@ -42,7 +42,7 @@ CMapHandler::CMapHandler()
 	Purpose   :
 	Return   :
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 CMapHandler::~CMapHandler()
@@ -62,7 +62,7 @@ CMapHandler::~CMapHandler()
 	Purpose   :
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::InitMapHandler()
@@ -117,7 +117,7 @@ VOID CMapHandler::LoadMapHandler(CHAR* szMapFile, CImageHandler* pxImgHandler, I
 	Purpose   :
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::DestroyMapHandler()
@@ -148,7 +148,7 @@ VOID CMapHandler::DestroyMapHandler()
 	Purpose   :
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::LoadNewMapBuffer()
@@ -198,7 +198,7 @@ VOID CMapHandler::LoadNewMapBuffer()
 	Params   : CHAR* szMapFile
 	Return   : BOOL
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 BOOL CMapHandler::LoadMapData(CHAR* szMapFile)
@@ -263,7 +263,7 @@ BOOL CMapHandler::LoadMapData(CHAR* szMapFile)
 	Purpose   :
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
@@ -296,7 +296,7 @@ VOID CMapHandler::LoadMapImage(CImageHandler* pxImgHandler)
 	Purpose   :
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::FreeMapData()
@@ -329,7 +329,7 @@ VOID CMapHandler::FreeMapData()
 	         INT nSpeed
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::ScrollMap(INT nCharDir, INT nCharFrame, INT nSpeed)
@@ -439,7 +439,7 @@ VOID CMapHandler::ScrollMap(INT nCharDir, WORD wCurrDelay, WORD wMoveDelay, INT 
 	         INT nY
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::DrawBaseTile(INT nX, INT nY)
@@ -482,7 +482,7 @@ VOID CMapHandler::DrawBaseTile(INT nX, INT nY)
 	         INT nY
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 /*VOID CMapHandler::DrawOpenDoor(INT nX, INT nY)
@@ -660,7 +660,7 @@ INT CMapHandler::GetDoorImgIdx(INT nX, INT nY)
 	         SHORT shMovedTileY
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 VOID CMapHandler::SetMovedTileBuffer(SHORT shMovedTileX, SHORT shMovedTileY)
@@ -1293,7 +1293,7 @@ BOOL CMapHandler::DrawOneCellOverObjTile(INT nX, INT nY)
 	         INT nY
 	Return   : VOID
 
-	[Date][Modifier] : 수정내용
+    [Date][Modifier] :
 
 *******************************************************************************************************************/
 /*
