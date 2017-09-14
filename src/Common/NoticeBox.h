@@ -1,13 +1,6 @@
 #ifndef _NOTICEBOX_H_
 #define _NOTICEBOX_H_
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-// CMirMsgBox.h
-//////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//////////////////////////////////////////////////////////////////////////////////////////
+
 class	CNoticeBox
 {
 public:
@@ -48,11 +41,14 @@ private:
 	SHORT	m_shHeight;
 	BOOL	m_bIsSelected;
 
-	CDLList<CHAR*>		m_xMsg;		// 출력될 문자
+	CDLList<CHAR*>		m_xMsg;		// Ouput string
 	CGameBtn			m_xMsgBtn;
 	CWHWilImageData*	m_pxBtnImage;
 protected:
-	__inline BOOL	IsInRect(int nPosX, int nPosY, RECT rc)	// 정확하게 Rect 안해 있는가를 체크
+	/**
+	 * Check some a point is in the rectangle \a rc
+	 */
+	__inline BOOL	IsInRect(int nPosX, int nPosY, RECT rc)
 	{	if (nPosX >= rc.left && nPosX <= rc.right && nPosY >= rc.top && nPosY <= rc.bottom)
 			return TRUE;
 		else 
